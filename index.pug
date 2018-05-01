@@ -3,25 +3,27 @@ html(lang="es")
 head
 	meta(charset="UTF-8")
 	title Universidad Cuauhtemoc
+	link(rel="stylesheet", href="css/desktopStyles.css")
+	link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
 body
-	header
-		nav.flex-column
-			div.flex-row
-				div
-					a
+	header.header-style1
+		nav.flex-column.just-sa
+			div.flex-row.just-sa.align-strh
+				div.flex-row.just-sb.aling-ctr
+					a.logo
 						img(src="resources/culogo.png", alt="Universidad Cuauhtemoc")
-					a
-						|facebook
-					a
-						|twitter
-					a
-						|instagram
-					a
-						|youtube
-					a
-						|UC
-					a
-						|calendario 
+					a.btn-social
+						img(src="resources/facebook-pin.png", alt="Facebook")
+					a.btn-social
+						img(src="resources/twitter-pin.png", alt="Twitter")
+					a.btn-social
+						img(src="resources/instagram-pin.png", alt="Instagram")
+					a.btn-social
+						img(src="resources/youtube-pin.png", alt="Youtube")
+					a.btn-social
+						img(src="resources/uc-pin.png", alt="Universidad Cuauhtemoc")
+					a.btn-social
+						img(src="resources/calendar-pin.png", alt="Calendario")
 				div
 					a.btn-green
 						|¡REGISTRATE!
@@ -50,4 +52,5 @@ body
 						a
 							|Visitanos
 	
-		
+	section.home-video
+		div
