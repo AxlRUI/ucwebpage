@@ -6,8 +6,42 @@
 $hard_pink: #990066
 $cu_green: #83b93a
 
+=flex() 
+  display: flex
+  display: -webkit-flex
+  display: -o-flex
+  display: -ms-flex
+  display: -moz-flex
+
+
+=align-items($align) 
+  aling-items: $align
+  -webkit-aling-items: $align
+  -o-aling-items: $align
+  -ms-aling-items: $align
+  -moz-aling-items: $align
+
+=justify-content($align) 
+  justify-content: $align
+  -webkit-justify-content: $align
+  -o-justify-content: $align
+  -ms-justify-content: $align
+  -moz-justify-content: $align
+
+=flex-direction($align) 
+  flex-direction: $align
+  -webkit-flex-direction: $align
+  -o-flex-direction: $align
+  -ms-flex-direction: $align
+  -moz-flex-direction: $align
+
 header
 	nav
+		+align-items(center)
+		+flex()
+		+flex-direction(row)
 		a
 			.logo
 				width: 300px
+	.btn-green
+		background: $cu_green

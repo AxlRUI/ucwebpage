@@ -3,5 +3,28 @@
   margin: 0;
   font-family: 'Roboto', sans-serif; }
 
-header nav a .logo {
-  width: 300px; }
+header nav {
+  aling-items: center;
+  -webkit-aling-items: center;
+  -o-aling-items: center;
+  -ms-aling-items: center;
+  -moz-aling-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -o-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row; }
+  header nav a .logo {
+    width: 300px; }
+
+header .btn-green {
+  background: #83b93a; }
