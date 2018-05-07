@@ -2,11 +2,17 @@
   padding: 0px;
   margin: 0px; }
 
+.content video {
+  margin-left: -1800px;
+  position: absolute;
+  height: 2700px;
+  z-index: -1; }
+
 body {
   background-color: #83B93A; }
 
-nav {
-  top: 50px;
+.firstNav {
+  padding-top: 70px;
   width: 100%;
   position: fixed;
   display: -webkit-box;
@@ -30,7 +36,7 @@ nav {
   -o-justify-content: space-between;
   -ms-justify-content: space-between;
   -moz-justify-content: space-between; }
-  nav .nav-left {
+  .firstNav .nav-left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -51,17 +57,17 @@ nav {
     -o-justify-content: space-around;
     -ms-justify-content: space-around;
     -moz-justify-content: space-around;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    -webkit-align-self: flex-end;
-    -o-align-self: flex-end;
-    -ms-align-self: flex-end;
-    -moz-align-self: flex-end; }
-    nav .nav-left img {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    -webkit-align-self: flex-start;
+    -o-align-self: flex-start;
+    -ms-align-self: flex-start;
+    -moz-align-self: flex-start; }
+    .firstNav .nav-left img {
       margin-left: 30px;
       width: 70%;
       height: 100%; }
-    nav .nav-left .burger {
+    .firstNav .nav-left .burger {
       -ms-flex-item-align: center;
       align-self: center;
       -webkit-align-self: center;
@@ -70,7 +76,7 @@ nav {
       -moz-align-self: center;
       width: 80px;
       height: 50px; }
-  nav .nav-right {
+  .firstNav .nav-right {
     margin-right: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -98,7 +104,7 @@ nav {
     -o-aling-items: flex-end;
     -ms-aling-items: flex-end;
     -moz-aling-items: flex-end; }
-    nav .nav-right .nav-social {
+    .firstNav .nav-right .nav-social {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -113,15 +119,15 @@ nav {
       -o-flex-direction: row;
       -ms-flex-direction: row;
       -moz-flex-direction: row; }
-      nav .nav-right .nav-social img {
-        padding: 10px;
-        width: 50px;
-        height: 50px; }
-    nav .nav-right .green-button {
-      width: 150px;
-      height: 40px;
+      .firstNav .nav-right .nav-social img {
+        padding: 30px 10px;
+        width: 85px;
+        height: 85px; }
+    .firstNav .nav-right .green-button {
+      width: 300px;
+      height: 90px;
       color: white;
-      font-size: 30px;
+      font-size: 65px;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
@@ -145,19 +151,21 @@ nav {
       text-decoration: none; }
 
 .index-play {
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
   background-color: #003056;
-  bottom: 250px;
+  bottom: 400px;
   margin-left: 100px;
-  position: absolute;
+  position: fixed;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -o-border-radius: 100%;
   -ms-border-radius: 100%;
-  -moz-border-radius: 100%; }
+  -moz-border-radius: 100%;
+  opacity: 0.6;
+  hover-opacity: 1.0; }
   .index-play .play {
-    padding: 45px 55px;
+    padding: 75px 90px;
     width: 35%;
     height: 40%;
     vertical-align: middle;
@@ -166,9 +174,52 @@ nav {
     -ms-vertical-align: middle;
     -moz-vertical-align: middle; }
 
-footer {
+.d1997 {
   width: 100%;
-  position: absolute;
-  bottom: 200px;
+  position: fixed;
+  bottom: 300px;
+  color: white;
   text-align: center;
-  font-size: 20px; }
+  font-size: 35px; }
+
+.secondNav {
+  top: 300px;
+  z-index: 100;
+  width: 50%;
+  position: fixed;
+  right: 100%;
+  font-size: 60px;
+  height: calc(100% - 300px); }
+  .secondNav ul {
+    list-style: none; }
+    .secondNav ul li {
+      display: block;
+      border-bottom: 1px solid white;
+      position: relative; }
+      .secondNav ul li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 20px; }
+    .secondNav ul .children {
+      font-size: 40px;
+      width: 100%;
+      display: none;
+      position: relative;
+      z-index: 1000; }
+    .secondNav ul li:hover .children {
+      border: none;
+      display: block; }
+      .secondNav ul li:hover .children li {
+        display: block;
+        border: none; }
+        .secondNav ul li:hover .children li a {
+          margin-left: 20px;
+          border-bottom: none;
+          display: block;
+          color: white; }
+        .secondNav ul li:hover .children li a:hover {
+          color: #83B93A; }
+    .secondNav ul li:hover a {
+      border-bottom: 1px solid #83B93A;
+      color: #83B93A; }
