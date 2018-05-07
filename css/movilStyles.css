@@ -12,7 +12,7 @@ body {
   background-color: #83B93A; }
 
 .firstNav {
-  padding-top: 50px;
+  padding-top: 70px;
   width: 100%;
   position: fixed;
   display: -webkit-box;
@@ -57,12 +57,12 @@ body {
     -o-justify-content: space-around;
     -ms-justify-content: space-around;
     -moz-justify-content: space-around;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    -webkit-align-self: flex-end;
-    -o-align-self: flex-end;
-    -ms-align-self: flex-end;
-    -moz-align-self: flex-end; }
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    -webkit-align-self: flex-start;
+    -o-align-self: flex-start;
+    -ms-align-self: flex-start;
+    -moz-align-self: flex-start; }
     .firstNav .nav-left img {
       margin-left: 30px;
       width: 70%;
@@ -120,14 +120,14 @@ body {
       -ms-flex-direction: row;
       -moz-flex-direction: row; }
       .firstNav .nav-right .nav-social img {
-        padding: 10px;
-        width: 90px;
-        height: 90px; }
+        padding: 30px 10px;
+        width: 85px;
+        height: 85px; }
     .firstNav .nav-right .green-button {
-      width: 240px;
-      height: 60px;
+      width: 300px;
+      height: 90px;
       color: white;
-      font-size: 50px;
+      font-size: 65px;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
