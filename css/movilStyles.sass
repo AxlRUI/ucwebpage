@@ -72,14 +72,13 @@ $blue: #003056
 body
 	background-color: $green
 
-nav
+.firstNav
 	padding-top: 50px
 	width: 100%
 	position: fixed
 	+flex()
 	+flex-direction(row)
 	+justify-content(space-between)
-	
 	.nav-left
 		+flex()
 		+flex-direction(row)
@@ -148,7 +147,7 @@ nav
 .secondNav
 	top: 300px
 	z-index: 100
-	width: 70%
+	width: 50%
 	position: fixed
 	right: 100%
 	font-size: 60px
@@ -170,18 +169,23 @@ nav
 			display: none
 			position: relative
 			z-index: 1000		
-		li:hover 
-			color: $green
+		li:hover
 			.children
 				border: none
 				display: block		
 				li
 					display: block
+					border: none
 					a
 						margin-left: 20px
+						border-bottom: none
 						display: block
-		li:active
-			color: $green				
+						color: white
+					a:hover
+						color: $green	
+			a
+				border-bottom: 1px solid $green 
+				color: $green 							
 
 
 

@@ -11,7 +11,7 @@
 body {
   background-color: #83B93A; }
 
-nav {
+.firstNav {
   padding-top: 50px;
   width: 100%;
   position: fixed;
@@ -36,7 +36,7 @@ nav {
   -o-justify-content: space-between;
   -ms-justify-content: space-between;
   -moz-justify-content: space-between; }
-  nav .nav-left {
+  .firstNav .nav-left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -63,11 +63,11 @@ nav {
     -o-align-self: flex-end;
     -ms-align-self: flex-end;
     -moz-align-self: flex-end; }
-    nav .nav-left img {
+    .firstNav .nav-left img {
       margin-left: 30px;
       width: 70%;
       height: 100%; }
-    nav .nav-left .burger {
+    .firstNav .nav-left .burger {
       -ms-flex-item-align: center;
       align-self: center;
       -webkit-align-self: center;
@@ -76,7 +76,7 @@ nav {
       -moz-align-self: center;
       width: 80px;
       height: 50px; }
-  nav .nav-right {
+  .firstNav .nav-right {
     margin-right: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -104,7 +104,7 @@ nav {
     -o-aling-items: flex-end;
     -ms-aling-items: flex-end;
     -moz-aling-items: flex-end; }
-    nav .nav-right .nav-social {
+    .firstNav .nav-right .nav-social {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -119,11 +119,11 @@ nav {
       -o-flex-direction: row;
       -ms-flex-direction: row;
       -moz-flex-direction: row; }
-      nav .nav-right .nav-social img {
+      .firstNav .nav-right .nav-social img {
         padding: 10px;
         width: 90px;
         height: 90px; }
-    nav .nav-right .green-button {
+    .firstNav .nav-right .green-button {
       width: 240px;
       height: 60px;
       color: white;
@@ -185,7 +185,7 @@ nav {
 .secondNav {
   top: 300px;
   z-index: 100;
-  width: 70%;
+  width: 50%;
   position: fixed;
   right: 100%;
   font-size: 60px;
@@ -207,15 +207,19 @@ nav {
       display: none;
       position: relative;
       z-index: 1000; }
-    .secondNav ul li:hover {
-      color: #83B93A; }
-      .secondNav ul li:hover .children {
-        border: none;
-        display: block; }
-        .secondNav ul li:hover .children li {
-          display: block; }
-          .secondNav ul li:hover .children li a {
-            margin-left: 20px;
-            display: block; }
-    .secondNav ul li:active {
+    .secondNav ul li:hover .children {
+      border: none;
+      display: block; }
+      .secondNav ul li:hover .children li {
+        display: block;
+        border: none; }
+        .secondNav ul li:hover .children li a {
+          margin-left: 20px;
+          border-bottom: none;
+          display: block;
+          color: white; }
+        .secondNav ul li:hover .children li a:hover {
+          color: #83B93A; }
+    .secondNav ul li:hover a {
+      border-bottom: 1px solid #83B93A;
       color: #83B93A; }
