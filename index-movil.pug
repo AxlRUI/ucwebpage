@@ -2,14 +2,18 @@ doctype html
 html
 	head
 		link(rel="stylesheet" href="css/movilStyles.css")
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
 	body
-		nav
-			div(class='nav-left')
-				img(class='burger' src='resources/burger.png')
+		section.content
+			video(poster='resources/1080x1920.jpg')#video
+				source(src="resources/1920x1080clip.mp4")
+		nav.firstNav
+			div.nav-left
+				img(src='resources/burger.png').burger
 				img(src='resources/culogo.png')
-			div(class='nav-right')
-				a(class='green-button' href='')|¡Registrate!
-				div(class='nav-social')
+			div.nav-right
+				a(href='').green-button|¡Registrate!
+				div.nav-social
 					a
 						img(src='resources/facebook-pin.png')
 					a
@@ -22,11 +26,70 @@ html
 						img(src='resources/uc-pin.png')
 					a
 						img(src='resources/calendar-pin.png')
-		div(class='index-play')
-			img(class='play' src='resources/Untitled-4.png')
-		footer
-			p
-				|DESDE 1977 FORMANDO PROFESIONISTAS CON ALTO DESEMPEÑO ACADÉMICO	
+		nav.secondNav
+			div
+				ul
+					li
+						a(href="#")|Nosotros
+						ul.children
+							li
+								a(href="#")|Misión, Visión, Valores
+							li
+								a(href="#")|Filosofía
+							li
+								a(href="#")|Directorio
+					li
+						a(href="#")|Oferta Académica
+						ul.children
+							li
+								a(href="#")|Misión, Visión, Valores
+							li
+								a(href="#")|Filosofía
+							li
+								a(href="#")|Directorio
+					li
+						a(href="#")|Intégrate
+					li
+						a(href="#")|Prestigio UC
+					li
+						a(href="#")|Beneficios UC
+					li
+						a(href="#")|Internacional
+					li
+						a(href="#").final|Visitanos
 
 
+		div(onClick='playPause()').index-play
+			img(src='resources/Untitled-4.png').play
+		p.d1997
+			|DESDE 1977 FORMANDO PROFESIONISTAS CON ALTO DESEMPEÑO ACADÉMICO	
+
+	script.
+		var myVideo = document.getElementById("video");
+		function playPause() { 
+		    if (myVideo.paused) 
+		        myVideo.play(); 
+		    else 
+		        myVideo.pause(); 
+		} 
+	script
+		|	var botonM = false;
+		|	$('.burger').click(function(){
+		|		if (botonM == false) {
+		|			$('.secondNav').animate({
+		|				left: '0'
+		|			},'slow');
+		|			botonM = true;
+		|		}else if(botonM == true){
+		|			$('.secondNav').animate({
+		|				left: '-100%'
+		|			},'slow');
+		|			botonM = false;
+		|		}
+		|	});
+
+					
+		
+			
+		
 
