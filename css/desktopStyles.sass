@@ -1,9 +1,14 @@
 $hard_pink: #990066
 $cu_green: #83b93a
+
+@font-face
+	font-family: 'Avenir Next Condenced'
+	src: url(..resources/avenir_next_condensed.ttf)
+
 *
 	padding: 0
 	margin: 0
-	font-family: 'Roboto', sans-serif
+	font-family: 'Avenir Next Condenced', sans-serif
 	
 
 a
@@ -53,6 +58,10 @@ a
   -moz-border-radius: $align
   border-radius: $align
 
+body
+	background: $hard_pink
+	overflow: scroll
+
 header
 	z-index: 10
 	position: fixed
@@ -74,12 +83,17 @@ header
 		li ul 
 			display: none
 			position: absolute
-			min-width: 600px
+			min-width: 100%
 		li:hover > ul
 			display: block
 			padding-top: 40px
 			a
 				border-right: none
+		.listHorizontal
+			li
+				float: left
+			.head
+				font-weight: bold
 		div
 			border-bottom: 2px solid white
 			padding: 0px 8px 15px 0px
@@ -100,9 +114,10 @@ header
 		+justify-content(space-between)
 		div
 			margin: 10px
+			margin-left: 0
 			a
 				.logo
-					width: 320px
+					width: 280px
 		.firstContainer
 			+flex()
 			+flex-direction(row)
@@ -117,10 +132,10 @@ header
 					width: 36px
 					height: 36px
 					.pin
-						width: 36px
+						width: 20px
 						+transition(400ms ease)
 					.pin:hover
-						width: 40px
+						width: 28px
 
 .btn-green
 	color: white
@@ -134,9 +149,23 @@ header
 	background: white
 	color: $cu_green
 
-.content
-	background: $hard_pink
+.content, .content2
+	margin: 0
+	padding: 0
+	display: block
+	background: black
 	position: absolute
 	height: 100%
 	width: 100%
+	z-index: 2
+.content2
 	z-index: 1
+	background: green
+
+#video1
+	position: fixed
+	z-index: 2
+	height: 100%
+	width: 100%
+	background: rgba(0,0,0,0.7)
+	display: none
