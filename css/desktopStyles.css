@@ -3,28 +3,173 @@
   margin: 0;
   font-family: 'Roboto', sans-serif; }
 
-header nav {
-  aling-items: center;
-  -webkit-aling-items: center;
-  -o-aling-items: center;
-  -ms-aling-items: center;
-  -moz-aling-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+header {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  height: 180px;
   display: -webkit-flex;
   display: -o-flex;
   display: -ms-flex;
   display: -moz-flex;
-  -webkit-box-orient: horizontal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -o-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  -moz-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -o-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: row;
-  -webkit-flex-direction: row;
-  -o-flex-direction: row;
-  -ms-flex-direction: row;
-  -moz-flex-direction: row; }
-  header nav a .logo {
-    width: 300px; }
+  flex-direction: column; }
+  header nav {
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 90%; }
+  header .secondNav div {
+    border-bottom: 2px solid white;
+    padding: 0px 8px 15px 0px; }
+    header .secondNav div a {
+      padding: 5px 10px 5px 10px;
+      border-right: 2px solid white;
+      color: white;
+      -webkit-transition: 400ms ease;
+      -o-transition: 400ms ease;
+      -ms-transition: 400ms ease;
+      -moz-transition: 400ms ease;
+      transition: 400ms ease;
+      font-size: 14px; }
+    header .secondNav div a.final {
+      border-right: none; }
+    header .secondNav div a:hover {
+      font-weight: bold;
+      color: #83b93a;
+      -webkit-text-decoration: underline #83b93a;
+      text-decoration: underline #83b93a; }
+  header .firstNav {
+    -webkit-justify-content: space-between;
+    -o-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    header .firstNav div {
+      margin: 10px; }
+      header .firstNav div a .logo {
+        width: 320px; }
+    header .firstNav .firstContainer {
+      display: -webkit-flex;
+      display: -o-flex;
+      display: -ms-flex;
+      display: -moz-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -o-flex-direction: row;
+      -ms-flex-direction: row;
+      -moz-flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row; }
+    header .firstNav .pinContainer {
+      display: -webkit-flex;
+      display: -o-flex;
+      display: -ms-flex;
+      display: -moz-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+      -o-justify-content: center;
+      -ms-justify-content: center;
+      -moz-justify-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -o-align-items: center;
+      -ms-align-items: center;
+      -moz-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-flex-direction: row;
+      -o-flex-direction: row;
+      -ms-flex-direction: row;
+      -moz-flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row; }
+      header .firstNav .pinContainer div {
+        height: 36px; }
+        header .firstNav .pinContainer div a {
+          width: 36px;
+          height: 36px; }
+          header .firstNav .pinContainer div a .pin {
+            width: 36px;
+            -webkit-transition: 400ms ease;
+            -o-transition: 400ms ease;
+            -ms-transition: 400ms ease;
+            -moz-transition: 400ms ease;
+            transition: 400ms ease; }
+          header .firstNav .pinContainer div a .pin:hover {
+            width: 40px; }
 
-header .btn-green {
-  background: #83b93a; }
+.btn-green {
+  color: white;
+  background: #83b93a;
+  padding: 5px 10px 5px 10px;
+  font-weight: bold;
+  font-size: 20px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: 400ms ease;
+  -o-transition: 400ms ease;
+  -ms-transition: 400ms ease;
+  -moz-transition: 400ms ease;
+  transition: 400ms ease; }
+
+.btn-green:hover {
+  background: white;
+  color: #83b93a; }
+
+.content {
+  background: #990066;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1; }
