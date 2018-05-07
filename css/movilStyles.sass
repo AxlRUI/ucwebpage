@@ -1,9 +1,15 @@
+$green: #83B93A
+$blue: #003056
+
+@font-face
+	font-family: 'Avenir Next Condenced'
+	src: url(..resources/avenir_next_condensed.ttf)
+
 *
 	padding: 0px
 	margin: 0px
+	font-family: 'Avenir Next Condenced', sans-serif
 
-$green: #83B93A
-$blue: #003056
 
 =flex() 
   display: flex
@@ -107,14 +113,14 @@ body
 				height: 85px
 		.green-button
 			width: 300px
-			height: 90px
+			height: 85px
 			color: white
-			font-size: 65px
+			font-size: 58px
 			+justify-content(center)
 			+align-self(flex-end)
 			background-color: $green	
 			+border-radius(10px)
-			padding: 2px 8px
+			padding: 10px 8px
 			text-decoration: none	
 
 .index-play

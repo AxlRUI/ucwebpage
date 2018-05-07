@@ -1,6 +1,11 @@
+@font-face {
+  font-family: 'Avenir Next Condenced';
+  src: url(..resources/avenir_next_condensed.ttf); }
+
 * {
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  font-family: 'Avenir Next Condenced', sans-serif; }
 
 .content video {
   margin-left: -1800px;
@@ -125,9 +130,9 @@ body {
         height: 85px; }
     .firstNav .nav-right .green-button {
       width: 300px;
-      height: 90px;
+      height: 85px;
       color: white;
-      font-size: 65px;
+      font-size: 58px;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
@@ -147,7 +152,7 @@ body {
       -o-border-radius: 10px;
       -ms-border-radius: 10px;
       -moz-border-radius: 10px;
-      padding: 2px 8px;
+      padding: 10px 8px;
       text-decoration: none; }
 
 .index-play {
