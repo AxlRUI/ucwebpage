@@ -4,24 +4,43 @@ head
 	meta(charset="UTF-8")
 	title Universidad Cuauhtemoc
 	link(rel="stylesheet", href="css/desktopStyles.css")
-	link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
 body
 	header
-		nav
-			a(href="https://www.ucslp.edu.mx/")
-				img(src="resources/culogo.png", alt="Universidad Cuauhtemoc").logo
+		nav.firstNav
+			div.firstContainer
+				div
+					a(href="https://www.ucslp.edu.mx/")
+						img(src="resources/culogo.png", alt="Universidad Cuauhtemoc").logo
+				div.pinContainer
+					div
+						a
+							img(src="resources/facebook-pin.png", alt="Facebook").pin
+					div
+						a
+							img(src="resources/instagram-pin.png", alt="Instagram").pin
+					div
+						a
+							img(src="resources/youtube-pin.png", alt="Youtube").pin
+					div
+						a
+							img(src="resources/twitter-pin.png", alt="Twitter").pin
+					div
+						a
+							img(src="resources/uc-pin.png", alt="UC").pin
+					div
+						a
+							img(src="resources/calendar-pin.png", alt="Calendario").pin
 			div
-				a
-					img(src="resources/facebook-pin.png", alt="Facebook")
-				a
-					img(src="resources/instragam-pin.png", alt="Instragram")
-				a
-					img(src="resources/youtube-pin.png", alt="Youtube")
-				a
-					img(src="twitter-pin.png", alt="Twitter")
-				a
-					img(src="uc-ping.png", alt="UC")
-				a
-					img(src="calendar-pin.png", alt="Calendario")
-			a(href="").btn-green
-				|Registrate
+				a(href="").btn-green
+					|¡Registrate!
+		nav.secondNav
+			div
+				a(href="")|Nosotros
+				a(href="")|Oferta Académica
+				a(href="")|Integrate
+				a(href="")|Prestigio UC
+				a(href="")|Beneficios UC
+				a(href="")|Internacional
+				a(href="").final|Visitanos
+	section.content
