@@ -5,6 +5,7 @@ head
 	title Universidad Cuauhtemoc
 	link(rel="stylesheet", href="css/desktopStyles.css")
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 body
 	header
 		nav.firstNav
@@ -14,16 +15,16 @@ body
 						img(src="resources/culogo.png", alt="Universidad Cuauhtemoc").logo
 				div.pinContainer
 					div
-						a
+						a(href="https://www.facebook.com/ucslp/")
 							img(src="resources/facebook-pin.png", alt="Facebook").pin
 					div
-						a
+						a(href="https://www.instagram.com/guerreros_ucslp/")
 							img(src="resources/instagram-pin.png", alt="Instagram").pin
 					div
-						a
+						a(href="https://www.youtube.com/user/UCUAUHTEMOCSLP")
 							img(src="resources/youtube-pin.png", alt="Youtube").pin
 					div
-						a
+						a(href="https://twitter.com/CuauhtemocSLP?lang=es")
 							img(src="resources/twitter-pin.png", alt="Twitter").pin
 					div
 						a
@@ -36,13 +37,37 @@ body
 					|¡Registrate!
 		nav.secondNav
 			div
-				a(href="")|Nosotros
-				a(href="")|Oferta Académica
-				a(href="")|Integrate
-				a(href="")|Prestigio UC
-				a(href="")|Beneficios UC
-				a(href="")|Internacional
-				a(href="").final|Visitanos
+				ul
+					li
+						a(href="")|Nosotros
+						ul
+							li
+								a(href="")|Misión, Visión, Valores
+							li
+								a(href="")|Filosofía
+							li
+								a(href="")|Directorio
+					li
+						a(href="")|Oferta Académica
+						ul
+							li
+								a(href="")|Misión, Visión, Valores
+							li
+								a(href="")|Filosofía
+							li
+								a(href="")|Directorio
+					li
+						a(href="")|Integrate
+					li
+						a(href="")|Prestigio UC
+					li
+						a(href="")|Beneficios UC
+					li
+						a(href="")|Internacional
+					li
+						a(href="").final|Visitanos
 	section.content
-		video(autoplay width="100%")
+		video(autoplay width="100%" loop)
 			source(src="resources/1920x1080clip.mp4")
+	script
+		

@@ -55,10 +55,24 @@ header {
     -ms-flex-align: center;
     align-items: center;
     width: 90%; }
+  header .secondNav ul, header .secondNav ol {
+    list-style: none; }
+  header .secondNav div > ul > li {
+    float: left; }
+  header .secondNav li ul {
+    display: none;
+    position: absolute;
+    min-width: 600px; }
+  header .secondNav li:hover > ul {
+    display: block;
+    padding-top: 40px; }
+    header .secondNav li:hover > ul a {
+      border-right: none; }
   header .secondNav div {
     border-bottom: 2px solid white;
     padding: 0px 8px 15px 0px; }
     header .secondNav div a {
+      display: block;
       padding: 5px 10px 5px 10px;
       border-right: 2px solid white;
       color: white;
