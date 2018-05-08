@@ -67,16 +67,28 @@ $blue: #003056
 	-ms-transition: $align
 	-moz-transition: $align
 	transition: $align    
-
-.content
-	video
-		margin-left: -1800px
-		position: absolute
-		height: 2700px
-		z-index: -1 
-
-body
+a
+	cursor: pointer
+#firstView
+	height: 100%
+	width: 100%
+	z-index: -1000
+	overflow: scroll
+	.back
+		position: fixed
+		height: 100%
+.margin
+	position: absolute
+	height: 50px
+	width: 50px
+	bottom: -50px		
+#secondView
+	position: fixed
+	height: 100%
+	width: 100%	
 	background-color: $green
+	z-index: -2000
+		
 
 .firstNav
 	padding-top: 70px
@@ -90,14 +102,16 @@ body
 		+flex-direction(row)
 		+justify-content(space-around)
 		+align-self(flex-start)
-		img
-			margin-left: 30px
-			width: 70%
+		margin-left: 40px
+		padding-right: 35px 
+		.logo
+			margin-left: 10px
+			width: 80%
 			height: 100%
 		.burger
 			+align-self(center)
-			width: 80px
-			height: 50px
+			width: 60px
+			height: 40px
 	.nav-right
 		margin-right: 20px
 		+flex
@@ -108,34 +122,35 @@ body
 			+flex
 			+flex-direction(row)
 			img
-				padding: 30px 10px
-				width: 85px
-				height: 85px
+				padding: 15px 5px
+				width: 50px
+				height: 50px
 		.green-button
-			width: 300px
-			height: 85px
-			color: white
-			font-size: 58px
-			+justify-content(center)
-			+align-self(flex-end)
-			background-color: $green	
-			+border-radius(10px)
-			padding: 10px 8px
-			text-decoration: none	
+			width: 140px
+			height: 20px
+			padding: 10px 5px
+			text-align: center
+			font-size: 18px
+			background-color: $green
+			+align-self(flex-end)	
+			+border-radius(25px)
+			a
+				text-decoration: none
+				color: white	
 
 .index-play
-	height: 250px
-	width: 250px
+	height: 150px
+	width: 150px
 	background-color: $blue
-	bottom: 400px
+	bottom: 250px
 	margin-left: 100px
 	position: fixed
 	+border-radius(100%)
-	opacity: 0.6
+	opacity: 0.9
 	.play
-		padding: 75px 90px
-		width: 35%
-		height: 40%
+		padding: 35% 40%
+		width: 27%
+		height: 32%
 		+vertical-align(middle)
 	:hover
 		opacity: 1.0
@@ -144,10 +159,10 @@ body
 	height:
 	width: 100%
 	position: fixed
-	bottom: 300px
+	bottom: 180px
 	color: white
 	text-align: center
-	font-size: 35px
+	font-size: 22px
 	
 	
 .secondNav
@@ -156,7 +171,7 @@ body
 	width: 50%
 	position: fixed
 	right: 100%
-	font-size: 60px
+	font-size: 30px
 	height: calc(100% - 300px)
 	ul
 		list-style: none
@@ -168,13 +183,15 @@ body
 				display: block
 				color: white
 				text-decoration: none
-				padding: 20px		
+				padding: 20px 0px 10px 0px		
 		.children
-			font-size: 40px
+			font-size: 20px
 			width: 100%
 			display: none
 			position: relative
-			z-index: 1000		
+			z-index: 1000
+			a
+				padding: 5px 10px !important		
 		li:hover
 			.children
 				border: none
