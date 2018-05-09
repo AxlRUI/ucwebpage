@@ -79,7 +79,7 @@ header {
   header .secondNav .listHorizontal li {
     float: left; }
   header .secondNav .listHorizontal .head {
-    font-weight: bold; }
+    font-weight: normal; }
   header .secondNav div {
     border-bottom: 2px solid white;
     padding: 0px 8px 15px 0px; }
@@ -94,11 +94,11 @@ header {
       -moz-transition: 400ms ease;
       transition: 400ms ease;
       font-size: 16px;
-      font-weight: bold; }
+      font-weight: normal; }
     header .secondNav div a.final {
       border-right: none; }
     header .secondNav div a:hover {
-      font-weight: bold;
+      font-weight: normal;
       color: #83b93a;
       -webkit-text-decoration: underline #83b93a;
       text-decoration: underline #83b93a; }
@@ -178,7 +178,7 @@ header {
   color: white;
   background: #83b93a;
   padding: 5px 10px 5px 10px;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 18px;
   -webkit-border-radius: 8px;
   -o-border-radius: 8px;
@@ -295,7 +295,7 @@ header {
       color: white;
       width: 100%;
       font-size: 28px;
-      font-weight: bold;
+      font-weight: normal;
       text-align: center;
       -webkit-transform: translate(-50%);
       -o-transform: translate(-50%);
@@ -453,7 +453,7 @@ header {
     .headerWhite .firstNav .listHorizontal li {
       float: left; }
     .headerWhite .firstNav .listHorizontal .head {
-      font-weight: bold; }
+      font-weight: normal; }
     .headerWhite .firstNav div {
       border: none;
       padding: 0;
@@ -474,11 +474,11 @@ header {
         -ms-transition: 400ms ease;
         -moz-transition: 400ms ease;
         transition: 400ms ease;
-        font-weight: bold; }
+        font-weight: normal; }
       .headerWhite .firstNav div a.final {
         border-right: none; }
       .headerWhite .firstNav div a:hover {
-        font-weight: bold;
+        font-weight: normal;
         color: #83b93a;
         -webkit-text-decoration: underline #83b93a;
         text-decoration: underline #83b93a; }
