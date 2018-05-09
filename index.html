@@ -5,6 +5,7 @@
   <title>Universidad Cuauhtemoc</title>
   <link rel="stylesheet" href="css/desktopStyles.css"/><link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <header id="mainHeader">
@@ -170,35 +171,38 @@
     <div>
       <div style="background-image: url('resources/desk/prepa.jpg')" onclick="window.location.href = 'https://www.ucslp.edu.mx/preparatoria';"><span>Prepa UC</span></div>
       <div>
-        <div style="background-image: url('resources/desk/lic3.jpg')"><span>Licenciaturas</span></div>
-        <div style="background-image: url('resources/desk/posgrados.jpg')"><span style="bottom: 5px;">
+        <div style="background-image: url('resources/desk/lic3.jpg')" onclick="window.location.href = 'https://www.ucslp.edu.mx/licenciaturas';"><span>Licenciaturas</span></div>
+        <div style="background-image: url('resources/desk/posgrados.jpg')" onclick="window.location.href = 'https://www.ucslp.edu.mx/posgrados';"><span style="bottom: 5px;">
             Posgrados y
             Maestrías</span></div>
       </div>
-      <div style="background-image: url('resources/desk/paseo.jpg')"><span>Paseo Virtual</span></div>
+      <div style="background-image: url('resources/desk/paseo.jpg')" onclick="window.location.href = 'https://www.ucslp.edu.mx/tour-virtual/';"><span>Paseo Virtual</span></div>
     </div>
     <div class="second">
       <div class="little">
         <div style="background-image: url('resources/desk/GameCU.png')"></div>
         <div style="background-image: url('resources/desk/Blue.png')"><span>Plataforma UC</span></div>
       </div>
-      <div class="big" style="background-image: url('resources/desk/banner1.jpg')"></div>
+      <div class="big" style="background-image: url('resources/desk/banner1.jpg')" id="bigBanner"><img src="resources/Untitled-4.png" alt="" id="arrowL"/><img src="resources/Untitled-4.png" alt="" id="arrowR"/></div>
     </div>
+    <script src="js/banner.js"></script>
   </section>
   <footer class="contact none">Contacto
     <div class="info">
-      <div><a href=""><img src="resources/culogo.png" alt="Universidad Cuauhtemoc"/></a></div>
-      <div>
-        <div>
-          Dirección: Salvador Nava Martínez No.3291
-          Col. Viveros. San Luis Potosí, México.
-          C.P. 78290
-        </div>
-        <div>
-          Lada Sin Costo: 01 800 00 UCSLP (82757)
-          Teléfonos: (444) 500.45.00 / (444) 817.62.30
-          WhatsApp: (444) 408.30.27
-          Email: contacto@ucslp.net
+      <div class="internal">
+        <div class="one"><a href=""><img src="resources/culogo.png" alt="Universidad Cuauhtemoc"/></a></div>
+        <div class="two">
+          <div class="two_one">
+            <p>Dirección: Salvador Nava Martínez No.3291</p>
+            <p>Col. Viveros. San Luis Potosí, México.</p>
+            <p>C.P. 78290</p>
+          </div>
+          <div class="two_two">
+            <p>Lada Sin Costo: 01 800 00 UCSLP (82757)</p>
+            <p>Teléfonos: (444) 500.45.00 / (444) 817.62.30</p>
+            <p>WhatsApp: (444) 408.30.27</p>
+            <p>Email: contacto@ucslp.net</p>
+          </div>
         </div>
       </div>
     </div>

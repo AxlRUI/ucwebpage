@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Avenir Next Condenced';
-  src: url(..resources/avenir_next_condensed.ttf); }
+  src: url(../resources/avenir.ttf); }
 
 * {
   padding: 0;
@@ -93,7 +93,7 @@ header {
       -ms-transition: 400ms ease;
       -moz-transition: 400ms ease;
       transition: 400ms ease;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: bold; }
     header .secondNav div a.final {
       border-right: none; }
@@ -324,7 +324,42 @@ header {
     -ms-flex: 65%;
     -moz-flex: 65%;
     -webkit-box-flex: 65%;
-    flex: 65%; }
+    flex: 65%;
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    -ms-transition: 400ms ease;
+    -moz-transition: 400ms ease;
+    transition: 400ms ease;
+    position: relative; }
+    .content2 .big #arrowL, .content2 .big #arrowR {
+      position: absolute;
+      width: 45px;
+      cursor: pointer;
+      opacity: 0.8;
+      -webkit-transition: 400ms ease;
+      -o-transition: 400ms ease;
+      -ms-transition: 400ms ease;
+      -moz-transition: 400ms ease;
+      transition: 400ms ease; }
+    .content2 .big #arrowL {
+      left: 18px;
+      -webkit-transform: rotate(180deg) translate(0%, 50%);
+      -o-transform: rotate(180deg) translate(0%, 50%);
+      -ms-transform: rotate(180deg) translate(0%, 50%);
+      -moz-transform: rotate(180deg) translate(0%, 50%);
+      transform: rotate(180deg) translate(0%, 50%);
+      top: calc(50%); }
+    .content2 .big #arrowR {
+      top: 50%;
+      -webkit-transform: translate(0%, -50%);
+      -o-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+      -moz-transform: translate(0%, -50%);
+      transform: translate(0%, -50%);
+      right: 18px; }
+    .content2 .big #arrowL:hover, .content2 .big #arrowR:hover {
+      opacity: 1;
+      width: 50px; }
 
 #video1 {
   position: fixed;
@@ -439,7 +474,6 @@ header {
         -ms-transition: 400ms ease;
         -moz-transition: 400ms ease;
         transition: 400ms ease;
-        font-size: 14px;
         font-weight: bold; }
       .headerWhite .firstNav div a.final {
         border-right: none; }
@@ -536,15 +570,13 @@ header {
     z-index: -1;
     background: #003056;
     width: 400%;
-    height: 300px;
-    top: calc(-300px + 100%);
+    height: 240px;
+    top: calc(-240px + 100%);
     border-radius: 10px;
     left: -150%;
     opacity: 0.9; }
-    .contact .info div {
-      display: block; }
-      .contact .info div a img {
-        width: 200px; }
+    .contact .info div a img {
+      width: 200px; }
   .contact .social {
     position: absolute;
     top: -50px;
@@ -573,5 +605,126 @@ header {
   .contact:hover > div {
     z-index: -40;
     display: initial; }
+    .contact:hover > div .internal {
+      display: -webkit-flex;
+      display: -o-flex;
+      display: -ms-flex;
+      display: -moz-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%;
+      -webkit-flex-direction: column;
+      -o-flex-direction: column;
+      -ms-flex-direction: column;
+      -moz-flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+      -webkit-justify-content: space-around;
+      -o-justify-content: space-around;
+      -ms-justify-content: space-around;
+      -moz-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-align-items: center;
+      -o-align-items: center;
+      -ms-align-items: center;
+      -moz-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .contact:hover > div .internal > .one {
+        -webkit-flex: 1;
+        -o-flex: 1;
+        -ms-flex: 1;
+        -moz-flex: 1;
+        -webkit-box-flex: 1;
+        flex: 1;
+        display: -webkit-flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -o-align-items: center;
+        -ms-align-items: center;
+        -moz-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 80%; }
+      .contact:hover > div .internal > .two {
+        -webkit-flex: 2;
+        -o-flex: 2;
+        -ms-flex: 2;
+        -moz-flex: 2;
+        -webkit-box-flex: 2;
+        flex: 2;
+        display: -webkit-flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -o-flex-direction: row;
+        -ms-flex-direction: row;
+        -moz-flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        width: 80%;
+        font-size: 18px; }
+        .contact:hover > div .internal > .two .two_one {
+          -webkit-flex: 1;
+          -o-flex: 1;
+          -ms-flex: 1;
+          -moz-flex: 1;
+          -webkit-box-flex: 1;
+          flex: 1; }
+        .contact:hover > div .internal > .two .two_two {
+          -webkit-flex: 1;
+          -o-flex: 1;
+          -ms-flex: 1;
+          -moz-flex: 1;
+          -webkit-box-flex: 1;
+          flex: 1;
+          text-align: right; }
   .contact:hover > div:hover {
     display: initial; }
+
+@media only screen and (min-width: 1600px) {
+  header {
+    height: 200px; }
+    header .firstNav div a .logo {
+      width: 380px; }
+    header .firstNav .pinContainer div a .pin {
+      width: 30px; }
+    header .firstNav .pinContainer div a .pin:hover {
+      width: 36px; }
+    header .secondNav div a {
+      font-size: 22px; }
+  .btn-green {
+    font-size: 22px; }
+  .textVideo {
+    font-size: 30px; }
+  .headerWhite {
+    height: 80px; }
+    .headerWhite .pinContainer .pin {
+      width: 32px; }
+    .headerWhite .pinContainer .pin:hover {
+      width: 38px; }
+    .headerWhite .firstNav div a {
+      font-size: 20px; }
+    .headerWhite .firstNav div .logo {
+      width: 60px; }
+    .headerWhite .firstNav div .btn-green {
+      font-size: 20px; }
+  .contact {
+    font-size: 28px; }
+  .contact:hover > div .internal > .two {
+    font-size: 22px; } }

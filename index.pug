@@ -6,6 +6,7 @@ head
 	link(rel="stylesheet", href="css/desktopStyles.css")
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 body
 	header#mainHeader
 		nav.firstNav
@@ -267,14 +268,14 @@ body
 					|Prepa UC
 
 			div
-				div(style="background-image: url('resources/desk/lic3.jpg')")
+				div(style="background-image: url('resources/desk/lic3.jpg')" onclick="window.location.href = 'https://www.ucslp.edu.mx/licenciaturas';")
 					span
 						|Licenciaturas
-				div(style="background-image: url('resources/desk/posgrados.jpg')")
+				div(style="background-image: url('resources/desk/posgrados.jpg')" onclick="window.location.href = 'https://www.ucslp.edu.mx/posgrados';")
 					span(style="bottom: 5px;")
 						|Posgrados y
 						|Maestrías
-			div(style="background-image: url('resources/desk/paseo.jpg')")
+			div(style="background-image: url('resources/desk/paseo.jpg')" onclick="window.location.href = 'https://www.ucslp.edu.mx/tour-virtual/';")
 				span
 					|Paseo Virtual
 				
@@ -284,23 +285,34 @@ body
 				div(style="background-image: url('resources/desk/Blue.png')")
 					span
 						|Plataforma UC
-			div(style="background-image: url('resources/desk/banner1.jpg')").big
+			div(style="background-image: url('resources/desk/banner1.jpg')")#bigBanner.big
+				img(src="resources/Untitled-4.png", alt="")#arrowL
+				img(src="resources/Untitled-4.png", alt="")#arrowR
+		script(src="js/banner.js")
 	footer.contact.none
 		|Contacto
 		div.info
-			div
-				a(href="")
-					img(src="resources/culogo.png", alt="Universidad Cuauhtemoc")
-			div
-				div
-					|Dirección: Salvador Nava Martínez No.3291
-					|Col. Viveros. San Luis Potosí, México.
-					|C.P. 78290
-				div
-					|Lada Sin Costo: 01 800 00 UCSLP (82757)
-					|Teléfonos: (444) 500.45.00 / (444) 817.62.30
-					|WhatsApp: (444) 408.30.27
-					|Email: contacto@ucslp.net
+			div.internal
+				div.one
+					a(href="")
+						img(src="resources/culogo.png", alt="Universidad Cuauhtemoc")
+				div.two
+					div.two_one
+						p
+							|Dirección: Salvador Nava Martínez No.3291
+						p
+							|Col. Viveros. San Luis Potosí, México.
+						p
+							|C.P. 78290
+					div.two_two
+						p
+							|Lada Sin Costo: 01 800 00 UCSLP (82757)
+						p
+							|Teléfonos: (444) 500.45.00 / (444) 817.62.30
+						p
+							|WhatsApp: (444) 408.30.27
+						p
+							|Email: contacto@ucslp.net
 		div.social
 			a(href="")
 				img(src="resources/facebook-pin.png", alt="Facebook")
