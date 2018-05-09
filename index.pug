@@ -7,7 +7,7 @@ head
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 body
-	header
+	header#mainHeader
 		nav.firstNav
 			div.firstContainer
 				div
@@ -37,8 +37,91 @@ body
 					|¡Registrate!
 		nav.secondNav
 			div
-				ul
+				ul.headerMain
 					li(style="margin-left:0; padding-left:0;")
+						a(href="https://www.ucslp.edu.mx/nosotros" style="margin-left:0; padding-left:0;")|Nosotros
+						ul.headerMain
+							li
+								a(href="#")|Misión, Visión, Valores
+							li
+								a(href="#")|Filosofía
+							li
+								a(href="#")|Directorio
+					li
+						a(href="https://www.ucslp.edu.mx/oferta")|Oferta Académica
+						ul.listHorizontal.headerMain
+							li
+								a(href="").head|Prepa UC
+							li
+								a(href="").head|Licenciaturas
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/odontologia")|Odontología
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/psicologia-clinica")|Psicología Clínica
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/fisioterapia")|Fisioterapia
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/ciencias-de-la-actividad-fisica-y-del-deporte")|Ciencias de la Actividad y el Deporte
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/administracion-de-empresas")|Administración de Empresas
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/arquitectura")|Arquitectura
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/diseno-grafico")|Diseño Gráfico
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/comunicacion")|Ciencias de la Comunicación
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/comercio-internacional")|Comercio Internacional
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/derecho")|Derecho
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/turismo")|Turismo
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/pedagogia")|Pedagogía
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/contenidos-digitales-interactivos")|Contenidos Digitales Interactivos
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/nutricion-y-ciencias-de-los-alimentos")|Nutrición y Ciencias de los Alimentos
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/medico-cirujano")|Médico Cirujano
+							li
+								a(href="").head|Maestrías y Posgrados
+								a(href="https://www.ucslp.edu.mx/posgrados/carreras/especialidad-en-ortodoncia-y-ortopedia-maxilar")|Especialidad en Ortodoncia
+								a(href="https://www.ucslp.edu.mx/posgrados/carreras/especialidad-en-bioetica")|Especialidad en Bioética
+								a(href="https://www.ucslp.edu.mx/posgrados/carreras/maestria-en-derecho-civil")|Maestría en Derecho Civil
+								a(href="https://www.ucslp.edu.mx/posgrados/carreras/maestria-en-criminologia")|Maestría en Criminología
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/licenciatura-ejecutiva-administracion-de-empresas")|Licenciatura Ejecutiva Administración de Empresas
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/licenciatura-ejecutiva-derecho")|Licenciatura Ejecutiva Derecho
+								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/licenciatura-ejecutiva-comercio-internacional")|Licenciatura Ejecutiva Comercio Internacional
+					li
+						a(href="https://www.ucslp.edu.mx/integrate")|Integrate
+						ul.headerMain
+							li
+								a(href="")|Ingreso a Lincenciatura (alumnos)
+							li
+								a(href="")|Ingreso a Bachillerato
+							li
+								a(href="")|Provenientes de Otras Universidades
+							li
+								a(href="")|Ingreso a Licenciatura para Alumnos Extranjeros
+					li
+						a(href="#")|Prestigio UC
+						ul.headerMain
+							li
+								a(href="https://www.ucslp.edu.mx/prestigio/prestigioAlumnos")|Alumnos
+							li
+								a(href="https://www.ucslp.edu.mx/prestigio/prestigioProfesores")|Docentes
+							li
+								a(href="https://www.ucslp.edu.mx/prestigio/prestigioExAlumnos")|Ex Alumnos
+					li
+						a(href="https://www.ucslp.edu.mx/beneficios")|Beneficios UC
+					li
+						a(href="https://www.ucslp.edu.mx/internacional")|Internacional
+						ul.headerMain
+							li
+								a(href="")|Intercambio Estudiantil
+							li
+								a(href="")|Estudiantes Visitantes
+							li
+								a(href="")|Profesores Visitantes
+							li
+								a(href="")|Testimonios
+					li
+						a(href="").final|Visitanos
+	header#header.none
+		nav.firstNav
+			div
+				ul
+					a(href="https://www.ucslp.edu.mx").logo
+						img(src="resources/culogo_round.png", alt="Universidad Cuauhtemoc").logo
+			
+				ul
+					li(style="margin-left:0; padding-left:0;").ul64
 						a(href="https://www.ucslp.edu.mx/nosotros" style="margin-left:0; padding-left:0;")|Nosotros
 						ul
 							li
@@ -113,12 +196,39 @@ body
 								a(href="")|Testimonios
 					li
 						a(href="").final|Visitanos
+			div
+				a(href="#").btn-green
+					|¡Registrate!
+		div(style="margin-left:24px").pinContainer
+			div
+				a(href="https://www.facebook.com/ucslp/")
+					img(src="resources/facebook-pin.png", alt="Facebook").pin
+			div
+				a(href="https://www.instagram.com/guerreros_ucslp/")
+					img(src="resources/instagram-pin.png", alt="Instagram").pin
+			div
+				a(href="https://www.youtube.com/user/UCUAUHTEMOCSLP")
+					img(src="resources/youtube-pin.png", alt="Youtube").pin
+			div
+				a(href="https://twitter.com/CuauhtemocSLP?lang=es")
+					img(src="resources/twitter-pin.png", alt="Twitter").pin
+			div
+				a(href="http://servicios.ucslp.edu.mx/")
+					img(src="resources/uc-pin.png", alt="UC").pin
+			div
+				a(href="https://www.ucslp.edu.mx/descargas/calendario/ucslp_calendario.pdf")
+					img(src="resources/calendar-pin.png", alt="Calendario").pin
 	section.content#cont1
 		div#video1
-		video(autoplay width="100%" loop)
+		video(autoplay width="100%" loop)#mainVideo
 			source(src="resources/1920x1080clip.mp4")
+		div.playButton
+			a(href="https://www.youtube.com/watch?v=q30CXgQZ6ao")
+				img(src="resources/Untitled-4.png", alt="Play")
+		div.textVideo
+			|DESDE 1977 FORMANDO PROFESIONISTAS CON ALTO DESEMPEÑO ACADÉMICO
 	script
-		|$('ul').hover(function(){
+		|$(".headerMain").hover(function(){
 		|	$("#video1").css("display", "block");
 		|    }, function(){
 		|    $("#video1").css("display", "none");
@@ -129,10 +239,65 @@ body
 		|  $(window).scroll(function() {
 		|    if ($(document).scrollTop() > 10 ) {
 		|      $("#cont2").css("z-index", "2");
-		|    } else if ($(document).scrollTop() < 10){
+		|		$("#header").addClass("headerWhite");
+		|		$("#header").removeClass("none");
+		|		$("footer").removeClass("none");
+		|		$("#mainHeader").addClass("none");
+		|    } else if ($(document).scrollTop() < 8){
 		|      $("#cont2").css("z-index", "1");
+		|		$("#header").removeClass("headerWhite");
+		|		$("#header").addClass("none");
+		|		$("footer").addClass("none");
+		|		$("#mainHeader").removeClass("none");
 		|    }
 		|  });
 		|});
+		//|$('.playButton').click(function(){
+		//|	var video = document.getElementById("mainVideo")
+		//|	
+		//|	if(video.paused)
+		//|		video.play();
+		//|	else
+		//|		video.pause();
+		//|});
 	section.content2#cont2
-		|ok
+		div
+			div(style="background-image: url('resources/desk/prepa.jpg')" onclick="window.location.href = 'https://www.ucslp.edu.mx/preparatoria';")
+				span
+					|Prepa UC
+
+			div
+				div(style="background-image: url('resources/desk/lic3.jpg')")
+					span
+						|Licenciaturas
+				div(style="background-image: url('resources/desk/posgrados.jpg')")
+					span(style="bottom: 5px;")
+						|Posgrados y
+						|Maestrías
+			div(style="background-image: url('resources/desk/paseo.jpg')")
+				span
+					|Paseo Virtual
+				
+		div.second
+			div.little
+				div(style="background-image: url('resources/desk/GameCU.png')")
+				div(style="background-image: url('resources/desk/Blue.png')")
+					span
+						|Plataforma UC
+			div(style="background-image: url('resources/desk/banner1.jpg')").big
+	footer.contact.none
+		|Contacto
+		div.info
+			div
+				a(href="")
+					img(src="resources/culogo.png", alt="Universidad Cuauhtemoc")
+			div
+				div
+				div
+		div.social
+			a(href="")
+				img(src="resources/facebook-pin.png", alt="Facebook")
+			a(href="")
+				img(src="resources/twitter-pin.png", alt="Twitter")
+			a(href="")
+				img(src="resources/instagram-pin.png", alt="Instagram")
