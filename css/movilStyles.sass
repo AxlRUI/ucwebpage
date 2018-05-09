@@ -1,5 +1,6 @@
 $green: #83B93A
 $blue: #003056
+$white: #f2f2f2
 
 @font-face
 	font-family: 'Avenir Next Condenced'
@@ -72,11 +73,11 @@ a
 #firstView
 	height: 100%
 	width: 100%
-	z-index: -1000
-	background-color: $blue
-	.back
-		position: fixed
-		height: 100%
+	z-index: 2
+	position: fixed
+	background-image: url("../resources/1080x1920.jpg")
+	background-repeat: no-repeat
+	background-size: 100% 100%
 .margin
 	position: absolute
 	height: 50px
@@ -87,7 +88,7 @@ a
 	height: 100%
 	width: 100%	
 	background-color: $green
-	z-index: -2000
+	z-index: -1
 		
 
 .firstNav
@@ -107,13 +108,7 @@ a
 		.logo
 			margin-left: 10px
 			width: 80%
-			height: 100%
-		.burger
-			+align-self(center)
-			width: 60px
-			height: 40px
-			font-size: 80px
-			color: white
+			height: 100%	
 	.nav-right
 		margin-right: 20px
 		+flex
@@ -128,7 +123,18 @@ a
 				width: 50px
 				height: 50px
 		> .green-button
-			+align-self(flex-end)		
+			+align-self(flex-end)
+
+.burger
+	background-image: url("../resources/burger.png")
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	+align-self(center)
+	width: 60px
+	height: 50px
+.burger:hover
+	background-image: url("../resources/burger2.png")
+
 .green-button
 	width: 190px
 	height: 30px
@@ -174,7 +180,7 @@ a
 	
 .secondNav
 	top: 300px
-	z-index: 100
+	z-index: 10
 	width: 50%
 	position: fixed
 	right: 100%
@@ -222,20 +228,20 @@ a
 	> .firstNavS
 		position: fixed
 		top: 0px !important
-		z-index: 2000
+		z-index: 3
 		width: 100%
 		height: 175px
-		background-color: white
+		background-color: $white
 		+flex()
 		+flex-direction(row)
 		+justify-content(space-between)	
 		.nav-leftS
 			+flex()
 			+flex-direction(row)
-			.burger
-				+align-self(center)
-				padding: 0px 30px
-				font-size: 100px
+			> .burger
+				margin: 0px 30px 0px 40px
+			> .burger:hover
+				background-image: url("../resources/burger.png")
 			.logo
 				+align-self(center)
 				width: 130px
@@ -250,9 +256,111 @@ a
 		height: 90%
 		+flex()
 		+flex-direction(column)
-		.box		
+		.box
+			+flex()
+			+flex-direction(row)		
 			width: 100%
-			height: 100%	
+			height: 100%
+			position: relative
+			> img
+				position: absolute
+				width: 100%
+				height: 100%
+			> p
+				position: absolute
+				font-size: 50px
+				color: white
+				bottom: 50px
+				margin-left: 50px
+	> .nav-socialS
+		position: fixed
+		z-index: 2
+		top: 350px
+		right: 40px
+		> div
+			height: 50px
+			width: 50px	
+			margin-bottom: 20px
+			> a img
+				height: 100%
+				width: 100%
+.first-footer
+	position: fixed
+	background-color: $blue	
+	z-index: 1
+	color: white
+	bottom: 0px
+	width: 300px
+	height: 50px
+	left: 35%
+	opacity: .8
+	+border-radius(40px 40px 0px 0px) 
+	+flex()
+	+justify-content(center)	
+	> div
+		+align-self(center)
+		p 
+			font-size: 30px	
+
+.second-footer
+	display: none
+	position: fixed
+	background-color: $blue	
+	z-index: 1
+	color: white
+	bottom: 0px
+	opacity: .8
+	+flex-direction(column)
+	height: 300px	
+	font-size: 20px
+	right: 5%
+	+border-radius(40px 40px 40px 0px) 
+	> .foot
+		height: 100px
+		width: 100%
+		+flex()
+		+flex-direction(row)
+		> img
+			height: 60px
+			margin: 20px
+	> .foot2
+		margin: 10px
+		+flex()
+		+flex-direction(row)
+		+justify-content(space-between)	
+		> div
+			padding: 0px 10px
+	> .foot3
+		+flex()
+		+justify-content(center)	
+		> img
+			width: 30px
+			height: 30px
+			padding: 0px 10px
+	> .foot4
+		position: absolute
+		+flex()
+		+flex-direction(row)
+		+justify-content(center)	
+		width: 100%	
+		bottom: 0px
+		> div
+			+border-radius(20px 20px 0px 0px) 
+			background-color: $green
+			> p
+				padding: 5px 40px
+
+
+
+					
+
+	
+
+
+
+	
+
+				
 	
 
 

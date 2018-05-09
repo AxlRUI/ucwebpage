@@ -7,27 +7,27 @@ html
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">	
 	body
 		content#firstView
-			img(src='resources/1080x1920.jpg').back
+			//img(src='resources/1080x1920.jpg').back
 			nav.firstNav
 				div.nav-left
-					span(class="icon-menu").burger
+					div.burger
 					img(src='resources/culogo.png').logo
 				div.nav-right
 					div.green-button
 						div
 							a(href='')|¡REGISTRATE!
 					div.nav-social
-						a
+						a(href="https://www.facebook.com/ucslp/")
 							img(src='resources/facebook-pin.png')
-						a
+						a(href="https://twitter.com/CuauhtemocSLP?lang=es")
 							img(src='resources/twitter-pin.png')
-						a
+						a(href="https://www.instagram.com/guerreros_ucslp/")
 							img(src='resources/instagram-pin.png')
-						a
+						a(href="https://www.youtube.com/user/UCUAUHTEMOCSLP")
 							img(src='resources/youtube-pin.png')
-						a
+						a(href="http://servicios.ucslp.edu.mx/")
 							img(src='resources/uc-pin.png')
-						a
+						a(href="https://www.ucslp.edu.mx/descargas/calendario/ucslp_calendario.pdf")
 							img(src='resources/calendar-pin.png')
 			nav.secondNav
 				div
@@ -94,22 +94,85 @@ html
 			div
 			nav.firstNavS
 				div.nav-leftS
-					span(class="icon-menu").burger
+					div.burger
 					img(src='resources/culogo_round.png').logo
 				div.nav-rightS
 					div.green-button
 						div 
 							a(href='')|¡REGISTRATE!
+			div.nav-socialS
+
+				div
+					a(href="https://www.facebook.com/ucslp/")
+						img(src='resources/facebook-pin.png')
+				div
+					a(href="https://twitter.com/CuauhtemocSLP?lang=es")
+						img(src='resources/twitter-pin.png')
+				div
+					a(href="https://www.instagram.com/guerreros_ucslp/")
+						img(src='resources/instagram-pin.png')
+				div
+					a(href="https://www.youtube.com/user/UCUAUHTEMOCSLP")
+						img(src='resources/youtube-pin.png')
+				div
+					a(href="http://servicios.ucslp.edu.mx/")
+						img(src='resources/uc-pin.png')
+				div
+					a(href="https://www.ucslp.edu.mx/descargas/calendario/ucslp_calendario.pdf")
+						img(src='resources/calendar-pin.png')
 			div.boxes
-				div.box(style="background-color:red")
-					img()
-				div.box(style="background-color:blue")
-					img()
-					img()
-				div.box(style="background-color:red")
-					img()
-				div.box(style="background-color:blue")
-					img()
+				div.box
+					img(src='resources/prepa-movil.jpg')
+					p Prepa UC	
+				div.box
+					div.box
+						img(src='resources/lic-movil.jpg')
+						p Licenciaturas	
+					div.box
+						img(src='resources/posgrado-movil.jpg')
+						p Posgrados y Maestros	
+				div.box
+					img(src='resources/paseo-movil.jpg')
+					p Paseo Virtual	
+				div.box
+					img(src='resources/banner1-movil.jpg')
+		footer.first-footer
+			div 
+				p Contacto
+		footer.second-footer
+			div.foot
+				img(src='resources/culogo.png')
+			div.foot2
+				div
+					p
+						|Dirección Av. Dr.Salvador Nava Martínez No 329
+					p
+						|Col. Viveros. San Luis Potosí, México.
+					p
+						|C.P. 78290
+				div
+					p
+						|Salida Sin Costo: 01 800 00 UCSLP (82757)
+					p
+						|Teléfonos: (444) 500.45.00 / (400) 817.65.30
+					p
+						|WhatsApp: (444) 408.30.27
+					p
+						|Email: contacto@ucslp.net	
+			div.foot3
+				a(href="https://www.facebook.com/ucslp/")
+				img(src='resources/facebook-pin.png')
+			
+				a(href="https://twitter.com/CuauhtemocSLP?lang=es")
+				img(src='resources/twitter-pin.png')
+			
+				a(href="https://www.instagram.com/guerreros_ucslp/")
+				img(src='resources/instagram-pin.png')
+			div.foot4
+				div
+					p Contacto	
+
+
 
 
 	  
@@ -132,13 +195,21 @@ html
 		|$(document).ready(function(){
 		|  $(window).scroll(function() {
 		|    if ($(document).scrollTop() > 5 ) {
-		|      $("#firstView").css("z-index", "-1000");
-		|		$("#secondView").css("z-index", "1000");
+		|      $("#firstView").css("z-index", "-1");
+		|		$("#secondView").css("z-index", "1");
 		|    } else if ($(document).scrollTop() < 5){
-		|      $("#secondView").css("z-index", "-1000");
-		|      $("#firstView").css("z-index", "1000");
+		|      $("#secondView").css("z-index", "-1");
+		|      $("#firstView").css("z-index", "2");
 		|    }
 		|  });
+		|	$('.first-footer').click(function(){
+		|		$(".second-footer").css("display", "flex");
+		|		$(".first-footer").css("display", "none");
+		|	});
+		|	$('.second-footer').click(function(){
+		|		$(".first-footer").css("display", "flex");
+		|		$(".second-footer").css("display", "none");
+		|	});
 		|});
 
 					
