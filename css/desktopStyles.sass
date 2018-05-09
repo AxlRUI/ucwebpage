@@ -4,7 +4,7 @@ $hard_blue: #003056
 
 @font-face
 	font-family: 'Avenir Next Condenced'
-	src: url(..resources/avenir_next_condensed.ttf)
+	src: url(../resources/avenir.ttf)
 
 *
 	padding: 0
@@ -125,7 +125,7 @@ header
 				border-right: 2px solid white
 				color: white
 				+transition(400ms ease)
-				font-size: 14px
+				font-size: 16px
 				font-weight: bold
 			a.final
 				border-right: none
@@ -231,6 +231,34 @@ header
 		+flex-direction(column)
 	.big
 		+flex-normal(65%)
+		+transition(400ms ease)
+		position: relative
+		#arrowL, #arrowR
+			position: absolute
+			width: 45px
+			
+			cursor: pointer
+			opacity: 0.8
+			+transition(400ms ease)
+		#arrowL
+			left: 18px
+			-webkit-transform: rotate(180deg) translate(0%, 50%)
+			-o-transform: rotate(180deg) translate(0%, 50%)
+			-ms-transform: rotate(180deg) translate(0%, 50%)
+			-moz-transform: rotate(180deg) translate(0%, 50%)
+			transform: rotate(180deg) translate(0%, 50%)
+			top: calc(50%)
+		#arrowR
+			top: 50%
+			-webkit-transform: translate(0%, -50%)
+			-o-transform: translate(0%, -50%)
+			-ms-transform: translate(0%, -50%)
+			-moz-transform: translate(0%, -50%)
+			transform: translate(0%, -50%)
+			right: 18px
+		#arrowL:hover, #arrowR:hover
+			opacity: 1
+			width: 50px
 
 
 #video1
@@ -298,7 +326,6 @@ header
 				border-right: 2px solid $hard_blue 
 				color: $hard_blue
 				+transition(400ms ease)
-				font-size: 14px
 				font-weight: bold
 			a.final
 				border-right: none
@@ -367,14 +394,13 @@ header
 		z-index: -1
 		background: $hard_blue
 		width: 400%
-		height: 300px
-		top: calc(-300px + 100%)
+		height: 240px
+		top: calc(-240px + 100%)
 		border-radius: 10px
 		left: -150%
 		opacity: 0.9
-
+		
 		div
-			display: block
 			a
 				img
 					width: 200px
@@ -405,5 +431,73 @@ header
 	> div
 		z-index: -40
 		display: initial
+		.internal
+			+flex()
+			height: 100%
+			+flex-direction(column)
+			+justify-content(space-around)
+			+align-items(center)
+			> .one
+				+flex-normal(1)
+				+flex()
+				+align-items(center)
+				width: 80%
+			> .two
+				+flex-normal(2)
+				+flex()
+				+flex-direction(row)
+				width: 80%
+				font-size: 18px
+				.two_one
+					+flex-normal(1)
+				.two_two
+					+flex-normal(1)
+					text-align: right
+
 	> div:hover
 		display: initial
+
+@media only screen and (min-width: 1600px)
+	
+	header
+		height: 200px;
+		.firstNav
+			div
+				a
+					.logo
+						width: 380px
+			.pinContainer
+				div
+					a 
+						.pin
+							width: 30px
+						.pin:hover
+							width: 36px
+		.secondNav
+			div
+				a
+					font-size: 22px
+	.btn-green
+		font-size: 22px
+	.textVideo
+		font-size: 30px
+	.headerWhite
+		height: 80px
+		.pinContainer
+			.pin
+				width: 32px
+			.pin:hover
+				width: 38px
+		.firstNav
+			div
+				a 
+					font-size: 20px
+				.logo
+					width: 60px
+				.btn-green
+					font-size: 20px
+	.contact
+		font-size: 28px
+	.contact:hover
+		>div .internal > .two
+			font-size: 22px
