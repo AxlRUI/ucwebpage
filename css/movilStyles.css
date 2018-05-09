@@ -148,48 +148,51 @@ a {
         padding: 15px 5px;
         width: 50px;
         height: 50px; }
-    .firstNav .nav-right .green-button {
-      width: 150px;
-      height: 40px;
-      padding: 10px 5px;
-      text-align: center;
-      background-color: #83B93A;
-      border-radius: 15px;
-      -webkit-border-radius: 15px;
-      -o-border-radius: 15px;
-      -ms-border-radius: 15px;
-      -moz-border-radius: 15px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      display: -webkit-flex;
-      display: -o-flex;
-      display: -ms-flex;
-      display: -moz-flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-justify-content: center;
-      -o-justify-content: center;
-      -ms-justify-content: center;
-      -moz-justify-content: center;
+    .firstNav .nav-right > .green-button {
       -ms-flex-item-align: end;
       align-self: flex-end;
       -webkit-align-self: flex-end;
       -o-align-self: flex-end;
       -ms-align-self: flex-end;
       -moz-align-self: flex-end; }
-      .firstNav .nav-right .green-button > div {
-        -ms-flex-item-align: center;
-        align-self: center;
-        -webkit-align-self: center;
-        -o-align-self: center;
-        -ms-align-self: center;
-        -moz-align-self: center;
-        font-size: 20px; }
-      .firstNav .nav-right .green-button a {
-        text-decoration: none;
-        color: white; }
+
+.green-button {
+  width: 190px;
+  height: 30px;
+  padding: 10px 5px;
+  text-align: center;
+  background-color: #83B93A;
+  font-weight: bold;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -o-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -moz-border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center; }
+  .green-button > div {
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-align-self: center;
+    -o-align-self: center;
+    -ms-align-self: center;
+    -moz-align-self: center;
+    font-size: 25px; }
+  .green-button a {
+    text-decoration: none;
+    color: white; }
 
 .index-play {
   height: 150px;
@@ -267,35 +270,15 @@ a {
       border-bottom: 1px solid #83B93A;
       color: #83B93A; }
 
-#secondView > .firstNavS {
-  position: fixed;
-  top: 0px !important;
-  z-index: 2000;
-  width: 100%;
-  height: 10%;
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: -webkit-flex;
-  display: -o-flex;
-  display: -ms-flex;
-  display: -moz-flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-direction: row;
-  -webkit-flex-direction: row;
-  -o-flex-direction: row;
-  -ms-flex-direction: row;
-  -moz-flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-justify-content: space-between;
-  -o-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -moz-justify-content: space-between; }
-  #secondView > .firstNavS .nav-leftS {
+#secondView {
+  height: 100%; }
+  #secondView > .firstNavS {
+    position: fixed;
+    top: 0px !important;
+    z-index: 2000;
+    width: 100%;
+    height: 175px;
+    background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -309,45 +292,15 @@ a {
     -webkit-flex-direction: row;
     -o-flex-direction: row;
     -ms-flex-direction: row;
-    -moz-flex-direction: row; }
-    #secondView > .firstNavS .nav-leftS .burger {
-      -ms-flex-item-align: center;
-      align-self: center;
-      -webkit-align-self: center;
-      -o-align-self: center;
-      -ms-align-self: center;
-      -moz-align-self: center;
-      padding: 0px 30px;
-      font-size: 100px; }
-    #secondView > .firstNavS .nav-leftS .logo {
-      -ms-flex-item-align: center;
-      align-self: center;
-      -webkit-align-self: center;
-      -o-align-self: center;
-      -ms-align-self: center;
-      -moz-align-self: center;
-      width: 130px;
-      height: 130px; }
-  #secondView > .firstNavS .nav-rightS {
-    -ms-flex-item-align: center;
-    align-self: center;
-    -webkit-align-self: center;
-    -o-align-self: center;
-    -ms-align-self: center;
-    -moz-align-self: center; }
-    #secondView > .firstNavS .nav-rightS .green-buttonS {
-      margin-right: 40px;
-      width: 190px;
-      height: 30px;
-      padding: 10px 5px;
-      text-align: center;
-      background-color: #83B93A;
-      font-weight: bold;
-      border-radius: 15px;
-      -webkit-border-radius: 15px;
-      -o-border-radius: 15px;
-      -ms-border-radius: 15px;
-      -moz-border-radius: 15px;
+    -moz-flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -o-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between; }
+    #secondView > .firstNavS .nav-leftS {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -355,21 +308,58 @@ a {
       display: -o-flex;
       display: -ms-flex;
       display: -moz-flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-justify-content: center;
-      -o-justify-content: center;
-      -ms-justify-content: center;
-      -moz-justify-content: center; }
-      #secondView > .firstNavS .nav-rightS .green-buttonS > div {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      -o-flex-direction: row;
+      -ms-flex-direction: row;
+      -moz-flex-direction: row; }
+      #secondView > .firstNavS .nav-leftS .burger {
         -ms-flex-item-align: center;
         align-self: center;
         -webkit-align-self: center;
         -o-align-self: center;
         -ms-align-self: center;
         -moz-align-self: center;
-        font-size: 25px; }
-      #secondView > .firstNavS .nav-rightS .green-buttonS a {
-        text-decoration: none;
-        color: white; }
+        padding: 0px 30px;
+        font-size: 100px; }
+      #secondView > .firstNavS .nav-leftS .logo {
+        -ms-flex-item-align: center;
+        align-self: center;
+        -webkit-align-self: center;
+        -o-align-self: center;
+        -ms-align-self: center;
+        -moz-align-self: center;
+        width: 130px;
+        height: 130px; }
+    #secondView > .firstNavS .nav-rightS {
+      -ms-flex-item-align: center;
+      align-self: center;
+      -webkit-align-self: center;
+      -o-align-self: center;
+      -ms-align-self: center;
+      -moz-align-self: center; }
+      #secondView > .firstNavS .nav-rightS > .green-button {
+        margin-right: 40px; }
+  #secondView .boxes {
+    margin-top: 175px;
+    width: 100%;
+    height: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column; }
+    #secondView .boxes .box {
+      width: 100%;
+      height: 100%; }
