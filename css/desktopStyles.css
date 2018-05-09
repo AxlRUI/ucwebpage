@@ -540,16 +540,11 @@ header {
     top: calc(-300px + 100%);
     border-radius: 10px;
     left: -150%;
-    opacity: 0.9;
-    display: -webkit-flex;
-    display: -o-flex;
-    display: -ms-flex;
-    display: -moz-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .contact .info div a img {
-      width: 200px; }
+    opacity: 0.9; }
+    .contact .info div {
+      display: block; }
+      .contact .info div a img {
+        width: 200px; }
   .contact .social {
     position: absolute;
     top: -50px;
