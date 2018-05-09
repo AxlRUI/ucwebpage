@@ -7,14 +7,30 @@
   margin: 0px;
   font-family: 'Avenir Next Condenced', sans-serif; }
 
-.content video {
-  margin-left: -1800px;
-  position: absolute;
-  height: 2700px;
-  z-index: -1; }
+a {
+  cursor: pointer; }
 
-body {
-  background-color: #83B93A; }
+#firstView {
+  height: 100%;
+  width: 100%;
+  z-index: -1000;
+  background-color: #003056; }
+  #firstView .back {
+    position: fixed;
+    height: 100%; }
+
+.margin {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: -50px; }
+
+#secondView {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #83B93A;
+  z-index: -2000; }
 
 .firstNav {
   padding-top: 70px;
@@ -67,10 +83,12 @@ body {
     -webkit-align-self: flex-start;
     -o-align-self: flex-start;
     -ms-align-self: flex-start;
-    -moz-align-self: flex-start; }
-    .firstNav .nav-left img {
-      margin-left: 30px;
-      width: 70%;
+    -moz-align-self: flex-start;
+    margin-left: 40px;
+    padding-right: 35px; }
+    .firstNav .nav-left .logo {
+      margin-left: 10px;
+      width: 80%;
       height: 100%; }
     .firstNav .nav-left .burger {
       -ms-flex-item-align: center;
@@ -79,8 +97,10 @@ body {
       -o-align-self: center;
       -ms-align-self: center;
       -moz-align-self: center;
-      width: 80px;
-      height: 50px; }
+      width: 60px;
+      height: 40px;
+      font-size: 80px;
+      color: white; }
   .firstNav .nav-right {
     margin-right: 20px;
     display: -webkit-box;
@@ -125,41 +145,36 @@ body {
       -ms-flex-direction: row;
       -moz-flex-direction: row; }
       .firstNav .nav-right .nav-social img {
-        padding: 30px 10px;
-        width: 85px;
-        height: 85px; }
+        padding: 15px 5px;
+        width: 50px;
+        height: 50px; }
     .firstNav .nav-right .green-button {
-      width: 300px;
-      height: 85px;
-      color: white;
-      font-size: 58px;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-justify-content: center;
-      -o-justify-content: center;
-      -ms-justify-content: center;
-      -moz-justify-content: center;
+      width: 140px;
+      height: 20px;
+      padding: 10px 5px;
+      text-align: center;
+      font-size: 18px;
+      background-color: #83B93A;
       -ms-flex-item-align: end;
       align-self: flex-end;
       -webkit-align-self: flex-end;
       -o-align-self: flex-end;
       -ms-align-self: flex-end;
       -moz-align-self: flex-end;
-      background-color: #83B93A;
-      border-radius: 10px;
-      -webkit-border-radius: 10px;
-      -o-border-radius: 10px;
-      -ms-border-radius: 10px;
-      -moz-border-radius: 10px;
-      padding: 10px 8px;
-      text-decoration: none; }
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -o-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -moz-border-radius: 25px; }
+      .firstNav .nav-right .green-button a {
+        text-decoration: none;
+        color: white; }
 
 .index-play {
-  height: 250px;
-  width: 250px;
+  height: 150px;
+  width: 150px;
   background-color: #003056;
-  bottom: 400px;
+  bottom: 250px;
   margin-left: 100px;
   position: fixed;
   border-radius: 100%;
@@ -167,12 +182,12 @@ body {
   -o-border-radius: 100%;
   -ms-border-radius: 100%;
   -moz-border-radius: 100%;
-  opacity: 0.6;
+  opacity: 0.9;
   hover-opacity: 1.0; }
   .index-play .play {
-    padding: 75px 90px;
-    width: 35%;
-    height: 40%;
+    padding: 35% 40%;
+    width: 27%;
+    height: 32%;
     vertical-align: middle;
     -webkit-vertical-align: middle;
     -o-vertical-align: middle;
@@ -182,10 +197,10 @@ body {
 .d1997 {
   width: 100%;
   position: fixed;
-  bottom: 300px;
+  bottom: 180px;
   color: white;
   text-align: center;
-  font-size: 35px; }
+  font-size: 22px; }
 
 .secondNav {
   top: 300px;
@@ -193,7 +208,7 @@ body {
   width: 50%;
   position: fixed;
   right: 100%;
-  font-size: 60px;
+  font-size: 30px;
   height: calc(100% - 300px); }
   .secondNav ul {
     list-style: none; }
@@ -205,13 +220,15 @@ body {
         display: block;
         color: white;
         text-decoration: none;
-        padding: 20px; }
+        padding: 20px 0px 10px 0px; }
     .secondNav ul .children {
-      font-size: 40px;
+      font-size: 20px;
       width: 100%;
       display: none;
       position: relative;
       z-index: 1000; }
+      .secondNav ul .children a {
+        padding: 5px 10px !important; }
     .secondNav ul li:hover .children {
       border: none;
       display: block; }
@@ -228,3 +245,43 @@ body {
     .secondNav ul li:hover a {
       border-bottom: 1px solid #83B93A;
       color: #83B93A; }
+
+#secondView > .firstNavS {
+  position: fixed;
+  top: 0px !important;
+  z-index: 2000;
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -o-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row;
+  aling-items: center;
+  -webkit-aling-items: center;
+  -o-aling-items: center;
+  -ms-aling-items: center;
+  -moz-aling-items: center; }
+  #secondView > .firstNavS .nav-left {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center; }
+    #secondView > .firstNavS .nav-left .burger {
+      padding: 10px 30px;
+      font-size: 100px; }
+    #secondView > .firstNavS .nav-left .logo {
+      width: 13%; }

@@ -1,83 +1,83 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="resources/style.css">
     <link rel="stylesheet" href="css/movilStyles.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">	
   </head>
   <body>
-    <section class="content">
-      <video poster="resources/1080x1920.jpg" loop id="video">
-        <source src="resources/1920x1080clip.mp4">
-      </video>
-    </section>
-    <nav class="firstNav">
-      <div class="nav-left"><img class="burger" src="resources/burger.png"><img src="resources/culogo.png"></div>
-      <div class="nav-right"><a class="green-button" href="">¡Registrate!</a>
-        <div class="nav-social"><a><img src="resources/facebook-pin.png"></a><a><img src="resources/twitter-pin.png"></a><a><img src="resources/instagram-pin.png"></a><a><img src="resources/youtube-pin.png"></a><a><img src="resources/uc-pin.png"></a><a><img src="resources/calendar-pin.png"></a></div>
-      </div>
-    </nav>
-    <nav class="secondNav">
-      <div>
-        <ul>
-          <li><a href="#">Nosotros</a>
-            <ul class="children">
-              <li><a href="#">Misión, Visión, Valores</a></li>
-              <li><a href="#">Filosofía</a></li>
-              <li><a href="#">Directorio</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Oferta Académica</a>
-            <ul class="children">
-              <li><a href="#">Prepa UC</a></li>
-              <li><a href="#">Licenciaturas +</a></li>
-              <li><a href="#">Maestrías y Posgrados</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Intégrate</a>
-            <ul class="children">
-              <li><a href="#">Ingreso a Licenciatura</a></li>
-              <li><a href="#">Ingreso a Bachillerato</a></li>
-              <li><a href="#">Provenientes de Otras Univesrdiades</a></li>
-              <li><a href="#">Ingreso a Licenciatura para Alumnos Extranjeros	</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Prestigio UC</a>
-            <ul class="children">
-              <li><a href="#">Alumnos</a></li>
-              <li><a href="#">Docentes</a></li>
-              <li><a href="#">Ex Alumnos</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Beneficios UC</a></li>
-          <li><a href="#">Internacional</a>
-            <ul class="children">
-              <li><a href="#">Intercambio Estudiantil</a></li>
-              <li><a href="#">Estudiantes Visitantes</a></li>
-              <li><a href="#">Profesores Visitantes</a></li>
-            </ul>
-          </li>
-          <li><a class="final" href="#">Visitanos</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="index-play" onClick="playPause()"><img class="play" src="resources/Untitled-4.png"></div>
-    <p class="d1997">DESDE 1977 FORMANDO PROFESIONISTAS CON ALTO DESEMPEÑO ACADÉMICO	</p>
+    <content id="firstView"><img class="back" src="resources/1080x1920.jpg">
+      <nav class="firstNav">
+        <div class="nav-left"><span class="icon-menu burger"></span><img class="logo" src="resources/culogo.png"></div>
+        <div class="nav-right">
+          <div class="green-button"><a href="">¡REGISTRATE!</a></div>
+          <div class="nav-social"><a><img src="resources/facebook-pin.png"></a><a><img src="resources/twitter-pin.png"></a><a><img src="resources/instagram-pin.png"></a><a><img src="resources/youtube-pin.png"></a><a><img src="resources/uc-pin.png"></a><a><img src="resources/calendar-pin.png"></a></div>
+        </div>
+      </nav>
+      <nav class="secondNav">
+        <div>
+          <ul>
+            <li><a href="#">Nosotros</a>
+              <ul class="children">
+                <li><a href="#">Misión, Visión, Valores</a></li>
+                <li><a href="#">Filosofía</a></li>
+                <li><a href="#">Directorio</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Oferta Académica</a>
+              <ul class="children">
+                <li><a href="#">Prepa UC</a></li>
+                <li><a href="#">Licenciaturas +</a></li>
+                <li><a href="#">Maestrías y Posgrados</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Intégrate</a>
+              <ul class="children">
+                <li><a href="#">Ingreso a Licenciatura</a></li>
+                <li><a href="#">Ingreso a Bachillerato</a></li>
+                <li><a href="#">Provenientes de Otras Univesrdiades</a></li>
+                <li><a href="#">Ingreso a Licenciatura para Alumnos Extranjeros	</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Prestigio UC</a>
+              <ul class="children">
+                <li><a href="https://www.ucslp.edu.mx/prestigio/prestigioAlumnos">Alumnos</a></li>
+                <li><a href="https://www.ucslp.edu.mx/prestigio/prestigioProfesores">Docentes</a></li>
+                <li><a href="https://www.ucslp.edu.mx/prestigio/prestigioExAlumnos">Ex Alumnos</a></li>
+              </ul>
+            </li>
+            <li><a href="https://www.ucslp.edu.mx/beneficios">Beneficios UC</a></li>
+            <li><a href="https://www.ucslp.edu.mx/internacional">Internacional</a>
+              <ul class="children">
+                <li><a href="#">Intercambio Estudiantil</a></li>
+                <li><a href="#">Estudiantes Visitantes</a></li>
+                <li><a href="#">Profesores Visitantes</a></li>
+              </ul>
+            </li>
+            <li><a class="final" href="#">Visitanos</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="index-play" onClick="playPause()"><img class="play" src="resources/Untitled-4.png"></div>
+      <p class="d1997">DESDE 1977 FORMANDO PROFESIONISTAS CON ALTO DESEMPEÑO ACADÉMICO</p>
+    </content>
+    <div class="margin"></div>
+    <content id="secondView">
+      <div></div>
+      <nav class="firstNavS">
+        <div class="nav-left"><span class="icon-menu burger"></span><img class="logo" src="resources/culogo_round.png"></div>
+        <div class="nav-right">
+          <div class="green-button"><a href="">¡REGISTRATE!</a></div>
+        </div>
+      </nav>
+    </content>
   </body>
-  <script>
-    var myVideo = document.getElementById("video");
-    function playPause() { 
-        if (myVideo.paused) 
-            myVideo.play(); 
-        else 
-            myVideo.pause(); 
-    } 
-  </script>
   <script>
     	var botonM = false;
     	$('.burger').click(function(){
     		if (botonM == false) {
     			$('.secondNav').animate({
-    				left: '0'
+    				left: '40'
     			},'slow');
     			botonM = true;
     		}else if(botonM == true){
@@ -87,5 +87,17 @@
     			botonM = false;
     		}
     	});
+     
+    $(document).ready(function(){
+     $(window).scroll(function() {
+       if ($(document).scrollTop() > 5 ) {
+         $("#firstView").css("z-index", "-1000");
+    		$("#secondView").css("z-index", "1000");
+       } else if ($(document).scrollTop() < 5){
+         $("#secondView").css("z-index", "-1000");
+         $("#firstView").css("z-index", "1000");
+       }
+     });
+    });
   </script>
 </html>

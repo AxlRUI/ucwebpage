@@ -1,107 +1,111 @@
 doctype html
 html
 	head
+		link(rel="stylesheet" href="resources/style.css")
 		link(rel="stylesheet" href="css/movilStyles.css")
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">	
 	body
-		section.content
-			video(poster='resources/1080x1920.jpg' loop)#video
-				source(src="resources/1920x1080clip.mp4")
-		nav.firstNav
-			div.nav-left
-				img(src='resources/burger.png').burger
-				img(src='resources/culogo.png')
-			div.nav-right
-				a(href='').green-button|¡Registrate!
-				div.nav-social
-					a
-						img(src='resources/facebook-pin.png')
-					a
-						img(src='resources/twitter-pin.png')
-					a
-						img(src='resources/instagram-pin.png')
-					a
-						img(src='resources/youtube-pin.png')
-					a
-						img(src='resources/uc-pin.png')
-					a
-						img(src='resources/calendar-pin.png')
-		nav.secondNav
+		content#firstView
+			img(src='resources/1080x1920.jpg').back
+			nav.firstNav
+				div.nav-left
+					span(class="icon-menu").burger
+					img(src='resources/culogo.png').logo
+				div.nav-right
+					div.green-button
+						a(href='')|¡REGISTRATE!
+					div.nav-social
+						a
+							img(src='resources/facebook-pin.png')
+						a
+							img(src='resources/twitter-pin.png')
+						a
+							img(src='resources/instagram-pin.png')
+						a
+							img(src='resources/youtube-pin.png')
+						a
+							img(src='resources/uc-pin.png')
+						a
+							img(src='resources/calendar-pin.png')
+			nav.secondNav
+				div
+					ul
+						li
+							a(href="#")|Nosotros
+							ul.children
+								li
+									a(href="#")|Misión, Visión, Valores
+								li
+									a(href="#")|Filosofía
+								li
+									a(href="#")|Directorio
+						li
+							a(href="#")|Oferta Académica
+							ul.children
+								li
+									a(href="#")|Prepa UC
+								li
+									a(href="#")|Licenciaturas +
+								li
+									a(href="#")|Maestrías y Posgrados
+						li
+							a(href="#")|Intégrate
+							ul.children
+								li
+									a(href="#")|Ingreso a Licenciatura
+								li
+									a(href="#")|Ingreso a Bachillerato
+								li
+									a(href="#")|Provenientes de Otras Univesrdiades
+								li
+									a(href="#")|Ingreso a Licenciatura para Alumnos Extranjeros	
+						li
+							a(href="#")|Prestigio UC
+							ul.children
+								li
+									a(href="https://www.ucslp.edu.mx/prestigio/prestigioAlumnos")|Alumnos
+								li
+									a(href="https://www.ucslp.edu.mx/prestigio/prestigioProfesores")|Docentes
+								li
+									a(href="https://www.ucslp.edu.mx/prestigio/prestigioExAlumnos")|Ex Alumnos
+						li
+							a(href="https://www.ucslp.edu.mx/beneficios")|Beneficios UC
+						li
+							a(href="https://www.ucslp.edu.mx/internacional")|Internacional
+							ul.children
+								li
+									a(href="#")|Intercambio Estudiantil
+								li
+									a(href="#")|Estudiantes Visitantes
+								li
+									a(href="#")|Profesores Visitantes
+						li
+							a(href="#").final|Visitanos
+
+
+			div(onClick='playPause()').index-play
+				img(src='resources/Untitled-4.png').play
+			p.d1997
+				|DESDE 1977 FORMANDO PROFESIONISTAS CON ALTO DESEMPEÑO ACADÉMICO
+		div.margin
+		content#secondView
 			div
-				ul
-					li
-						a(href="#")|Nosotros
-						ul.children
-							li
-								a(href="#")|Misión, Visión, Valores
-							li
-								a(href="#")|Filosofía
-							li
-								a(href="#")|Directorio
-					li
-						a(href="#")|Oferta Académica
-						ul.children
-							li
-								a(href="#")|Prepa UC
-							li
-								a(href="#")|Licenciaturas +
-							li
-								a(href="#")|Maestrías y Posgrados
-					li
-						a(href="#")|Intégrate
-						ul.children
-							li
-								a(href="#")|Ingreso a Licenciatura
-							li
-								a(href="#")|Ingreso a Bachillerato
-							li
-								a(href="#")|Provenientes de Otras Univesrdiades
-							li
-								a(href="#")|Ingreso a Licenciatura para Alumnos Extranjeros	
-					li
-						a(href="#")|Prestigio UC
-						ul.children
-							li
-								a(href="#")|Alumnos
-							li
-								a(href="#")|Docentes
-							li
-								a(href="#")|Ex Alumnos
-					li
-						a(href="#")|Beneficios UC
-					li
-						a(href="#")|Internacional
-						ul.children
-							li
-								a(href="#")|Intercambio Estudiantil
-							li
-								a(href="#")|Estudiantes Visitantes
-							li
-								a(href="#")|Profesores Visitantes
-					li
-						a(href="#").final|Visitanos
+			nav.firstNavS
+				div.nav-left
+					span(class="icon-menu").burger
+					img(src='resources/culogo_round.png').logo
+				div.nav-right
+					div.green-button
+						a(href='')|¡REGISTRATE!
 
-
-		div(onClick='playPause()').index-play
-			img(src='resources/Untitled-4.png').play
-		p.d1997
-			|DESDE 1977 FORMANDO PROFESIONISTAS CON ALTO DESEMPEÑO ACADÉMICO	
-
-	script.
-		var myVideo = document.getElementById("video");
-		function playPause() { 
-		    if (myVideo.paused) 
-		        myVideo.play(); 
-		    else 
-		        myVideo.pause(); 
-		} 
+	  
 	script
 		|	var botonM = false;
 		|	$('.burger').click(function(){
 		|		if (botonM == false) {
 		|			$('.secondNav').animate({
-		|				left: '0'
+		|				left: '40'
 		|			},'slow');
 		|			botonM = true;
 		|		}else if(botonM == true){
@@ -111,6 +115,18 @@ html
 		|			botonM = false;
 		|		}
 		|	});
+		| 
+		|$(document).ready(function(){
+		|  $(window).scroll(function() {
+		|    if ($(document).scrollTop() > 5 ) {
+		|      $("#firstView").css("z-index", "-1000");
+		|		$("#secondView").css("z-index", "1000");
+		|    } else if ($(document).scrollTop() < 5){
+		|      $("#secondView").css("z-index", "-1000");
+		|      $("#firstView").css("z-index", "1000");
+		|    }
+		|  });
+		|});
 
 					
 		
