@@ -1,6 +1,7 @@
 doctype html
 html
 	head
+		link(rel="stylesheet" href="resources/style.css")
 		link(rel="stylesheet" href="css/movilStyles.css")
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">	
@@ -9,7 +10,7 @@ html
 			img(src='resources/1080x1920.jpg').back
 			nav.firstNav
 				div.nav-left
-					img(src='resources/burger.png').burger
+					span(class="icon-menu").burger
 					img(src='resources/culogo.png').logo
 				div.nav-right
 					div.green-button
@@ -90,6 +91,14 @@ html
 		div.margin
 		content#secondView
 			div
+			nav.firstNavS
+				div.nav-left
+					span(class="icon-menu").burger
+					img(src='resources/culogo_round.png').logo
+				div.nav-right
+					div.green-button
+						a(href='')|¡REGISTRATE!
+
 	  
 	script
 		|	var botonM = false;

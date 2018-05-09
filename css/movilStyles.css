@@ -14,7 +14,7 @@ a {
   height: 100%;
   width: 100%;
   z-index: -1000;
-  overflow: scroll; }
+  background-color: #003056; }
   #firstView .back {
     position: fixed;
     height: 100%; }
@@ -98,7 +98,9 @@ a {
       -ms-align-self: center;
       -moz-align-self: center;
       width: 60px;
-      height: 40px; }
+      height: 40px;
+      font-size: 80px;
+      color: white; }
   .firstNav .nav-right {
     margin-right: 20px;
     display: -webkit-box;
@@ -243,3 +245,43 @@ a {
     .secondNav ul li:hover a {
       border-bottom: 1px solid #83B93A;
       color: #83B93A; }
+
+#secondView > .firstNavS {
+  position: fixed;
+  top: 0px !important;
+  z-index: 2000;
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -o-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row;
+  aling-items: center;
+  -webkit-aling-items: center;
+  -o-aling-items: center;
+  -ms-aling-items: center;
+  -moz-aling-items: center; }
+  #secondView > .firstNavS .nav-left {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center; }
+    #secondView > .firstNavS .nav-left .burger {
+      padding: 10px 30px;
+      font-size: 100px; }
+    #secondView > .firstNavS .nav-left .logo {
+      width: 13%; }
