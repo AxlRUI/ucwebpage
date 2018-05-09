@@ -1,5 +1,6 @@
 $hard_pink: #990066
 $cu_green: #83b93a
+$hard_blue: #003056
 
 @font-face
 	font-family: 'Avenir Next Condenced'
@@ -22,6 +23,14 @@ a
 	-moz-transition: $align
 	transition: $align
 
+=transform($align)
+	-webkit-transform: $align
+	-o-transform: $align
+	-ms-transform: $align
+	-moz-transform: $align
+	transform: $align
+
+
 =flex() 
   display: -webkit-flex
   display: -o-flex
@@ -29,6 +38,12 @@ a
   display: -moz-flex
   display: flex
 
+=flex-normal($align) 
+  -webkit-flex: $align
+  -o-flex: $align
+  -ms-flex: $align
+  -moz-flex: $align
+  flex: $align
 
 =align-items($align) 
   -webkit-align-items: $align
@@ -36,6 +51,14 @@ a
   -ms-align-items: $align
   -moz-align-items: $align
   align-items: $align
+
+=flex-grow($align) 
+  -webkit-flex-grow: $align
+  -o-flex-grow: $align
+  -ms-flex-grow: $align
+  -moz-flex-grow: $align
+  flex-grow: $align
+
 
 =justify-content($align) 
   -webkit-justify-content: $align
@@ -103,6 +126,7 @@ header
 				color: white
 				+transition(400ms ease)
 				font-size: 14px
+				font-weight: bold
 			a.final
 				border-right: none
 			a:hover
@@ -116,7 +140,7 @@ header
 			margin-left: 0
 			a
 				.logo
-					width: 280px
+					width: 300px
 		.firstContainer
 			+flex()
 			+flex-direction(row)
@@ -126,23 +150,23 @@ header
 			+align-items(center)
 			+flex-direction(row)
 			div 
-				height: 36px
+				height: 26px
 				a
-					width: 36px
-					height: 36px
+					width: 26px
+					height: 26px
 					.pin
-						width: 20px
+						width: 26px
 						+transition(400ms ease)
 					.pin:hover
-						width: 28px
+						width: 29px
 
 .btn-green
 	color: white
 	background: $cu_green
 	padding: 5px 10px 5px 10px
 	font-weight: bold
-	font-size: 20px
-	+border-radius(10px)
+	font-size: 18px
+	+border-radius(8px)
 	+transition(400ms ease)
 .btn-green:hover
 	background: white
@@ -159,9 +183,55 @@ header
 	z-index: 2
 	
 .content2
-	margin-top: 50px
+	margin-top: 128px
+	height: calc(100% - 64px)
 	z-index: 1
-	background: green
+	background: white
+	+flex()
+	+flex-direction(column)
+	+justify-content(space-bewteen)
+	+align-items(stretch)
+	> div
+		+flex-grow(1)
+		+flex()
+		> div
+			+flex-grow(1)
+			+flex()
+			background-repeat: no-repeat
+			background-size: 100% 100%
+			>div
+				+flex-grow(1)
+				background-repeat: no-repeat
+				background-size: 100% 100%
+	div
+		position: relative
+		cursor: pointer
+		+transition(400ms ease)
+		span
+			position: absolute
+			left: 50%
+			bottom: 20px
+			color: white
+			width: 100%
+			font-size: 28px
+			font-weight: bold
+			text-align: center
+			-webkit-transform: translate(-50%)
+			-o-transform: translate(-50%)
+			-ms-transform: translate(-50%)
+			-moz-transform: translate(-50%)
+			transform: translate(-50%)
+			+transition(400ms ease)
+	div:hover
+		> span
+			color: $cu_green
+			font-size: 30px
+			
+	.little
+		+flex-direction(column)
+	.big
+		+flex-normal(65%)
+
 
 #video1
 	position: fixed
@@ -170,3 +240,169 @@ header
 	width: 100%
 	background: rgba(0,0,0,0.7)
 	display: none
+
+.none
+	display: none
+.headerWhite
+	background: #f2f2f2
+	height: 64px
+	+flex-direction(row)
+	+justify-content(center)
+	+align-items(center)
+	.pinContainer
+		position: fixed
+		float: right
+		right: 30px
+		top: 140px
+		.pin
+			width: 26px
+			+transition(400ms ease)
+		.pin:hover
+			width: 29px
+	.firstNav
+		+justify-content(space-between)
+			
+		ul, ol
+			list-style: none
+			//height: 64px
+			+flex()
+			+align-items(center)
+		div > ul >li 
+			float: left
+			height: 64px
+			margin-top: 32px
+		li ul 
+			display: none
+			position: absolute
+			min-width: 100%
+		li:hover > ul
+			display: block
+			padding-top: 0
+			a
+				border-right: none
+		ul > li > ul
+			background: rgba(255,255,255,0.6)
+			margin-top: 20px
+		.listHorizontal
+			li
+				float: left
+			.head
+				font-weight: bold
+		div
+			border: none
+			padding: 0
+			+flex()
+			a
+				display: block
+				padding: 5px 10px 5px 10px
+				border-right: 2px solid $hard_blue 
+				color: $hard_blue
+				+transition(400ms ease)
+				font-size: 14px
+				font-weight: bold
+			a.final
+				border-right: none
+			a:hover
+				font-weight: bold
+				color: $cu_green
+				text-decoration: underline $cu_green
+			.logo
+				width: 52px;
+				border: none !important
+
+			.btn-green
+				color: white
+				border: none
+				font-size: 16px
+.playButton
+	position: relative
+	bottom: 220px
+	left: 128px
+	background: $hard_blue
+	width: 120px
+	height: 120px
+	border-radius: 100%
+	+flex()
+	+justify-content(center)
+	+align-items(center)
+	+transition(400ms ease)
+	img
+		width: 36px
+		margin-left: 5px
+.playButton:hover
+	cursor: pointer
+	background: $cu_green
+
+.textVideo
+	position: relative
+	bottom: 200px
+	left: 128px
+	font-weight: 800
+	font-size: 20px
+	color: white
+	width: calc(100% - 128px)
+
+.contact
+	position: fixed
+	bottom: 0
+	background: $hard_blue
+	opacity: 0.8
+	z-index: 10
+	left: 50%
+	-webkit-transform: translate(-50%)
+	-o-transform: translate(-50%)
+	-ms-transform: translate(-50%)
+	-moz-transform: translate(-50%)
+	transform: translate(-50%)
+	font-size: 18px
+	padding: 2px 80px 8px 80px
+	border-radius: 40px 40px 0px 0px
+	color: white
+	cursor: pointer
+	+transition(400ms ease)
+	> div
+		display: none
+	.info
+		position: fixed
+		z-index: -1
+		background: $hard_blue
+		width: 400%
+		height: 300px
+		top: calc(-300px + 100%)
+		border-radius: 10px
+		left: -150%
+		opacity: 0.9
+		+flex()
+		div
+			a
+				img
+					width: 200px
+	.social
+		position: absolute
+		top: -50px
+		z-index: 10
+		-webkit-transform: translate(-16px)
+		-o-transform: translate(-16px)
+		-ms-transform: translate(-16px)
+		-moz-transform: translate(-16px)
+		transform: translate(-16px)
+		a 
+			
+			margin: 0px 10px 0px 0px
+			
+			img
+				width: 28px
+				+transition(400ms ease)
+		a:hover
+			img
+				width: 30px
+
+.contact:hover
+	background: $cu_green
+	opacity: 1
+	z-index: 20
+	> div
+		z-index: -40
+		display: initial
+	> div:hover
+		display: initial
