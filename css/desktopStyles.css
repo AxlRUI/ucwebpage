@@ -27,26 +27,26 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
   -o-justify-content: space-around;
   -ms-justify-content: space-around;
   -moz-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-align-items: center;
+  -webkit-justify-content: space-around;
   -o-align-items: center;
   -ms-align-items: center;
   -moz-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: column;
+  -webkit-align-items: center;
   -o-flex-direction: column;
   -ms-flex-direction: column;
   -moz-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-flex-direction: column; }
   header nav {
     display: -webkit-flex;
     display: -o-flex;
@@ -55,13 +55,13 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
     -o-align-items: center;
     -ms-align-items: center;
     -moz-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-align-items: center;
     width: 90%; }
   header .secondNav ul, header .secondNav ol {
     list-style: none; }
@@ -81,22 +81,22 @@ header {
   header .secondNav .listHorizontal .head {
     font-weight: normal; }
   header .secondNav div {
-    -webkit-transition: 400ms ease;
     -o-transition: 400ms ease;
     -ms-transition: 400ms ease;
     -moz-transition: 400ms ease;
     transition: 400ms ease;
+    -webkit-transition: 400ms ease;
     padding: 0px 0px 15px 0px; }
     header .secondNav div a {
       display: block;
       padding: 1px 10px 1px 10px;
       border-right: 2px solid white;
       color: white;
-      -webkit-transition: 400ms ease;
       -o-transition: 400ms ease;
       -ms-transition: 400ms ease;
       -moz-transition: 400ms ease;
       transition: 400ms ease;
+      -webkit-transition: 400ms ease;
       font-size: 15px;
       font-weight: normal; }
     header .secondNav div a.final {
@@ -110,13 +110,13 @@ header {
   header .secondNav div:hover {
     border-bottom: 2px solid white; }
   header .firstNav {
-    -webkit-justify-content: space-between;
     -o-justify-content: space-between;
     -ms-justify-content: space-between;
     -moz-justify-content: space-between;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    -webkit-justify-content: space-between; }
     header .firstNav div {
       margin: 10px;
       margin-left: 0;
@@ -131,13 +131,13 @@ header {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-flex-direction: row;
       -o-flex-direction: row;
       -ms-flex-direction: row;
       -moz-flex-direction: row;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-      flex-direction: row; }
+      flex-direction: row;
+      -webkit-flex-direction: row; }
     header .firstNav .pinContainer {
       display: -webkit-flex;
       display: -o-flex;
@@ -146,27 +146,27 @@ header {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-justify-content: center;
       -o-justify-content: center;
       -ms-justify-content: center;
       -moz-justify-content: center;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      -webkit-align-items: center;
+      -webkit-justify-content: center;
       -o-align-items: center;
       -ms-align-items: center;
       -moz-align-items: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      -webkit-flex-direction: row;
+      -webkit-align-items: center;
       -o-flex-direction: row;
       -ms-flex-direction: row;
       -moz-flex-direction: row;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-      flex-direction: row; }
+      flex-direction: row;
+      -webkit-flex-direction: row; }
       header .firstNav .pinContainer div {
         height: 26px; }
         header .firstNav .pinContainer div a {
@@ -174,11 +174,11 @@ header {
           height: 26px; }
           header .firstNav .pinContainer div a .pin {
             width: 26px;
-            -webkit-transition: 400ms ease;
             -o-transition: 400ms ease;
             -ms-transition: 400ms ease;
             -moz-transition: 400ms ease;
-            transition: 400ms ease; }
+            transition: 400ms ease;
+            -webkit-transition: 400ms ease; }
           header .firstNav .pinContainer div a .pin:hover {
             width: 29px; }
 
@@ -188,16 +188,16 @@ header {
   padding: 5px 10px 5px 10px;
   font-weight: normal;
   font-size: 18px;
-  -webkit-border-radius: 8px;
   -o-border-radius: 8px;
   -ms-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  -webkit-transition: 400ms ease;
+  -webkit-border-radius: 8px;
   -o-transition: 400ms ease;
   -ms-transition: 400ms ease;
   -moz-transition: 400ms ease;
-  transition: 400ms ease; }
+  transition: 400ms ease;
+  -webkit-transition: 400ms ease; }
 
 .btn-green:hover {
   background: white;
@@ -225,35 +225,35 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
   -o-flex-direction: column;
   -ms-flex-direction: column;
   -moz-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  -webkit-justify-content: space-bewteen;
+  -webkit-flex-direction: column;
   -o-justify-content: space-bewteen;
   -ms-justify-content: space-bewteen;
   -moz-justify-content: space-bewteen;
   -webkit-box-pack: space-bewteen;
   -ms-flex-pack: space-bewteen;
   justify-content: space-bewteen;
-  -webkit-align-items: stretch;
+  -webkit-justify-content: space-bewteen;
   -o-align-items: stretch;
   -ms-align-items: stretch;
   -moz-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
-  align-items: stretch; }
+  align-items: stretch;
+  -webkit-align-items: stretch; }
   .content2 > div {
-    -webkit-flex-grow: 1;
     -o-flex-grow: 1;
     -ms-flex-grow: 1;
     -moz-flex-grow: 1;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
+    -webkit-flex-grow: 1;
     display: -webkit-flex;
     display: -o-flex;
     display: -ms-flex;
@@ -262,13 +262,13 @@ header {
     display: -ms-flexbox;
     display: flex; }
     .content2 > div > div {
-      -webkit-flex-grow: 1;
       -o-flex-grow: 1;
       -ms-flex-grow: 1;
       -moz-flex-grow: 1;
       -webkit-box-flex: 1;
       -ms-flex-positive: 1;
       flex-grow: 1;
+      -webkit-flex-grow: 1;
       display: -webkit-flex;
       display: -o-flex;
       display: -ms-flex;
@@ -279,23 +279,23 @@ header {
       background-repeat: no-repeat;
       background-size: 100% 100%; }
       .content2 > div > div > div {
-        -webkit-flex-grow: 1;
         -o-flex-grow: 1;
         -ms-flex-grow: 1;
         -moz-flex-grow: 1;
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
         flex-grow: 1;
+        -webkit-flex-grow: 1;
         background-repeat: no-repeat;
         background-size: 100% 100%; }
   .content2 div {
     position: relative;
     cursor: pointer;
-    -webkit-transition: 400ms ease;
     -o-transition: 400ms ease;
     -ms-transition: 400ms ease;
     -moz-transition: 400ms ease;
-    transition: 400ms ease; }
+    transition: 400ms ease;
+    -webkit-transition: 400ms ease; }
     .content2 div span {
       position: absolute;
       left: 50%;
@@ -310,22 +310,22 @@ header {
       -ms-transform: translate(-50%);
       -moz-transform: translate(-50%);
       transform: translate(-50%);
-      -webkit-transition: 400ms ease;
       -o-transition: 400ms ease;
       -ms-transition: 400ms ease;
       -moz-transition: 400ms ease;
-      transition: 400ms ease; }
+      transition: 400ms ease;
+      -webkit-transition: 400ms ease; }
   .content2 div:hover > span {
     color: #83b93a;
     font-size: 30px; }
   .content2 .little {
-    -webkit-flex-direction: column;
     -o-flex-direction: column;
     -ms-flex-direction: column;
     -moz-flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    flex-direction: column; }
+    flex-direction: column;
+    -webkit-flex-direction: column; }
   .content2 .big {
     -webkit-flex: 65%;
     -o-flex: 65%;
@@ -333,22 +333,22 @@ header {
     -moz-flex: 65%;
     -webkit-box-flex: 65%;
     flex: 65%;
-    -webkit-transition: 400ms ease;
     -o-transition: 400ms ease;
     -ms-transition: 400ms ease;
     -moz-transition: 400ms ease;
     transition: 400ms ease;
+    -webkit-transition: 400ms ease;
     position: relative; }
     .content2 .big #arrowL, .content2 .big #arrowR {
       position: absolute;
-      width: 45px;
+      width: 30px;
       cursor: pointer;
       opacity: 0.8;
-      -webkit-transition: 400ms ease;
       -o-transition: 400ms ease;
       -ms-transition: 400ms ease;
       -moz-transition: 400ms ease;
-      transition: 400ms ease; }
+      transition: 400ms ease;
+      -webkit-transition: 400ms ease; }
     .content2 .big #arrowL {
       left: 18px;
       -webkit-transform: rotate(180deg) translate(0%, 50%);
@@ -383,27 +383,27 @@ header {
 .headerWhite {
   background: #f2f2f2;
   height: 64px;
-  -webkit-flex-direction: row;
   -o-flex-direction: row;
   -ms-flex-direction: row;
   -moz-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   flex-direction: row;
-  -webkit-justify-content: center;
+  -webkit-flex-direction: row;
   -o-justify-content: center;
   -ms-justify-content: center;
   -moz-justify-content: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
+  -webkit-justify-content: center;
   -o-align-items: center;
   -ms-align-items: center;
   -moz-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-align-items: center; }
   .headerWhite .pinContainer {
     position: fixed;
     float: right;
@@ -411,21 +411,21 @@ header {
     top: 140px; }
     .headerWhite .pinContainer .pin {
       width: 26px;
-      -webkit-transition: 400ms ease;
       -o-transition: 400ms ease;
       -ms-transition: 400ms ease;
       -moz-transition: 400ms ease;
-      transition: 400ms ease; }
+      transition: 400ms ease;
+      -webkit-transition: 400ms ease; }
     .headerWhite .pinContainer .pin:hover {
       width: 29px; }
   .headerWhite .firstNav {
-    -webkit-justify-content: space-between;
     -o-justify-content: space-between;
     -ms-justify-content: space-between;
     -moz-justify-content: space-between;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    -webkit-justify-content: space-between; }
     .headerWhite .firstNav ul, .headerWhite .firstNav ol {
       list-style: none;
       display: -webkit-flex;
@@ -435,13 +435,13 @@ header {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-align-items: center;
       -o-align-items: center;
       -ms-align-items: center;
       -moz-align-items: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      -webkit-align-items: center; }
     .headerWhite .firstNav div > ul > li {
       float: left;
       height: 64px;
@@ -474,15 +474,16 @@ header {
       display: flex; }
       .headerWhite .firstNav div a {
         display: block;
-        padding: 5px 10px 5px 10px;
+        padding: 1px 10px 1px 10px;
         border-right: 2px solid #003056;
         color: #003056;
-        -webkit-transition: 400ms ease;
         -o-transition: 400ms ease;
         -ms-transition: 400ms ease;
         -moz-transition: 400ms ease;
         transition: 400ms ease;
-        font-weight: normal; }
+        -webkit-transition: 400ms ease;
+        font-weight: normal;
+        font-size: 15px; }
       .headerWhite .firstNav div a.final {
         border-right: none; }
       .headerWhite .firstNav div a:hover {
@@ -513,25 +514,25 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
   -o-justify-content: center;
   -ms-justify-content: center;
   -moz-justify-content: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
+  -webkit-justify-content: center;
   -o-align-items: center;
   -ms-align-items: center;
   -moz-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-transition: 400ms ease;
+  -webkit-align-items: center;
   -o-transition: 400ms ease;
   -ms-transition: 400ms ease;
   -moz-transition: 400ms ease;
-  transition: 400ms ease; }
+  transition: 400ms ease;
+  -webkit-transition: 400ms ease; }
   .playButton img {
     width: 30px;
     margin-top: 5px;
@@ -567,11 +568,11 @@ header {
   border-radius: 40px 40px 0px 0px;
   color: white;
   cursor: pointer;
-  -webkit-transition: 400ms ease;
   -o-transition: 400ms ease;
   -ms-transition: 400ms ease;
   -moz-transition: 400ms ease;
-  transition: 400ms ease; }
+  transition: 400ms ease;
+  -webkit-transition: 400ms ease; }
   .contact > div {
     display: none; }
   .contact .info {
@@ -599,11 +600,11 @@ header {
       margin: 0px 10px 0px 0px; }
       .contact .social a img {
         width: 28px;
-        -webkit-transition: 400ms ease;
         -o-transition: 400ms ease;
         -ms-transition: 400ms ease;
         -moz-transition: 400ms ease;
-        transition: 400ms ease; }
+        transition: 400ms ease;
+        -webkit-transition: 400ms ease; }
     .contact .social a:hover img {
       width: 30px; }
 
@@ -623,26 +624,26 @@ header {
       display: -ms-flexbox;
       display: flex;
       height: 100%;
-      -webkit-flex-direction: column;
       -o-flex-direction: column;
       -ms-flex-direction: column;
       -moz-flex-direction: column;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       flex-direction: column;
-      -webkit-justify-content: space-around;
+      -webkit-flex-direction: column;
       -o-justify-content: space-around;
       -ms-justify-content: space-around;
       -moz-justify-content: space-around;
       -ms-flex-pack: distribute;
       justify-content: space-around;
-      -webkit-align-items: center;
+      -webkit-justify-content: space-around;
       -o-align-items: center;
       -ms-align-items: center;
       -moz-align-items: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      -webkit-align-items: center; }
       .contact:hover > div .internal > .one {
         -webkit-flex: 1;
         -o-flex: 1;
@@ -657,13 +658,13 @@ header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-align-items: center;
         -o-align-items: center;
         -ms-align-items: center;
         -moz-align-items: center;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        -webkit-align-items: center;
         width: 80%; }
       .contact:hover > div .internal > .two {
         -webkit-flex: 2;
@@ -679,13 +680,13 @@ header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-flex-direction: row;
         -o-flex-direction: row;
         -ms-flex-direction: row;
         -moz-flex-direction: row;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         flex-direction: row;
+        -webkit-flex-direction: row;
         width: 80%;
         font-size: 18px; }
         .contact:hover > div .internal > .two .two_one {

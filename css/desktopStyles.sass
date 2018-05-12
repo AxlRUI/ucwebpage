@@ -17,18 +17,18 @@ a
 	cursor: pointer
 
 =transition($align)
-	-webkit-transition: $align
 	-o-transition: $align
 	-ms-transition: $align
 	-moz-transition: $align
 	transition: $align
+	-webkit-transition: $align
 
 =transform($align)
-	-webkit-transform: $align
 	-o-transform: $align
 	-ms-transform: $align
 	-moz-transform: $align
 	transform: $align
+	-webkit-transform: $align
 
 
 =flex() 
@@ -46,40 +46,40 @@ a
   flex: $align
 
 =align-items($align) 
-  -webkit-align-items: $align
   -o-align-items: $align
   -ms-align-items: $align
   -moz-align-items: $align
   align-items: $align
+  -webkit-align-items: $align
 
 =flex-grow($align) 
-  -webkit-flex-grow: $align
   -o-flex-grow: $align
   -ms-flex-grow: $align
   -moz-flex-grow: $align
   flex-grow: $align
+  -webkit-flex-grow: $align
 
 
 =justify-content($align) 
-  -webkit-justify-content: $align
   -o-justify-content: $align
   -ms-justify-content: $align
   -moz-justify-content: $align
   justify-content: $align
+  -webkit-justify-content: $align
 
 =flex-direction($align) 
-  -webkit-flex-direction: $align
   -o-flex-direction: $align
   -ms-flex-direction: $align
   -moz-flex-direction: $align
   flex-direction: $align
+  -webkit-flex-direction: $align
 
 =border-radius($align) 
-  -webkit-border-radius: $align
   -o-border-radius: $align
   -ms-border-radius: $align
   -moz-border-radius: $align
   border-radius: $align
+  -webkit-border-radius: $align
 
 body
 	background: $cu_green
@@ -240,7 +240,7 @@ header
 		position: relative
 		#arrowL, #arrowR
 			position: absolute
-			width: 45px
+			width: 30px
 			
 			cursor: pointer
 			opacity: 0.8
@@ -327,11 +327,12 @@ header
 			+flex()
 			a
 				display: block
-				padding: 5px 10px 5px 10px
+				padding: 1px 10px 1px 10px
 				border-right: 2px solid $hard_blue 
 				color: $hard_blue
 				+transition(400ms ease)
 				font-weight: normal
+				font-size: 15px
 			a.final
 				border-right: none
 			a:hover
