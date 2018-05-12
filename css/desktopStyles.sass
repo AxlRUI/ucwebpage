@@ -117,29 +117,32 @@ header
 			.head
 				font-weight: normal
 		div
-			
-			padding: 0px 8px 15px 0px
+			+transition(400ms ease)
+			padding: 0px 0px 15px 0px
 			a
 				display: block
-				padding: 5px 10px 5px 10px
+				padding: 1px 10px 1px 10px
 				border-right: 2px solid white
 				color: white
 				+transition(400ms ease)
-				font-size: 16px
+				font-size: 15px
 				font-weight: normal
+				//background: green
 			a.final
 				border-right: none
+				padding-right: 0
 			a:hover
 				font-weight: normal
 				color: $cu_green
 				text-decoration: underline $cu_green
 		div:hover
-			border-bottom: 4px solid white
+			border-bottom: 2px solid white
 	.firstNav
 		+justify-content(space-between)
 		div
 			margin: 10px
 			margin-left: 0
+			margin-bottom: 0
 			a
 				.logo
 					width: 300px
@@ -348,15 +351,16 @@ header
 	bottom: 220px
 	left: 128px
 	background: $hard_blue
-	width: 120px
-	height: 120px
+	width: 100px
+	height: 100px
 	border-radius: 100%
 	+flex()
 	+justify-content(center)
 	+align-items(center)
 	+transition(400ms ease)
 	img
-		width: 36px
+		width: 30px
+		margin-top: 5px
 		margin-left: 5px
 .playButton:hover
 	cursor: pointer
@@ -367,7 +371,7 @@ header
 	bottom: 200px
 	left: 128px
 	font-weight: 800
-	font-size: 20px
+	font-size: 28px
 	color: white
 	width: calc(100% - 128px)
 
