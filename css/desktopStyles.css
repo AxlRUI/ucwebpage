@@ -81,7 +81,6 @@ header {
   header .secondNav .listHorizontal .head {
     font-weight: normal; }
   header .secondNav div {
-    border-bottom: 2px solid white;
     padding: 0px 8px 15px 0px; }
     header .secondNav div a {
       display: block;
@@ -102,6 +101,8 @@ header {
       color: #83b93a;
       -webkit-text-decoration: underline #83b93a;
       text-decoration: underline #83b93a; }
+  header .secondNav div:hover {
+    border-bottom: 4px solid white; }
   header .firstNav {
     -webkit-justify-content: space-between;
     -o-justify-content: space-between;
