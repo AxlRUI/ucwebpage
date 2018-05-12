@@ -595,7 +595,10 @@ header {
     -o-transform: translate(-16px);
     -ms-transform: translate(-16px);
     -moz-transform: translate(-16px);
-    transform: translate(-16px); }
+    transform: translate(-16px);
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-transform: nowrap; }
     .contact .social a {
       margin: 0px 10px 0px 0px; }
       .contact .social a img {
