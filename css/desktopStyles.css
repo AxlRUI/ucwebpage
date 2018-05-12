@@ -598,7 +598,8 @@ header {
     transform: translate(-16px);
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    -webkit-transform: nowrap; }
+    -webkit-transform: nowrap;
+    background: red; }
     .contact .social a {
       margin: 0px 10px 0px 0px; }
       .contact .social a img {
