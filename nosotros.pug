@@ -825,7 +825,7 @@ body
 				img(src="resources/instagram-pin.png", alt="Instagram")
 	script
 		|$(document).ready(function(){
-		|	var actual = window.location.href.toString().split(window.location.host)[2];
+		|	var actual = window.location.href.toString().split(window.location.host)[1];
 		|	if(actual != "/nosotros.html"){
 		|		$("#mainHeader").addClass("none");
 		|		$("#header").removeClass("none").addClass("headerWhite");
@@ -837,7 +837,21 @@ body
 		|			$("#videoFilos").get(0).currentTime = 0;
 		|			$("#videoFilos").get(0).play();
 		|		}
-		|	} 
+		|	}else{
+		|		var actual = window.location.href.toString().split(window.location.host)[1];
+		|		if(actual != "/nosotros.html"){
+		|			$("#mainHeader").addClass("none");
+		|			$("#header").removeClass("none").addClass("headerWhite");
+		|			if(actual == "/nosotros.html#mision"){
+		|				$("#videoMision").get(0).currentTime = 0;
+		|				$("#videoMision").get(0).play();
+		|			}
+		|			if(actual == "/nosotros.html#filosofia"){
+		|				$("#videoFilos").get(0).currentTime = 0;
+		|				$("#videoFilos").get(0).play();
+		|			}
+		|		}
+		|	}
 		|});
 		|$(".contentNosotros").find("div").click(function(){
 		|	$("#mainHeader").addClass("none");
@@ -854,7 +868,7 @@ body
 		|	}
 		|});
 		|$(window).bind('hashchange', function() {
-		|	var actual = window.location.href.toString().split(window.location.host)[2];
+		|	var actual = window.location.href.toString().split(window.location.host)[1];
 		|	if(actual != "/nosotros.html"){
 		|		$("#mainHeader").addClass("none");
 		|		$("#header").removeClass("none").addClass("headerWhite");
@@ -870,5 +884,23 @@ body
 		|			$("#videoMision").get(0).pause();
 		|			$("#videoFilos").get(0).pause();
 		|		}
-		|	} 
+		|	}else{
+		|		var actual = window.location.href.toString().split(window.location.host)[1];
+		|		if(actual != "/nosotros.html"){
+		|			$("#mainHeader").addClass("none");
+		|			$("#header").removeClass("none").addClass("headerWhite");
+		|			if(actual == "/nosotros.html#mision"){
+		|				$("#videoMision").get(0).currentTime = 0;
+		|				$("#videoMision").get(0).play();
+		|			}
+		|			if(actual == "/nosotros.html#filosofia"){
+		|				$("#videoFilos").get(0).currentTime = 0;
+		|				$("#videoFilos").get(0).play();
+		|			}
+		|			if(actual == "/nosotros.html#directorio"){
+		|				$("#videoMision").get(0).pause();
+		|				$("#videoFilos").get(0).pause();
+		|			}
+		|		}
+		|	}
 		|});
