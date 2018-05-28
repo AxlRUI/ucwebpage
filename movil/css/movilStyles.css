@@ -1,0 +1,804 @@
+@font-face {
+  font-family: 'Avenir Next Condenced';
+  src: url(..resources/avenir.ttf); }
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Avenir Next Condenced', sans-serif; }
+
+a {
+  cursor: pointer; }
+
+#firstView {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  background-image: url("../resources/index/1080x1920.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+.margin {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: -50px; }
+
+#secondView {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1; }
+
+.firstNav {
+  padding-top: 70px;
+  width: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -o-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -o-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -moz-justify-content: space-between; }
+  .firstNav .nav-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -o-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -o-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    -webkit-align-self: flex-start;
+    -o-align-self: flex-start;
+    -ms-align-self: flex-start;
+    -moz-align-self: flex-start;
+    margin-left: 40px;
+    padding-right: 35px; }
+    .firstNav .nav-left .logo {
+      margin-left: 10px;
+      width: 80%;
+      height: 100%; }
+  .firstNav .nav-right {
+    margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    aling-items: flex-end;
+    -webkit-aling-items: flex-end;
+    -o-aling-items: flex-end;
+    -ms-aling-items: flex-end;
+    -moz-aling-items: flex-end; }
+    .firstNav .nav-right .nav-social {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      display: -webkit-flex;
+      display: -o-flex;
+      display: -ms-flex;
+      display: -moz-flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      -o-flex-direction: row;
+      -ms-flex-direction: row;
+      -moz-flex-direction: row; }
+      .firstNav .nav-right .nav-social img {
+        padding: 15px 5px;
+        width: 50px;
+        height: 50px; }
+    .firstNav .nav-right > .green-button {
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      -webkit-align-self: flex-end;
+      -o-align-self: flex-end;
+      -ms-align-self: flex-end;
+      -moz-align-self: flex-end; }
+
+.burger {
+  background-image: url("../resources/nav/burger.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-align-self: center;
+  -o-align-self: center;
+  -ms-align-self: center;
+  -moz-align-self: center;
+  width: 60px;
+  height: 50px; }
+
+.burger:hover {
+  background-image: url("../resources/nav/burger2.png"); }
+
+.green-button {
+  width: 190px;
+  height: 30px;
+  padding: 10px 5px;
+  text-align: center;
+  background-color: #83B93A;
+  font-weight: bold;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -o-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -moz-border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center; }
+  .green-button > div {
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-align-self: center;
+    -o-align-self: center;
+    -ms-align-self: center;
+    -moz-align-self: center;
+    font-size: 25px; }
+  .green-button a {
+    text-decoration: none;
+    color: white; }
+
+.index-play {
+  height: 150px;
+  width: 150px;
+  background-color: #003056;
+  bottom: 250px;
+  margin-left: 100px;
+  position: fixed;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -o-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -moz-border-radius: 100%;
+  opacity: 0.9;
+  hover-opacity: 1.0; }
+  .index-play .play {
+    padding: 35% 40%;
+    width: 27%;
+    height: 32%;
+    vertical-align: middle;
+    -webkit-vertical-align: middle;
+    -o-vertical-align: middle;
+    -ms-vertical-align: middle;
+    -moz-vertical-align: middle; }
+
+.d1997 {
+  width: 100%;
+  position: fixed;
+  bottom: 100px;
+  color: white;
+  text-align: center;
+  font-size: 35px; }
+
+.secondNav {
+  margin-top: 175px;
+  padding-top: 50px;
+  padding-left: 50px;
+  z-index: 10;
+  width: 50%;
+  position: fixed;
+  right: 100%;
+  font-size: 50px;
+  height: calc(100% - 300px); }
+  .secondNav ul {
+    list-style: none; }
+    .secondNav ul li {
+      display: block;
+      border-bottom: 1px solid #f2f2f2;
+      position: relative; }
+      .secondNav ul li a {
+        display: block;
+        color: #f2f2f2;
+        text-decoration: none;
+        padding: 20px 0px 10px 0px; }
+    .secondNav ul .children {
+      font-size: 40px;
+      width: 100%;
+      display: none;
+      position: relative;
+      z-index: 1000; }
+      .secondNav ul .children a {
+        padding: 5px 10px !important; }
+    .secondNav ul li:hover .children {
+      border: none;
+      display: block; }
+      .secondNav ul li:hover .children li {
+        display: block;
+        border: none; }
+        .secondNav ul li:hover .children li a {
+          margin-left: 20px;
+          border-bottom: none;
+          display: block;
+          color: #f2f2f2; }
+        .secondNav ul li:hover .children li a:hover {
+          color: #83B93A; }
+    .secondNav ul li:hover a {
+      border-bottom: 1px solid #83B93A;
+      color: #83B93A; }
+
+#secondView {
+  position: absolute;
+  height: 180%; }
+  #secondView .secondNav {
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2; }
+    #secondView .secondNav li {
+      width: 50%;
+      border-bottom: 1px solid #003056; }
+      #secondView .secondNav li .children li {
+        width: 100%;
+        border-bottom: none; }
+    #secondView .secondNav a {
+      color: #003056; }
+    #secondView .secondNav a:hover {
+      color: #83B93A; }
+  #secondView > .firstNavS {
+    position: fixed;
+    top: 0px !important;
+    z-index: 3;
+    width: 100%;
+    height: 175px;
+    background-color: #f2f2f2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -o-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -o-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between; }
+    #secondView > .firstNavS .nav-leftS {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      display: -webkit-flex;
+      display: -o-flex;
+      display: -ms-flex;
+      display: -moz-flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      -o-flex-direction: row;
+      -ms-flex-direction: row;
+      -moz-flex-direction: row; }
+      #secondView > .firstNavS .nav-leftS > .burger {
+        margin: 0px 30px 0px 40px; }
+      #secondView > .firstNavS .nav-leftS > .burger:hover {
+        background-image: url("../resources/nav/burger.png"); }
+      #secondView > .firstNavS .nav-leftS .logo {
+        -ms-flex-item-align: center;
+        align-self: center;
+        -webkit-align-self: center;
+        -o-align-self: center;
+        -ms-align-self: center;
+        -moz-align-self: center;
+        width: 130px;
+        height: 130px; }
+    #secondView > .firstNavS .nav-rightS {
+      -ms-flex-item-align: center;
+      align-self: center;
+      -webkit-align-self: center;
+      -o-align-self: center;
+      -ms-align-self: center;
+      -moz-align-self: center; }
+      #secondView > .firstNavS .nav-rightS > .green-button {
+        margin-right: 40px; }
+  #secondView .boxes {
+    margin-top: 200px;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column; }
+    #secondView .boxes .box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      display: -webkit-flex;
+      display: -o-flex;
+      display: -ms-flex;
+      display: -moz-flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      -o-flex-direction: row;
+      -ms-flex-direction: row;
+      -moz-flex-direction: row;
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      #secondView .boxes .box > img {
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+      #secondView .boxes .box > p {
+        position: absolute;
+        font-size: 50px;
+        color: white;
+        bottom: 50px;
+        margin-left: 50px; }
+  #secondView > .nav-socialS {
+    position: fixed;
+    z-index: 2;
+    top: 350px;
+    right: 40px; }
+    #secondView > .nav-socialS > div {
+      height: 50px;
+      width: 50px;
+      margin-bottom: 20px; }
+      #secondView > .nav-socialS > div > a img {
+        height: 100%;
+        width: 100%; }
+
+#logoprepUC {
+  position: fixed;
+  bottom: 150px;
+  left: 25%;
+  z-index: 2; }
+  #logoprepUC > a > img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    width: 500px; }
+
+#logoprepUCmenu {
+  display: none;
+  z-index: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -o-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  background-color: #83B93A;
+  position: fixed;
+  width: 500px;
+  height: 250px;
+  bottom: 322px;
+  padding: 50px 100px 150px 100px;
+  left: 15%;
+  border-radius: 40px 40px 40px 40px;
+  -webkit-border-radius: 40px 40px 40px 40px;
+  -o-border-radius: 40px 40px 40px 40px;
+  -ms-border-radius: 40px 40px 40px 40px;
+  -moz-border-radius: 40px 40px 40px 40px; }
+  #logoprepUCmenu a {
+    padding: 30px 20px 10px 20px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    text-decoration: none; }
+
+#UC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -o-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  position: absolute; }
+  #UC > div {
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+  #UC .one {
+    background-image: url("../resources/prepaUC/4_1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+  #UC #proceso {
+    background-image: url("../resources/prepaUC/2-02.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -webkit-animation: changeP 15s infinite ease;
+    animation: changeP 15s infinite ease; }
+  #UC #costos {
+    background-image: url("../resources/prepaUC/1-01.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+  #UC #plan {
+    background-image: url("../resources/prepaUC/2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -webkit-animation: changePlan 6s infinite ease;
+    animation: changePlan 6s infinite ease; }
+    #UC #plan #primer {
+      -webkit-animation-name: textD;
+      -webkit-animation: textD 10s infinite ease;
+      animation: textD 10s infinite ease; }
+    #UC #plan #tercer {
+      -webkit-animation-name: textD;
+      -webkit-animation: textC 10s infinite ease;
+      animation: textC 10s infinite ease; }
+    #UC #plan #primer, #UC #plan #tercer {
+      color: #f2f2f2;
+      position: fixed;
+      top: 250px;
+      font-size: 40px;
+      left: 50px; }
+  #UC #talleres {
+    background-image: url("../resources/prepaUC/5.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -webkit-animation: changeT 6s infinite ease;
+    animation: changeT 6s infinite ease; }
+    #UC #talleres #deportivos {
+      -webkit-animation-name: textD;
+      -webkit-animation: textD 6s infinite ease;
+      animation: textD 6s infinite ease; }
+    #UC #talleres #culturales {
+      -webkit-animation-name: textD;
+      -webkit-animation: textC 6s infinite ease;
+      animation: textC 6s infinite ease; }
+    #UC #talleres #culturales, #UC #talleres #deportivos {
+      color: #f2f2f2;
+      position: fixed;
+      top: 250px;
+      font-size: 45px;
+      left: 50px; }
+
+@-webkit-keyframes textD {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes textD {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes textC {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes textC {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes changeP {
+  0% {
+    background-image: url("../resources/prepaUC/2-02.jpg"); }
+  50% {
+    background-image: url("../resources/prepaUC/3-03.jpg"); } }
+
+@keyframes changeP {
+  0% {
+    background-image: url("../resources/prepaUC/2-02.jpg"); }
+  50% {
+    background-image: url("../resources/prepaUC/3-03.jpg"); } }
+
+@-webkit-keyframes changePlan {
+  0% {
+    background-image: url("../resources/prepaUC/2.jpg"); }
+  25% {
+    background-image: url("../resources/prepaUC/2.2.jpg"); }
+  75% {
+    background-image: url("../resources/prepaUC/3.jpg"); } }
+
+@keyframes changePlan {
+  0% {
+    background-image: url("../resources/prepaUC/2.jpg"); }
+  25% {
+    background-image: url("../resources/prepaUC/2.2.jpg"); }
+  75% {
+    background-image: url("../resources/prepaUC/3.jpg"); } }
+
+@-webkit-keyframes changeT {
+  0% {
+    background-image: url("../resources/prepaUC/5.jpg"); }
+  50% {
+    background-image: url("../resources/prepaUC/4.jpg"); } }
+
+@keyframes changeT {
+  0% {
+    background-image: url("../resources/prepaUC/5.jpg"); }
+  50% {
+    background-image: url("../resources/prepaUC/4.jpg"); } }
+
+.display {
+  display: none; }
+
+.display:target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex; }
+
+#nosotros {
+  background-color: #83B93A;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -2; }
+  #nosotros video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    margin-top: 100px;
+    width: 100%; }
+
+.first-footer {
+  position: fixed;
+  background-color: #003056;
+  z-index: 3;
+  color: white;
+  bottom: 0px;
+  width: 300px;
+  height: 50px;
+  left: 35%;
+  opacity: .8;
+  border-radius: 40px 40px 0px 0px;
+  -webkit-border-radius: 40px 40px 0px 0px;
+  -o-border-radius: 40px 40px 0px 0px;
+  -ms-border-radius: 40px 40px 0px 0px;
+  -moz-border-radius: 40px 40px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center; }
+  .first-footer > div {
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-align-self: center;
+    -o-align-self: center;
+    -ms-align-self: center;
+    -moz-align-self: center; }
+    .first-footer > div p {
+      font-size: 30px; }
+
+.second-footer {
+  display: none;
+  position: fixed;
+  background-color: #003056;
+  z-index: 3;
+  color: white;
+  bottom: 0px;
+  opacity: .8;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -o-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  height: 300px;
+  font-size: 20px;
+  right: 5%;
+  border-radius: 40px 40px 40px 0px;
+  -webkit-border-radius: 40px 40px 40px 0px;
+  -o-border-radius: 40px 40px 40px 0px;
+  -ms-border-radius: 40px 40px 40px 0px;
+  -moz-border-radius: 40px 40px 40px 0px; }
+  .second-footer > .foot {
+    height: 100px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -o-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row; }
+    .second-footer > .foot > img {
+      height: 60px;
+      margin: 20px; }
+  .second-footer > .foot2 {
+    margin: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -o-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -o-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between; }
+    .second-footer > .foot2 > div {
+      padding: 0px 10px; }
+  .second-footer > .foot3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center; }
+    .second-footer > .foot3 > img {
+      width: 30px;
+      height: 30px;
+      padding: 0px 10px; }
+  .second-footer > .foot4 {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -o-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    width: 100%;
+    bottom: 0px; }
+    .second-footer > .foot4 > div {
+      border-radius: 20px 20px 0px 0px;
+      -webkit-border-radius: 20px 20px 0px 0px;
+      -o-border-radius: 20px 20px 0px 0px;
+      -ms-border-radius: 20px 20px 0px 0px;
+      -moz-border-radius: 20px 20px 0px 0px;
+      background-color: #83B93A; }
+      .second-footer > .foot4 > div > p {
+        padding: 5px 40px; }
