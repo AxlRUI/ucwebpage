@@ -1,0 +1,540 @@
+$hard_pink: #990066
+$cu_green: #83b93a
+$hard_blue: #003056
+
+@font-face
+	font-family: 'Avenir Next Condenced'
+	src: url(../resources/avenir.ttf)
+
+*
+	padding: 0
+	margin: 0
+	font-family: 'Avenir Next Condenced', sans-serif
+	
+
+a
+	text-decoration: none
+	cursor: pointer
+
+=transition($align)
+	-o-transition: $align
+	-ms-transition: $align
+	-moz-transition: $align
+	transition: $align
+	-webkit-transition: $align
+
+=transform($align)
+	-o-transform: $align
+	-ms-transform: $align
+	-moz-transform: $align
+	transform: $align
+	-webkit-transform: $align
+
+
+=flex() 
+  display: -webkit-flex
+  display: -o-flex
+  display: -ms-flex
+  display: -moz-flex
+  display: flex
+
+=flex-normal($align) 
+  -webkit-flex: $align
+  -o-flex: $align
+  -ms-flex: $align
+  -moz-flex: $align
+  flex: $align
+
+=align-items($align) 
+  -o-align-items: $align
+  -ms-align-items: $align
+  -moz-align-items: $align
+  align-items: $align
+  -webkit-align-items: $align
+
+=flex-grow($align) 
+  -o-flex-grow: $align
+  -ms-flex-grow: $align
+  -moz-flex-grow: $align
+  flex-grow: $align
+  -webkit-flex-grow: $align
+
+
+=justify-content($align) 
+  -o-justify-content: $align
+  -ms-justify-content: $align
+  -moz-justify-content: $align
+  justify-content: $align
+  -webkit-justify-content: $align
+
+=flex-direction($align) 
+  -o-flex-direction: $align
+  -ms-flex-direction: $align
+  -moz-flex-direction: $align
+  flex-direction: $align
+  -webkit-flex-direction: $align
+
+=border-radius($align) 
+  -o-border-radius: $align
+  -ms-border-radius: $align
+  -moz-border-radius: $align
+  border-radius: $align
+  -webkit-border-radius: $align
+
+body
+	background: $cu_green
+	overflow: scroll
+header
+	z-index: 10
+	position: fixed
+	width: 100%
+	height: 180px
+	+flex()
+	+justify-content(space-around)
+	+align-items(center)
+	+flex-direction(column)
+	nav
+		+flex()
+		+align-items(center)
+		width: 90%
+	.secondNav
+		ul, ol
+			list-style: none
+		div > ul >li 
+			float: left
+		li ul 
+			display: none
+			position: absolute
+			min-width: 100%
+		li:hover > ul
+			display: block
+			padding-top: 40px
+			a
+				border-right: none
+		.listHorizontal
+			li
+				float: left
+			.head
+				font-weight: normal
+		div
+			+transition(400ms ease)
+			padding: 0px 0px 15px 0px
+			a
+				display: block
+				padding: 1px 10px 1px 10px
+				border-right: 2px solid white
+				color: white
+				+transition(400ms ease)
+				font-size: 15px
+				font-weight: normal
+				//background: green
+			.greenHead
+				color: $cu_green !important
+				cursor: initial
+			.greenHead:hover
+				text-decoration: none
+			.greenHeadContainer
+				margin-bottom: 8px
+				padding: 0
+			.greenHeadContainer:hover
+				border: none
+			a.final
+				border-right: none
+				padding-right: 0
+			a:hover
+				font-weight: normal
+				color: $cu_green
+				text-decoration: underline $cu_green
+		div:hover
+			border-bottom: 2px solid white
+	.firstNav
+		+justify-content(space-between)
+		div
+			margin: 10px
+			margin-left: 0
+			margin-bottom: 0
+			a
+				.logo
+					width: 300px
+		.firstContainer
+			+flex()
+			+flex-direction(row)
+		.pinContainer
+			+flex()
+			+justify-content(center)
+			+align-items(center)
+			+flex-direction(row)
+			div 
+				height: 26px
+				a
+					width: 26px
+					height: 26px
+					.pin
+						width: 26px
+						+transition(400ms ease)
+					.pin:hover
+						width: 29px
+
+.btn-green
+	color: white
+	background: $cu_green
+	padding: 5px 10px 5px 10px
+	font-weight: normal
+	font-size: 18px
+	+border-radius(8px)
+	+transition(400ms ease)
+.btn-green:hover
+	background: white
+	color: $cu_green
+
+.content, .content2
+	margin: 0
+	padding: 0
+	display: block
+	background: black
+	position: absolute
+	height: 100%
+	width: 100%
+	z-index: 2
+	
+.content2
+	margin-top: 140px
+	height: calc(100% - 60px)
+	z-index: 1
+	background: white
+	+flex()
+	+flex-direction(column)
+	+justify-content(space-bewteen)
+	+align-items(stretch)
+	> div
+		+flex-grow(1)
+		+flex()
+		> div
+			+flex-grow(1)
+			+flex()
+			background-repeat: no-repeat
+			background-size: 100% 100%
+			>div
+				+flex-grow(1)
+				background-repeat: no-repeat
+				background-size: 100% 100%
+	div
+		position: relative
+		cursor: pointer
+		+transition(400ms ease)
+		span
+			position: absolute
+			left: 50%
+			bottom: 20px
+			color: white
+			width: 100%
+			font-size: 28px
+			font-weight: normal
+			text-align: center
+			-webkit-transform: translate(-50%)
+			-o-transform: translate(-50%)
+			-ms-transform: translate(-50%)
+			-moz-transform: translate(-50%)
+			transform: translate(-50%)
+			+transition(400ms ease)
+	div:hover
+		> span
+			color: $cu_green
+			
+	.little
+		+flex-direction(column)
+	.big
+		+flex-normal(65%)
+		+transition(400ms ease)
+		position: relative
+		#arrowL, #arrowR
+			position: absolute
+			width: 30px
+			
+			cursor: pointer
+			opacity: 0.8
+			+transition(400ms ease)
+		#arrowL
+			left: 18px
+			-webkit-transform: rotate(180deg) translate(0%, 50%)
+			-o-transform: rotate(180deg) translate(0%, 50%)
+			-ms-transform: rotate(180deg) translate(0%, 50%)
+			-moz-transform: rotate(180deg) translate(0%, 50%)
+			transform: rotate(180deg) translate(0%, 50%)
+			top: calc(50%)
+		#arrowR
+			top: 50%
+			-webkit-transform: translate(0%, -50%)
+			-o-transform: translate(0%, -50%)
+			-ms-transform: translate(0%, -50%)
+			-moz-transform: translate(0%, -50%)
+			transform: translate(0%, -50%)
+			right: 18px
+		#arrowL:hover, #arrowR:hover
+			opacity: 1
+			width: 50px
+
+
+#video1
+	position: fixed
+	z-index: 2
+	height: 100%
+	width: 100%
+	background: rgba(0,0,0,0.7)
+	display: none
+
+.none
+	display: none
+.headerWhite
+	background: #f2f2f2
+	height: 64px
+	+flex-direction(row)
+	+justify-content(center)
+	+align-items(center)
+	.pinContainer
+		position: fixed
+		float: right
+		right: 30px
+		top: 140px
+		.pin
+			width: 26px
+			+transition(400ms ease)
+		.pin:hover
+			width: 29px
+	.firstNav
+		+justify-content(space-between)
+		ul, ol
+			list-style: none
+			//height: 64px
+			+flex()
+			+align-items(center)
+		div > ul >li 
+			float: left
+			height: 64px
+			margin-top: 32px
+		li ul 
+			display: none
+			position: absolute
+			min-width: 100%
+		li:hover > ul
+			display: block
+			padding-top: 0
+			a
+				border-right: none
+		ul > li > ul
+			background: rgba(255,255,255,0.8)
+			margin-top: 21px
+		.listHorizontal
+			li
+				float: left
+			.head
+				font-weight: normal
+
+		div
+			border: none
+			padding: 0
+			+flex()
+			.greenHead
+				color: $cu_green !important
+				cursor: initial
+				margin: 0
+			.greenHead:hover
+				text-decoration: none
+			.greenHeadContainer
+				margin: 0
+				margin-bottom: 8px
+				padding: 0
+				+flex-direction(column)
+			.greenHeadContainer:hover
+				border: none
+			a
+				display: block
+				padding: 1px 10px 1px 10px
+				border-right: 2px solid $hard_blue 
+				color: $hard_blue
+				+transition(400ms ease)
+				font-weight: normal
+				font-size: 15px
+			a.final
+				border-right: none
+			a:hover
+				font-weight: normal
+				color: $cu_green
+				text-decoration: underline $cu_green
+			.logo
+				width: 52px;
+				border: none !important
+
+			.btn-green
+				color: white
+				border: none
+				font-size: 16px
+		
+.playButton
+	position: relative
+	bottom: 300px
+	left: 128px
+	background: $hard_blue
+	width: 100px
+	height: 100px
+	border-radius: 100%
+	+flex()
+	+justify-content(center)
+	+align-items(center)
+	+transition(400ms ease)
+	img
+		width: 30px
+		margin-top: 5px
+		margin-left: 5px
+.playButton:hover
+	cursor: pointer
+	background: $cu_green
+
+.textVideo
+	position: relative
+	bottom: 280px
+	left: 128px
+	font-weight: 800
+	font-size: 28px
+	color: white
+	width: calc(100% - 128px)
+
+.contact
+	position: fixed
+	bottom: 0
+	
+	z-index: 10
+	left: 50%
+	-webkit-transform: translate(-50%)
+	-o-transform: translate(-50%)
+	-ms-transform: translate(-50%)
+	-moz-transform: translate(-50%)
+	transform: translate(-50%)
+	font-size: 18px
+	color: white
+	cursor: pointer
+	+transition(400ms ease)
+	.specialP
+		font-size: 18px
+		padding: 2px 80px 8px 80px
+		border-radius: 40px 40px 0px 0px
+		background: $hard_blue
+	> div
+		display: none
+	.info
+		position: fixed
+		z-index: -1
+		background: $hard_blue
+		width: 400%
+		height: 240px
+		top: calc(-240px + 100%)
+		border-radius: 10px
+		left: -150%
+		
+		
+		div
+			a
+				img
+					width: 200px
+	.social
+		position: absolute
+		top: -50px
+		flex-wrap: nowrap
+		-webkit-transform: nowrap
+		width: 100%
+		+justify-content(center)
+		+align-items(center)
+		a 
+			
+			margin: 0px 10px 0px 0px
+			
+			img
+				width: 28px
+				+transition(400ms ease)
+		a:hover
+			img
+				width: 30px
+
+.contact:hover
+
+	.specialP
+		background: $cu_green
+	.social
+		+flex()
+	> div
+		opacity: 0.8
+		z-index: -1
+		display: initial
+		.internal
+			+flex()
+			height: 100%
+			+flex-direction(column)
+			+justify-content(space-around)
+			+align-items(center)
+			> .one
+				+flex-normal(1)
+				+flex()
+				+align-items(center)
+				width: 80%
+			> .two
+				+flex-normal(2)
+				+flex()
+				+flex-direction(row)
+				width: 80%
+				font-size: 18px
+				.two_one
+					+flex-normal(1)
+				.two_two
+					+flex-normal(1)
+					text-align: right
+
+	> div:hover
+		display: initial
+	> .social:hover
+		+flex()
+
+
+@media only screen and (min-width: 1600px)
+	
+	header
+		height: 200px;
+		.firstNav
+			div
+				a
+					.logo
+						width: 380px
+			.pinContainer
+				div
+					a 
+						.pin
+							width: 30px
+						.pin:hover
+							width: 36px
+		.secondNav
+			div
+				a
+					font-size: 22px
+	.btn-green
+		font-size: 22px
+	.textVideo
+		font-size: 30px
+	.headerWhite
+		height: 80px
+		.pinContainer
+			.pin
+				width: 32px
+			.pin:hover
+				width: 38px
+		.firstNav
+			div
+				a 
+					font-size: 20px
+				.logo
+					width: 60px
+				.btn-green
+					font-size: 20px
+	.contact
+		font-size: 28px
+	.contact:hover
+		>div .internal > .two
+			font-size: 22px

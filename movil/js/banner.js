@@ -4,7 +4,7 @@ $(document).ready(function(){
 	var L = document.getElementById("arrowL");
 
 	//$(banner).css("background-image","url('../resources/desk/banner1.png')");
-	var links = ["../resources/banners/bannerwebnuevo.png","../resources/banners/UCSLP_bannerweb_ceneval.png","../resources/banners/UCSLP_CAFD_Digital_banner.png","../resources/banners/UCSLP_Campan.png","../resources/desk/banner1.jpg"]
+	var links = ["https://axlrui.github.io/ucwebpage.github.io/resources/banners/bannerwebnuevo.png","https://axlrui.github.io/ucwebpage.github.io/resources/banners/UCSLP_bannerweb_ceneval.png","https://axlrui.github.io/ucwebpage.github.io/resources/banners/UCSLP_CAFD_Digital_banner.png","https://axlrui.github.io/ucwebpage.github.io/resources/banners/UCSLP_Campan.png","https://axlrui.github.io/ucwebpage.github.io/resources/desk/banner1.jpg"]
 	
 	var aux = 0;
 	//alert($aux);

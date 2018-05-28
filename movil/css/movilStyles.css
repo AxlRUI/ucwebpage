@@ -228,7 +228,11 @@ a {
   bottom: 100px;
   color: white;
   text-align: center;
+<<<<<<< HEAD:movil/css/movilStyles.css
   font-size: 35px; }
+=======
+  font-size: 30px; }
+>>>>>>> master:css/movilStyles.css
 
 .secondNav {
   margin-top: 175px;

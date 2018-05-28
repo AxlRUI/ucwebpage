@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Prepa Cuauhtémoc
+	link(rel="stylesheet", href="css/desktopStylesPrepaUC.css")
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+body
+	header
+		nav.firstNav
+			div.firstContainer
+				div
+					a(href="/index.html")
+						img(src="resources/culogo.png", alt="Universidad Cuauhtemoc").logo
+				div(style="margin-left:24px").pinContainer
+					div
+						a(href="https://www.facebook.com/ucslp/")
+							img(src="resources/facebook-pin.png", alt="Facebook").pin
+					div
+						a(href="https://www.instagram.com/guerreros_ucslp/")
+							img(src="resources/instagram-pin.png", alt="Instagram").pin
+					div
+						a(href="https://www.youtube.com/user/UCUAUHTEMOCSLP")
+							img(src="resources/youtube-pin.png", alt="Youtube").pin
+					div
+						a(href="https://twitter.com/CuauhtemocSLP?lang=es")
+							img(src="resources/twitter-pin.png", alt="Twitter").pin
+					div
+						a(href="http://servicios.ucslp.edu.mx/")
+							img(src="resources/uc-pin.png", alt="UC").pin
+					div
+						a(href="https://www.ucslp.edu.mx/descargas/calendario/ucslp_calendario.pdf")
+							img(src="resources/calendar-pin.png", alt="Calendario").pin
+			div
+				a(href="#").btn-green
+					|¡Registrate!
+	img(src="resources/PrepaCu.png", alt="Prepa Cuauhtémoc").prepaLogo
+	nav.floatNav
+		div
+			a(href="#aboutus").initial|¿Quiénes somos?
+			a(href="#proceso")|Proceso de ingreso a preparatoria
+			a(href="#costos")|Costos Prepa UC
+			a(href="#plan")|Plan de Estudios
+			a(href="#talleres").final|Talleres
+	section.contentPrepa#contentPrepa
+		video(src="resources/HomePrepa.mp4" autoplay width="100%" loop)#MainVideo
+		div#aboutus
+			video(src="resources/PrepaQuienes.mp4" width="100%" loop)
+		div#proceso
+			video(src="resources/PrepaProceso.mp4" width="100%" loop)
+		div#costos
+			video(src="resources/PrepaCostos.mp4" width="100%" loop)
+		div#plan
+			div.uno
+				div
+					h3
+						|I SEMESTRE
+					p
+						|-Matemáticas I
+					p
+						|-Química I
+					p
+						|-Ética y Valores I
+					p
+						|-Introducción a las 
+					p
+						|Ciencias Sociales
+					p
+						|-Taller de Lectura y Redacción I
+					p
+						|-Lengya Adicional al Español I
+					p
+						|-Informática I
+				div
+					h3
+						|II SEMESTRE
+					p
+						|-Matemáticas II
+					p
+						|-Química II
+					p
+						|-Ética y Valores II
+					p
+						|-Historia de México
+					p
+						|-Taller de Lectura y Redacción II
+					p
+						|-Lengua Adicional al Español II
+					p
+						|-Informática II
+			div.dos
+				div
+					h3
+						|III SEMESTRE
+					p
+						|-Matemáticas III
+					p
+						|-Geografía 
+					p
+						|-Física I
+					p
+						|-Historia de México II
+					p
+						|-Literatura I
+					p
+						|-Lengua Adicional al Español III
+					p
+						|-Informática III
+				div
+					h3
+						|IV SEMESTRE
+					p
+						|-Matemáticas IV
+					p
+						|-Biología I 
+					p
+						|-Física II
+					p
+						|-Estructura Socioeconómica
+					p
+						|-Literatura IV 
+					p
+						|-Lengua Adicional al Español IV
+					p
+						|-Informática IV
+			div.tres
+				div2
+					h3
+						|V SEMESTRE
+					p
+						|-Etimologías Grecolatinas
+					p
+						|-Biología II 
+					p
+						|-Historia Universal Contemporánea
+					p
+						|-Cálculo Diferencial
+					p
+						|-Economía I
+					p
+						|-Lengua Adicional al Español V
+					p
+						|-Informática V 
+				div
+					h3
+						|VI SEMESTRE
+					p
+						|-Filosofía
+					p
+						|-Ecología y Medio Ambiente 
+					p
+						|-Metodología de la Investigación
+					p
+						|-Cálculo Integral
+					p
+						|-Economía II
+					p
+						|-Ciencias de la Salud II
+					p
+						|-Lengua Adicional al Español VI
+					p
+						|-Informática VI 
+		div#talleres
+			div.uno
+				h3
+					|Deportivos
+				p
+					|-Basketball
+				p
+					|-Football
+				p
+					|-Volleyball
+				p
+					|-Atletismo
+			div.dos
+				h3
+					|Culturales
+				p
+					|-Cocina
+				p
+					|-Música
+				p
+					|-Baile moderno
+				p
+					|-Cartonaje
+				p
+					|-Pintura
+		script
+			|	$('.floatNav').find("div").children().on("click", function(){
+			|		$(".contentPrepa").find("video").each(function(){
+			|			$(this).get(0).pause();
+			|			$(this).get(0).currentTime = 0;
+			|		})
+			|		switch($(this).attr('href')){
+			|			case '#aboutus':
+			|				$("#aboutus").find("video").get(0).play();
+			|			break;
+			|			case '#proceso':
+			|				$("#proceso").find("video").get(0).play();
+			|			break;
+			|			case '#costos':
+			|				$("#costos").find("video").get(0).play();
+			|			break;
+			|			default:
+			|			break;
+			|		}
+			|	});
+	footer.contact
+		p.specialP
+			|Contacto
+		div.info
+			div.internal
+				div.one
+					a(href="")
+						img(src="resources/culogo.png", alt="Universidad Cuauhtemoc")
+				div.two
+					div.two_one
+						p
+							|Dirección: Salvador Nava Martínez No.3291
+						p
+							|Col. Viveros. San Luis Potosí, México.
+						p
+							|C.P. 78290
+					div.two_two
+						p
+							|Lada Sin Costo: 01 800 00 UCSLP (82757)
+						p
+							|Teléfonos: (444) 500.45.00 / (444) 817.62.30
+						p
+							|WhatsApp: (444) 408.30.27
+						p
+							|Email: contacto@ucslp.net
+		div.social
+			a(href="")
+				img(src="resources/facebook-pin.png", alt="Facebook")
+			a(href="")
+				img(src="resources/twitter-pin.png", alt="Twitter")
+			a(href="")
+				img(src="resources/instagram-pin.png", alt="Instagram")
