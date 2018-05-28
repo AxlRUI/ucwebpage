@@ -26,7 +26,7 @@
     <nav class="secondNav">
       <div>
         <ul class="headerMain">
-          <li style="margin-left:0; padding-left:0;"><a href="/nosotros.html" style="margin-left:0; padding-left:0;">Nosotros</a>
+          <li style="margin-left:0; padding-left:0;"><a href="nosotros.html" style="margin-left:0; padding-left:0;">Nosotros</a>
             <ul class="headerMain">
               <li><a href="#mision">Misión, Visión, Valores</a></li>
               <li><a href="#filosofia">Filosofía</a></li>
@@ -77,7 +77,7 @@
       <div>
         <ul><a class="logo" href=""><img class="logo" src="resources/culogo_round.png" alt="Universidad Cuauhtemoc"/></a></ul>
         <ul>
-          <li class="ul64" style="margin-left:0; padding-left:0;"><a href="/nosotros.html" style="margin-left:0; padding-left:0;">Nosotros</a>
+          <li class="ul64" style="margin-left:0; padding-left:0;"><a href="nosotros.html" style="margin-left:0; padding-left:0;">Nosotros</a>
             <ul>
               <li><a href="#mision">Misión, Visión, Valores</a></li>
               <li><a href="l#filosofia">Filosofía</a></li>
@@ -540,7 +540,7 @@
   </footer>
   <script>
     $(document).ready(function(){
-    	var actual = window.location.href.toString().split(window.location.host)[2];
+    	var actual = window.location.href.toString().split(window.location.host)[1];
     	if(actual != "/nosotros.html"){
     		$("#mainHeader").addClass("none");
     		$("#header").removeClass("none").addClass("headerWhite");
@@ -552,7 +552,20 @@
     			$("#videoFilos").get(0).currentTime = 0;
     			$("#videoFilos").get(0).play();
     		}
-    	} 
+    		actual = window.location.href.toString();
+    		if(actual == "https://axlrui.github.io/ucwebpage.github.io/nosotros.html"){
+    			$("#mainHeader").removeClass("none");
+    			$("#header").addClass("none").removeClass("headerWhite");
+    		}
+    		if(actual == "https://axlrui.github.io/ucwebpage.github.io/nosotros.html#mision"){
+    			$("#videoMision").get(0).currentTime = 0;
+    			$("#videoMision").get(0).play();
+    		}
+    		if(actual == "https://axlrui.github.io/ucwebpage.github.io/nosotros.html#filosofia"){
+    			$("#videoFilos").get(0).currentTime = 0;
+    			$("#videoFilos").get(0).play();
+    		}
+    	}
     });
     $(".contentNosotros").find("div").click(function(){
     	$("#mainHeader").addClass("none");
@@ -569,7 +582,7 @@
     	}
     });
     $(window).bind('hashchange', function() {
-    	var actual = window.location.href.toString().split(window.location.host)[2];
+    	var actual = window.location.href.toString().split(window.location.host)[1];
     	if(actual != "/nosotros.html"){
     		$("#mainHeader").addClass("none");
     		$("#header").removeClass("none").addClass("headerWhite");
@@ -585,7 +598,24 @@
     			$("#videoMision").get(0).pause();
     			$("#videoFilos").get(0).pause();
     		}
-    	} 
+    		actual = window.location.href.toString();
+    		if(actual == "https://axlrui.github.io/ucwebpage.github.io/nosotros.html"){
+    			$("#mainHeader").removeClass("none");
+    			$("#header").addClass("none").removeClass("headerWhite");
+    		}
+    		if(actual == "https://axlrui.github.io/ucwebpage.github.io/nosotros.html#mision"){
+    			$("#videoMision").get(0).currentTime = 0;
+    			$("#videoMision").get(0).play();
+    		}
+    		if(actual == "https://axlrui.github.io/ucwebpage.github.io/nosotros.html#filosofia"){
+    			$("#videoFilos").get(0).currentTime = 0;
+    			$("#videoFilos").get(0).play();
+    		}
+    		if(actual == "https://axlrui.github.io/ucwebpage.github.io/nosotros.html#directorio"){
+    			$("#videoMision").get(0).pause();
+    			$("#videoFilos").get(0).pause();
+    		}
+    	}
     });
   </script>
 </body>
