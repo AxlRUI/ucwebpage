@@ -128,6 +128,16 @@ header
 				font-size: 15px
 				font-weight: normal
 				//background: green
+			.greenHead
+				color: $cu_green !important
+				cursor: initial
+			.greenHead:hover
+				text-decoration: none
+			.greenHeadContainer
+				margin-bottom: 8px
+				padding: 0
+			.greenHeadContainer:hover
+				border: none
 			a.final
 				border-right: none
 				padding-right: 0
@@ -188,8 +198,8 @@ header
 	z-index: 2
 	
 .content2
-	margin-top: 128px
-	height: calc(100% - 64px)
+	margin-top: 140px
+	height: calc(100% - 60px)
 	z-index: 1
 	background: white
 	+flex()
@@ -230,7 +240,6 @@ header
 	div:hover
 		> span
 			color: $cu_green
-			font-size: 30px
 			
 	.little
 		+flex-direction(column)
@@ -294,7 +303,6 @@ header
 			width: 29px
 	.firstNav
 		+justify-content(space-between)
-			
 		ul, ol
 			list-style: none
 			//height: 64px
@@ -314,17 +322,31 @@ header
 			a
 				border-right: none
 		ul > li > ul
-			background: rgba(255,255,255,0.6)
-			margin-top: 20px
+			background: rgba(255,255,255,0.8)
+			margin-top: 21px
 		.listHorizontal
 			li
 				float: left
 			.head
 				font-weight: normal
+
 		div
 			border: none
 			padding: 0
 			+flex()
+			.greenHead
+				color: $cu_green !important
+				cursor: initial
+				margin: 0
+			.greenHead:hover
+				text-decoration: none
+			.greenHeadContainer
+				margin: 0
+				margin-bottom: 8px
+				padding: 0
+				+flex-direction(column)
+			.greenHeadContainer:hover
+				border: none
 			a
 				display: block
 				padding: 1px 10px 1px 10px
@@ -347,9 +369,10 @@ header
 				color: white
 				border: none
 				font-size: 16px
+		
 .playButton
 	position: relative
-	bottom: 220px
+	bottom: 300px
 	left: 128px
 	background: $hard_blue
 	width: 100px
@@ -369,7 +392,7 @@ header
 
 .textVideo
 	position: relative
-	bottom: 200px
+	bottom: 280px
 	left: 128px
 	font-weight: 800
 	font-size: 28px
@@ -379,8 +402,7 @@ header
 .contact
 	position: fixed
 	bottom: 0
-	background: $hard_blue
-	opacity: 0.8
+	
 	z-index: 10
 	left: 50%
 	-webkit-transform: translate(-50%)
@@ -389,11 +411,14 @@ header
 	-moz-transform: translate(-50%)
 	transform: translate(-50%)
 	font-size: 18px
-	padding: 2px 80px 8px 80px
-	border-radius: 40px 40px 0px 0px
 	color: white
 	cursor: pointer
 	+transition(400ms ease)
+	.specialP
+		font-size: 18px
+		padding: 2px 80px 8px 80px
+		border-radius: 40px 40px 0px 0px
+		background: $hard_blue
 	> div
 		display: none
 	.info
@@ -405,7 +430,7 @@ header
 		top: calc(-240px + 100%)
 		border-radius: 10px
 		left: -150%
-		opacity: 0.9
+		
 		
 		div
 			a
@@ -414,15 +439,11 @@ header
 	.social
 		position: absolute
 		top: -50px
-		z-index: 10
-		-webkit-transform: translate(-16px)
-		-o-transform: translate(-16px)
-		-ms-transform: translate(-16px)
-		-moz-transform: translate(-16px)
-		transform: translate(-16px)
 		flex-wrap: nowrap
 		-webkit-transform: nowrap
-		background: red
+		width: 100%
+		+justify-content(center)
+		+align-items(center)
 		a 
 			
 			margin: 0px 10px 0px 0px
@@ -435,11 +456,14 @@ header
 				width: 30px
 
 .contact:hover
-	background: $cu_green
-	opacity: 1
-	z-index: 20
+
+	.specialP
+		background: $cu_green
+	.social
+		+flex()
 	> div
-		z-index: -40
+		opacity: 0.8
+		z-index: -1
 		display: initial
 		.internal
 			+flex()
@@ -466,6 +490,9 @@ header
 
 	> div:hover
 		display: initial
+	> .social:hover
+		+flex()
+
 
 @media only screen and (min-width: 1600px)
 	

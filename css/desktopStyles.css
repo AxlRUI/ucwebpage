@@ -99,6 +99,16 @@ header {
       -webkit-transition: 400ms ease;
       font-size: 15px;
       font-weight: normal; }
+    header .secondNav div .greenHead {
+      color: #83b93a !important;
+      cursor: initial; }
+    header .secondNav div .greenHead:hover {
+      text-decoration: none; }
+    header .secondNav div .greenHeadContainer {
+      margin-bottom: 8px;
+      padding: 0; }
+    header .secondNav div .greenHeadContainer:hover {
+      border: none; }
     header .secondNav div a.final {
       border-right: none;
       padding-right: 0; }
@@ -214,8 +224,8 @@ header {
   z-index: 2; }
 
 .content2 {
-  margin-top: 128px;
-  height: calc(100% - 64px);
+  margin-top: 140px;
+  height: calc(100% - 60px);
   z-index: 1;
   background: white;
   display: -webkit-flex;
@@ -316,8 +326,7 @@ header {
       transition: 400ms ease;
       -webkit-transition: 400ms ease; }
   .content2 div:hover > span {
-    color: #83b93a;
-    font-size: 30px; }
+    color: #83b93a; }
   .content2 .little {
     -o-flex-direction: column;
     -ms-flex-direction: column;
@@ -456,8 +465,8 @@ header {
       .headerWhite .firstNav li:hover > ul a {
         border-right: none; }
     .headerWhite .firstNav ul > li > ul {
-      background: rgba(255, 255, 255, 0.6);
-      margin-top: 20px; }
+      background: rgba(255, 255, 255, 0.8);
+      margin-top: 21px; }
     .headerWhite .firstNav .listHorizontal li {
       float: left; }
     .headerWhite .firstNav .listHorizontal .head {
@@ -472,6 +481,25 @@ header {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
+      .headerWhite .firstNav div .greenHead {
+        color: #83b93a !important;
+        cursor: initial;
+        margin: 0; }
+      .headerWhite .firstNav div .greenHead:hover {
+        text-decoration: none; }
+      .headerWhite .firstNav div .greenHeadContainer {
+        margin: 0;
+        margin-bottom: 8px;
+        padding: 0;
+        -o-flex-direction: column;
+        -ms-flex-direction: column;
+        -moz-flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-flex-direction: column; }
+      .headerWhite .firstNav div .greenHeadContainer:hover {
+        border: none; }
       .headerWhite .firstNav div a {
         display: block;
         padding: 1px 10px 1px 10px;
@@ -501,7 +529,7 @@ header {
 
 .playButton {
   position: relative;
-  bottom: 220px;
+  bottom: 300px;
   left: 128px;
   background: #003056;
   width: 100px;
@@ -544,7 +572,7 @@ header {
 
 .textVideo {
   position: relative;
-  bottom: 200px;
+  bottom: 280px;
   left: 128px;
   font-weight: 800;
   font-size: 28px;
@@ -554,8 +582,6 @@ header {
 .contact {
   position: fixed;
   bottom: 0;
-  background: #003056;
-  opacity: 0.8;
   z-index: 10;
   left: 50%;
   -webkit-transform: translate(-50%);
@@ -564,8 +590,6 @@ header {
   -moz-transform: translate(-50%);
   transform: translate(-50%);
   font-size: 18px;
-  padding: 2px 80px 8px 80px;
-  border-radius: 40px 40px 0px 0px;
   color: white;
   cursor: pointer;
   -o-transition: 400ms ease;
@@ -573,6 +597,11 @@ header {
   -moz-transition: 400ms ease;
   transition: 400ms ease;
   -webkit-transition: 400ms ease; }
+  .contact .specialP {
+    font-size: 18px;
+    padding: 2px 80px 8px 80px;
+    border-radius: 40px 40px 0px 0px;
+    background: #003056; }
   .contact > div {
     display: none; }
   .contact .info {
@@ -583,23 +612,30 @@ header {
     height: 240px;
     top: calc(-240px + 100%);
     border-radius: 10px;
-    left: -150%;
-    opacity: 0.9; }
+    left: -150%; }
     .contact .info div a img {
       width: 200px; }
   .contact .social {
     position: absolute;
     top: -50px;
-    z-index: 10;
-    -webkit-transform: translate(-16px);
-    -o-transform: translate(-16px);
-    -ms-transform: translate(-16px);
-    -moz-transform: translate(-16px);
-    transform: translate(-16px);
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     -webkit-transform: nowrap;
-    background: red; }
+    width: 100%;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center; }
     .contact .social a {
       margin: 0px 10px 0px 0px; }
       .contact .social a img {
@@ -612,14 +648,58 @@ header {
     .contact .social a:hover img {
       width: 30px; }
 
-.contact:hover {
-  background: #83b93a;
-  opacity: 1;
-  z-index: 20; }
-  .contact:hover > div {
-    z-index: -40;
-    display: initial; }
-    .contact:hover > div .internal {
+.contact:hover .specialP {
+  background: #83b93a; }
+
+.contact:hover .social {
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contact:hover > div {
+  opacity: 0.8;
+  z-index: -1;
+  display: initial; }
+  .contact:hover > div .internal {
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center; }
+    .contact:hover > div .internal > .one {
+      -webkit-flex: 1;
+      -o-flex: 1;
+      -ms-flex: 1;
+      -moz-flex: 1;
+      -webkit-box-flex: 1;
+      flex: 1;
       display: -webkit-flex;
       display: -o-flex;
       display: -ms-flex;
@@ -627,89 +707,64 @@ header {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      height: 100%;
-      -o-flex-direction: column;
-      -ms-flex-direction: column;
-      -moz-flex-direction: column;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      flex-direction: column;
-      -webkit-flex-direction: column;
-      -o-justify-content: space-around;
-      -ms-justify-content: space-around;
-      -moz-justify-content: space-around;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      -webkit-justify-content: space-around;
       -o-align-items: center;
       -ms-align-items: center;
       -moz-align-items: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      -webkit-align-items: center; }
-      .contact:hover > div .internal > .one {
+      -webkit-align-items: center;
+      width: 80%; }
+    .contact:hover > div .internal > .two {
+      -webkit-flex: 2;
+      -o-flex: 2;
+      -ms-flex: 2;
+      -moz-flex: 2;
+      -webkit-box-flex: 2;
+      flex: 2;
+      display: -webkit-flex;
+      display: -o-flex;
+      display: -ms-flex;
+      display: -moz-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -o-flex-direction: row;
+      -ms-flex-direction: row;
+      -moz-flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      width: 80%;
+      font-size: 18px; }
+      .contact:hover > div .internal > .two .two_one {
+        -webkit-flex: 1;
+        -o-flex: 1;
+        -ms-flex: 1;
+        -moz-flex: 1;
+        -webkit-box-flex: 1;
+        flex: 1; }
+      .contact:hover > div .internal > .two .two_two {
         -webkit-flex: 1;
         -o-flex: 1;
         -ms-flex: 1;
         -moz-flex: 1;
         -webkit-box-flex: 1;
         flex: 1;
-        display: -webkit-flex;
-        display: -o-flex;
-        display: -ms-flex;
-        display: -moz-flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -o-align-items: center;
-        -ms-align-items: center;
-        -moz-align-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-align-items: center;
-        width: 80%; }
-      .contact:hover > div .internal > .two {
-        -webkit-flex: 2;
-        -o-flex: 2;
-        -ms-flex: 2;
-        -moz-flex: 2;
-        -webkit-box-flex: 2;
-        flex: 2;
-        display: -webkit-flex;
-        display: -o-flex;
-        display: -ms-flex;
-        display: -moz-flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -o-flex-direction: row;
-        -ms-flex-direction: row;
-        -moz-flex-direction: row;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        flex-direction: row;
-        -webkit-flex-direction: row;
-        width: 80%;
-        font-size: 18px; }
-        .contact:hover > div .internal > .two .two_one {
-          -webkit-flex: 1;
-          -o-flex: 1;
-          -ms-flex: 1;
-          -moz-flex: 1;
-          -webkit-box-flex: 1;
-          flex: 1; }
-        .contact:hover > div .internal > .two .two_two {
-          -webkit-flex: 1;
-          -o-flex: 1;
-          -ms-flex: 1;
-          -moz-flex: 1;
-          -webkit-box-flex: 1;
-          flex: 1;
-          text-align: right; }
-  .contact:hover > div:hover {
-    display: initial; }
+        text-align: right; }
+
+.contact:hover > div:hover {
+  display: initial; }
+
+.contact:hover > .social:hover {
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 @media only screen and (min-width: 1600px) {
   header {
