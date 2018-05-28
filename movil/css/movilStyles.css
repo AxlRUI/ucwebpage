@@ -341,6 +341,7 @@ a {
       #secondView > .firstNavS .nav-leftS > .burger:hover {
         background-image: url("../resources/nav/burger.png"); }
       #secondView > .firstNavS .nav-leftS .logo {
+        margin-top: 20px;
         -ms-flex-item-align: center;
         align-self: center;
         -webkit-align-self: center;
@@ -481,6 +482,7 @@ a {
       #n > .firstNavS .nav-leftS > .burger:hover {
         background-image: url("../resources/nav/burger.png"); }
       #n > .firstNavS .nav-leftS .logo {
+        margin-top: 20px;
         -ms-flex-item-align: center;
         align-self: center;
         -webkit-align-self: center;
@@ -569,7 +571,7 @@ a {
     height: 100%;
     width: 100%; }
   #UC .one {
-    background-image: url("../resources/prepaUC/4_1.jpg");
+    background-image: url("../resources/prepaUC/3.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat; }
   #UC #proceso {
@@ -670,18 +672,14 @@ a {
 @-webkit-keyframes changePlan {
   0% {
     background-image: url("../resources/prepaUC/2.jpg"); }
-  25% {
-    background-image: url("../resources/prepaUC/2.2.jpg"); }
-  75% {
-    background-image: url("../resources/prepaUC/3.jpg"); } }
+  50% {
+    background-image: url("../resources/prepaUC/2.2.jpg"); } }
 
 @keyframes changePlan {
   0% {
     background-image: url("../resources/prepaUC/2.jpg"); }
-  25% {
-    background-image: url("../resources/prepaUC/2.2.jpg"); }
-  75% {
-    background-image: url("../resources/prepaUC/3.jpg"); } }
+  50% {
+    background-image: url("../resources/prepaUC/2.2.jpg"); } }
 
 @-webkit-keyframes changeT {
   0% {
