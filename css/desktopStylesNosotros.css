@@ -919,7 +919,7 @@ body {
     height: 100%; }
   #mision h1, #filosofia h1, #directorio h1 {
     position: fixed;
-    font-size: 70px;
+    font-size: 40px;
     color: white;
     bottom: 70px;
     left: 90px; }
