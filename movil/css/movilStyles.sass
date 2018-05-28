@@ -19,6 +19,13 @@ $white: #f2f2f2
   display: -ms-flex
   display: -moz-flex
 
+=flex-wrap($align) 
+  flex-wrap: $align
+  -webkit-flex-wrap: $align
+  -o-flex-wrap: $align
+  -ms-flex-wrap: $align
+  -moz-flex-wrap: $align  
+
 
 =align-items($align) 
   aling-items: $align
@@ -174,11 +181,7 @@ a
 	bottom: 100px
 	color: white
 	text-align: center
-<<<<<<< HEAD:movil/css/movilStyles.sass
 	font-size: 35px
-=======
-	font-size: 30px
->>>>>>> master:css/movilStyles.sass
 	
 	
 .secondNav
@@ -306,6 +309,48 @@ a
 			> a img
 				height: 100%
 				width: 100%
+#n
+	position: absolute
+	.secondNav
+		width: 100%
+		height: 100%
+		background-color: $white
+		li
+			width: 50%
+			border-bottom: 1px solid $blue
+			.children
+				li
+					width: 100%
+					border-bottom: none
+		a
+			color: $blue
+		a:hover
+			color: $green	
+	> .firstNavS
+		position: fixed
+		top: 0px !important
+		z-index: 3
+		width: 100%
+		height: 175px
+		background-color: $white
+		+flex()
+		+flex-direction(row)
+		+justify-content(space-between)	
+		.nav-leftS
+			+flex()
+			+flex-direction(row)
+			> .burger
+				margin: 0px 30px 0px 40px
+			> .burger:hover
+				background-image: url("../resources/nav/burger.png")
+			.logo
+				+align-self(center)
+				width: 130px
+				height: 130px
+		.nav-rightS
+			+align-self(center)	
+			> .green-button
+				margin-right: 40px				
 #logoprepUC
 	position: fixed
 	bottom: 150px
@@ -437,7 +482,6 @@ a
 	+flex()		
 
 #nosotros
-	background-color: $green
 	width: 100%
 	height: 100%
 	position: fixed
@@ -446,7 +490,37 @@ a
 		+flex()
 		margin-top: 100px	
 		width: 100%
-
+	#directorio
+		top: 175px
+		position: absolute
+		width: 100%
+		height: 100%
+		> div
+			overflow-x: scroll
+			+flex()
+			+flex-direction(row)
+			width: 100%	
+			height: 30%
+			.next
+				position: relative
+				width: 1000px
+				+flex()
+				+flex-direction(row)
+				padding: 70px 20px 
+				> div
+					padding: 20px
+					width: 1000px
+					font-size: 30px
+					color: $white		
+					+flex()
+					+flex-direction(column)
+		.carrusel
+			background-color: $blue
+		.carrusel2
+			background-color: $green
+		.carrusel3
+			background-color: gray	
+		
 .first-footer
 	position: fixed
 	background-color: $blue	

@@ -228,11 +228,7 @@ a {
   bottom: 100px;
   color: white;
   text-align: center;
-<<<<<<< HEAD:movil/css/movilStyles.css
   font-size: 35px; }
-=======
-  font-size: 30px; }
->>>>>>> master:css/movilStyles.css
 
 .secondNav {
   margin-top: 175px;
@@ -420,6 +416,88 @@ a {
       #secondView > .nav-socialS > div > a img {
         height: 100%;
         width: 100%; }
+
+#n {
+  position: absolute; }
+  #n .secondNav {
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2; }
+    #n .secondNav li {
+      width: 50%;
+      border-bottom: 1px solid #003056; }
+      #n .secondNav li .children li {
+        width: 100%;
+        border-bottom: none; }
+    #n .secondNav a {
+      color: #003056; }
+    #n .secondNav a:hover {
+      color: #83B93A; }
+  #n > .firstNavS {
+    position: fixed;
+    top: 0px !important;
+    z-index: 3;
+    width: 100%;
+    height: 175px;
+    background-color: #f2f2f2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -o-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -o-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between; }
+    #n > .firstNavS .nav-leftS {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      display: -webkit-flex;
+      display: -o-flex;
+      display: -ms-flex;
+      display: -moz-flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      -o-flex-direction: row;
+      -ms-flex-direction: row;
+      -moz-flex-direction: row; }
+      #n > .firstNavS .nav-leftS > .burger {
+        margin: 0px 30px 0px 40px; }
+      #n > .firstNavS .nav-leftS > .burger:hover {
+        background-image: url("../resources/nav/burger.png"); }
+      #n > .firstNavS .nav-leftS .logo {
+        -ms-flex-item-align: center;
+        align-self: center;
+        -webkit-align-self: center;
+        -o-align-self: center;
+        -ms-align-self: center;
+        -moz-align-self: center;
+        width: 130px;
+        height: 130px; }
+    #n > .firstNavS .nav-rightS {
+      -ms-flex-item-align: center;
+      align-self: center;
+      -webkit-align-self: center;
+      -o-align-self: center;
+      -ms-align-self: center;
+      -moz-align-self: center; }
+      #n > .firstNavS .nav-rightS > .green-button {
+        margin-right: 40px; }
 
 #logoprepUC {
   position: fixed;
@@ -630,7 +708,6 @@ a {
   display: -moz-flex; }
 
 #nosotros {
-  background-color: #83B93A;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -645,6 +722,72 @@ a {
     display: -moz-flex;
     margin-top: 100px;
     width: 100%; }
+  #nosotros #directorio {
+    top: 175px;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    #nosotros #directorio > div {
+      overflow-x: scroll;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      display: -webkit-flex;
+      display: -o-flex;
+      display: -ms-flex;
+      display: -moz-flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      -o-flex-direction: row;
+      -ms-flex-direction: row;
+      -moz-flex-direction: row;
+      width: 100%;
+      height: 30%; }
+      #nosotros #directorio > div .next {
+        position: relative;
+        width: 1000px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        display: -webkit-flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        -o-flex-direction: row;
+        -ms-flex-direction: row;
+        -moz-flex-direction: row;
+        padding: 70px 20px; }
+        #nosotros #directorio > div .next > div {
+          padding: 20px;
+          width: 1000px;
+          font-size: 30px;
+          color: #f2f2f2;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          display: -webkit-flex;
+          display: -o-flex;
+          display: -ms-flex;
+          display: -moz-flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          flex-direction: column;
+          -webkit-flex-direction: column;
+          -o-flex-direction: column;
+          -ms-flex-direction: column;
+          -moz-flex-direction: column; }
+    #nosotros #directorio .carrusel {
+      background-color: #003056; }
+    #nosotros #directorio .carrusel2 {
+      background-color: #83B93A; }
+    #nosotros #directorio .carrusel3 {
+      background-color: gray; }
 
 .first-footer {
   position: fixed;
