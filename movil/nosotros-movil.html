@@ -18,51 +18,51 @@
           </div>
         </div>
       </nav>
+      <nav class="secondNav">
+        <div>
+          <ul>
+            <li><a href="nosotros-movil.html#mision">Nosotros</a>
+              <ul class="children">
+                <li><a href="nosotros-movil.html#mision">Misión, Visión, Valores</a></li>
+                <li><a href="nosotros-movil.html#filosofia">Filosofía</a></li>
+                <li><a href="nosotros-movil.html#directorio">Directorio</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Oferta Académica</a>
+              <ul class="children">
+                <li><a href="prepaUC-movil.html">Prepa UC</a></li>
+                <li><a href="#">Licenciaturas +</a></li>
+                <li><a href="#">Maestrías y Posgrados</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Intégrate</a>
+              <ul class="children">
+                <li><a href="#">Ingreso a Licenciatura</a></li>
+                <li><a href="#">Ingreso a Bachillerato</a></li>
+                <li><a href="#">Provenientes de Otras Univesrdiades</a></li>
+                <li><a href="#">Ingreso a Licenciatura para Alumnos Extranjeros	</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Prestigio UC</a>
+              <ul class="children">
+                <li><a href="https://www.ucslp.edu.mx/prestigio/prestigioAlumnos">Alumnos</a></li>
+                <li><a href="https://www.ucslp.edu.mx/prestigio/prestigioProfesores">Docentes</a></li>
+                <li><a href="https://www.ucslp.edu.mx/prestigio/prestigioExAlumnos">Ex Alumnos</a></li>
+              </ul>
+            </li>
+            <li><a href="https://www.ucslp.edu.mx/beneficios">Beneficios UC</a></li>
+            <li><a href="https://www.ucslp.edu.mx/internacional">Internacional</a>
+              <ul class="children">
+                <li><a href="#">Intercambio Estudiantil</a></li>
+                <li><a href="#">Estudiantes Visitantes</a></li>
+                <li><a href="#">Profesores Visitantes</a></li>
+              </ul>
+            </li>
+            <li><a class="final" href="#">Visitanos</a></li>
+          </ul>
+        </div>
+      </nav>
     </content>
-    <nav class="secondNav">
-      <div>
-        <ul>
-          <li><a href="nosotros-movil.html#mision">Nosotros</a>
-            <ul class="children">
-              <li><a href="nosotros-movil.html#mision">Misión, Visión, Valores</a></li>
-              <li><a href="nosotros-movil.html#filosofia">Filosofía</a></li>
-              <li><a href="nosotros-movil.html#directorio">Directorio</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Oferta Académica</a>
-            <ul class="children">
-              <li><a href="prepaUC-movil.html">Prepa UC</a></li>
-              <li><a href="#">Licenciaturas +</a></li>
-              <li><a href="#">Maestrías y Posgrados</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Intégrate</a>
-            <ul class="children">
-              <li><a href="#">Ingreso a Licenciatura</a></li>
-              <li><a href="#">Ingreso a Bachillerato</a></li>
-              <li><a href="#">Provenientes de Otras Univesrdiades</a></li>
-              <li><a href="#">Ingreso a Licenciatura para Alumnos Extranjeros	</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Prestigio UC</a>
-            <ul class="children">
-              <li><a href="https://www.ucslp.edu.mx/prestigio/prestigioAlumnos">Alumnos</a></li>
-              <li><a href="https://www.ucslp.edu.mx/prestigio/prestigioProfesores">Docentes</a></li>
-              <li><a href="https://www.ucslp.edu.mx/prestigio/prestigioExAlumnos">Ex Alumnos</a></li>
-            </ul>
-          </li>
-          <li><a href="https://www.ucslp.edu.mx/beneficios">Beneficios UC</a></li>
-          <li><a href="https://www.ucslp.edu.mx/internacional">Internacional</a>
-            <ul class="children">
-              <li><a href="#">Intercambio Estudiantil</a></li>
-              <li><a href="#">Estudiantes Visitantes</a></li>
-              <li><a href="#">Profesores Visitantes</a></li>
-            </ul>
-          </li>
-          <li><a class="final" href="#">Visitanos</a></li>
-        </ul>
-      </div>
-    </nav>
     <div id="nosotros">
       <div class="display" id="mision">
         <video autoplay loop>
@@ -119,6 +119,10 @@
               <p>- Lic. Roberto Carlos Olvera Araiza</p>
               <p>roberto@ucslp.net</p>
             </div>
+          </div>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
           </div>
         </div>
         <div class="carrusel2">
@@ -200,8 +204,14 @@
             <div><br><br><br><br><br>
               <p>- Dr. Carlos Agustín Rodríguez Paz</p>
               <p>Coordinador</p>
-              <p>rodriguezpazca@ucslp.net		</p>
+              <p>rodriguezpazca@ucslp.net</p>
             </div>
+          </div>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
           </div>
         </div>
         <div class="carrusel3">
@@ -247,6 +257,11 @@
               <p>- Lic. Augusto Rodríguez Hernández</p>
               <p>augusto@ucslp.net</p>
             </div>
+          </div>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
           </div>
         </div>
       </div>
@@ -296,6 +311,12 @@
     	});
      
     $(document).ready(function(){
+    	$('.children').click(function(){
+    		$('.secondNav').animate({
+    				left: '-110%'
+    			},'slow');
+    	});
+    
      $(window).scroll(function() {
        if ($(document).scrollTop() > 5 ) {
          $("#firstView").css("z-index", "-1");

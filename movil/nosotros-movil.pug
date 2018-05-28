@@ -19,60 +19,60 @@ html
 					div.green-button
 						div 
 							a(href='')|¡REGISTRATE!
-		nav.secondNav
-			div
-				ul
-					li
-						a(href="nosotros-movil.html#mision")|Nosotros
-						ul.children
-							li
-								a(href="nosotros-movil.html#mision")|Misión, Visión, Valores
-							li
-								a(href="nosotros-movil.html#filosofia")|Filosofía
-							li
-								a(href="nosotros-movil.html#directorio")|Directorio
-					li
-						a(href="#")|Oferta Académica
-						ul.children
-							li
-								a(href="prepaUC-movil.html")|Prepa UC
-							li
-								a(href="#")|Licenciaturas +
-							li
-								a(href="#")|Maestrías y Posgrados
-					li
-						a(href="#")|Intégrate
-						ul.children
-							li
-								a(href="#")|Ingreso a Licenciatura
-							li
-								a(href="#")|Ingreso a Bachillerato
-							li
-								a(href="#")|Provenientes de Otras Univesrdiades
-							li
-								a(href="#")|Ingreso a Licenciatura para Alumnos Extranjeros	
-					li
-						a(href="#")|Prestigio UC
-						ul.children
-							li
-								a(href="https://www.ucslp.edu.mx/prestigio/prestigioAlumnos")|Alumnos
-							li
-								a(href="https://www.ucslp.edu.mx/prestigio/prestigioProfesores")|Docentes
-							li
-								a(href="https://www.ucslp.edu.mx/prestigio/prestigioExAlumnos")|Ex Alumnos
-					li
-						a(href="https://www.ucslp.edu.mx/beneficios")|Beneficios UC
-					li
-						a(href="https://www.ucslp.edu.mx/internacional")|Internacional
-						ul.children
-							li
-								a(href="#")|Intercambio Estudiantil
-							li
-								a(href="#")|Estudiantes Visitantes
-							li
-								a(href="#")|Profesores Visitantes
-					li
-						a(href="#").final|Visitanos
+			nav.secondNav
+				div
+					ul
+						li
+							a(href="nosotros-movil.html#mision")|Nosotros
+							ul.children
+								li
+									a(href="nosotros-movil.html#mision")|Misión, Visión, Valores
+								li
+									a(href="nosotros-movil.html#filosofia")|Filosofía
+								li
+									a(href="nosotros-movil.html#directorio")|Directorio
+						li
+							a(href="#")|Oferta Académica
+							ul.children
+								li
+									a(href="prepaUC-movil.html")|Prepa UC
+								li
+									a(href="#")|Licenciaturas +
+								li
+									a(href="#")|Maestrías y Posgrados
+						li
+							a(href="#")|Intégrate
+							ul.children
+								li
+									a(href="#")|Ingreso a Licenciatura
+								li
+									a(href="#")|Ingreso a Bachillerato
+								li
+									a(href="#")|Provenientes de Otras Univesrdiades
+								li
+									a(href="#")|Ingreso a Licenciatura para Alumnos Extranjeros	
+						li
+							a(href="#")|Prestigio UC
+							ul.children
+								li
+									a(href="https://www.ucslp.edu.mx/prestigio/prestigioAlumnos")|Alumnos
+								li
+									a(href="https://www.ucslp.edu.mx/prestigio/prestigioProfesores")|Docentes
+								li
+									a(href="https://www.ucslp.edu.mx/prestigio/prestigioExAlumnos")|Ex Alumnos
+						li
+							a(href="https://www.ucslp.edu.mx/beneficios")|Beneficios UC
+						li
+							a(href="https://www.ucslp.edu.mx/internacional")|Internacional
+							ul.children
+								li
+									a(href="#")|Intercambio Estudiantil
+								li
+									a(href="#")|Estudiantes Visitantes
+								li
+									a(href="#")|Profesores Visitantes
+						li
+							a(href="#").final|Visitanos
 			
 		#nosotros
 			#mision.display
@@ -154,7 +154,9 @@ html
 								|- Lic. Roberto Carlos Olvera Araiza
 							p
 								|roberto@ucslp.net
-							
+					div.dots
+						div.dot
+						div.dot
 				div.carrusel2
 					div.next
 						div
@@ -302,7 +304,12 @@ html
 							p
 								|Coordinador
 							p
-								|rodriguezpazca@ucslp.net		
+								|rodriguezpazca@ucslp.net
+					div.dots
+						div.dot
+						div.dot
+						div.dot
+						div.dot
 				div.carrusel3
 					div.next
 						div
@@ -372,7 +379,10 @@ html
 								|- Lic. Augusto Rodríguez Hernández
 							p
 								|augusto@ucslp.net
-			
+					div.dots
+						div.dot
+						div.dot
+						div.dot
 		footer.first-footer
 			div 
 				p Contacto
@@ -430,6 +440,12 @@ html
 		|	});
 		| 
 		|$(document).ready(function(){
+		|	$('.children').click(function(){
+		|		$('.secondNav').animate({
+		|				left: '-110%'
+		|			},'slow');
+		|	});
+		|
 		|  $(window).scroll(function() {
 		|    if ($(document).scrollTop() > 5 ) {
 		|      $("#firstView").css("z-index", "-1");

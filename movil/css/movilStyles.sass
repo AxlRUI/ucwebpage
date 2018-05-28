@@ -408,25 +408,29 @@ a
 		background-size: 100% 100%
 		background-repeat: no-repeat
 	#plan	
-		background-image: url("../resources/prepaUC/2.jpg")
-		background-size: 100% 100%
-		background-repeat: no-repeat
-		-webkit-animation: changePlan 6s infinite ease
-		animation: changePlan 6s infinite ease
+		width: 100%
+		height: 200%
+		position: absolute
+		background-color: red
+		+flex-direction(column)
 		#primer
-			-webkit-animation-name: textD
-			-webkit-animation: textD 10s infinite ease
-			animation: textD 10s infinite ease
+			width: 100%
+			height: 100%
+			background-size: 100% 100%
+			background-repeat: no-repeat
+			background-image: url("../resources/prepaUC/2.jpg")
 		#tercer
-			-webkit-animation-name: textD
-			-webkit-animation: textC 10s infinite ease
-			animation: textC 10s infinite ease	
+			width: 100%
+			height: 100%
+			background-size: 100% 100%
+			background-repeat: no-repeat
+			background-image: url("../resources/prepaUC/2.2.jpg")
 		#primer, #tercer
-			color: $white
-			position: fixed
-			top: 250px
-			font-size: 40px
-			left: 50px
+			> div
+				color: $white
+				padding: 200px 50px
+				font-size: 35px
+				position: relative
 	#talleres	
 		background-image: url("../resources/prepaUC/5.jpg")
 		background-size: 100% 100%
@@ -466,11 +470,6 @@ a
 			background-image: url("../resources/prepaUC/2-02.jpg")	
 		50%	
 			background-image: url("../resources/prepaUC/3-03.jpg")
-	@keyframes changePlan
-		0%	
-			background-image: url("../resources/prepaUC/2.jpg")
-		50%
-			background-image: url("../resources/prepaUC/2.2.jpg")
 				
 	@keyframes changeT
 		0%	
@@ -521,7 +520,22 @@ a
 		.carrusel2
 			background-color: $green
 		.carrusel3
-			background-color: gray	
+			background-color: gray
+		.dots
+			+flex()
+			+flex-direction(row)
+			position: absolute
+			+justify-content(space-around)
+			+align-self(flex-end)
+			margin-left: 40%
+			padding: 70px 50px
+			width: 100px 
+			.dot
+				width: 15px
+				height: 15px
+				background-color: $white
+				+border-radius(100%)
+
 		
 .first-footer
 	position: fixed
