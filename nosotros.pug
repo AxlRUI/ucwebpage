@@ -40,7 +40,7 @@ body
 			div
 				ul.headerMain
 					li(style="margin-left:0; padding-left:0;")
-						a(href="/nosotros.html" style="margin-left:0; padding-left:0;")|Nosotros
+						a(href="nosotros.html" style="margin-left:0; padding-left:0;")|Nosotros
 						ul.headerMain
 							li
 								a(href="#mision")|Misión, Visión, Valores
@@ -131,7 +131,7 @@ body
 			
 				ul
 					li(style="margin-left:0; padding-left:0;").ul64
-						a(href="/nosotros.html" style="margin-left:0; padding-left:0;")|Nosotros
+						a(href="nosotros.html" style="margin-left:0; padding-left:0;")|Nosotros
 						ul
 							li
 								a(href="#mision")|Misión, Visión, Valores
@@ -837,20 +837,16 @@ body
 		|			$("#videoFilos").get(0).currentTime = 0;
 		|			$("#videoFilos").get(0).play();
 		|		}
-		|	}
-		|		var actual = "window.location.href.toString()";
-		|		if(actual != "https://axlrui.github.io/ucwebpage.github.io/nosotros.html"){
-		|			$("#mainHeader").addClass("none");
-		|			$("#header").removeClass("none").addClass("headerWhite");
-		|			if(actual == "/nosotros.html#mision"){
-		|				$("#videoMision").get(0).currentTime = 0;
-		|				$("#videoMision").get(0).play();
-		|			}
-		|			if(actual == "/nosotros.html#filosofia"){
-		|				$("#videoFilos").get(0).currentTime = 0;
-		|				$("#videoFilos").get(0).play();
-		|			}
+		|		actual = window.location.href.toString();
+		|		if(actual == "https://axlrui.github.io/ucwebpage.github.io/nosotros.html#mision"){
+		|			$("#videoMision").get(0).currentTime = 0;
+		|			$("#videoMision").get(0).play();
 		|		}
+		|		if(actual == "https://axlrui.github.io/ucwebpage.github.io/nosotros.html#filosofia"){
+		|			$("#videoFilos").get(0).currentTime = 0;
+		|			$("#videoFilos").get(0).play();
+		|		}
+		|	}
 		|});
 		|$(".contentNosotros").find("div").click(function(){
 		|	$("#mainHeader").addClass("none");
@@ -883,22 +879,18 @@ body
 		|			$("#videoMision").get(0).pause();
 		|			$("#videoFilos").get(0).pause();
 		|		}
-		|	}
-		|		var actual = window.location.href.toString();
-		|		if(actual != "https://axlrui.github.io/ucwebpage.github.io/nosotros.html"){
-		|			$("#mainHeader").addClass("none");
-		|			$("#header").removeClass("none").addClass("headerWhite");
-		|			if(actual == "https://axlrui.github.io/ucwebpage.github.io/nosotros.html#mision"){
-		|				$("#videoMision").get(0).currentTime = 0;
-		|				$("#videoMision").get(0).play();
-		|			}
-		|			if(actual == "https://axlrui.github.io/ucwebpage.github.io/nosotros.html#filosofia"){
-		|				$("#videoFilos").get(0).currentTime = 0;
-		|				$("#videoFilos").get(0).play();
-		|			}
-		|			if(actual == "https://axlrui.github.io/ucwebpage.github.io/nosotros.html#directorio"){
-		|				$("#videoMision").get(0).pause();
-		|				$("#videoFilos").get(0).pause();
-		|			}
+		|		actual = window.location.href.toString();
+		|		if(actual == "https://axlrui.github.io/ucwebpage.github.io/nosotros.html#mision"){
+		|			$("#videoMision").get(0).currentTime = 0;
+		|			$("#videoMision").get(0).play();
 		|		}
+		|		if(actual == "https://axlrui.github.io/ucwebpage.github.io/nosotros.html#filosofia"){
+		|			$("#videoFilos").get(0).currentTime = 0;
+		|			$("#videoFilos").get(0).play();
+		|		}
+		|		if(actual == "https://axlrui.github.io/ucwebpage.github.io/nosotros.html#directorio"){
+		|			$("#videoMision").get(0).pause();
+		|			$("#videoFilos").get(0).pause();
+		|		}
+		|	}
 		|});
