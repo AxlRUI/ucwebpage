@@ -825,7 +825,7 @@ body
 				img(src="resources/instagram-pin.png", alt="Instagram")
 	script
 		|$(document).ready(function(){
-		|	var actual = window.location.href.toString().split(window.location.host)[1];
+		|	var actual = window.location.href.toString().split(window.location.host)[2];
 		|	if(actual != "/nosotros.html"){
 		|		$("#mainHeader").addClass("none");
 		|		$("#header").removeClass("none").addClass("headerWhite");
@@ -854,7 +854,7 @@ body
 		|	}
 		|});
 		|$(window).bind('hashchange', function() {
-		|	var actual = window.location.href.toString().split(window.location.host)[1];
+		|	var actual = window.location.href.toString().split(window.location.host)[2];
 		|	if(actual != "/nosotros.html"){
 		|		$("#mainHeader").addClass("none");
 		|		$("#header").removeClass("none").addClass("headerWhite");
