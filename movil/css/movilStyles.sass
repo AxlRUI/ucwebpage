@@ -122,12 +122,14 @@ a
 		+justify-content(center)
 		+align-items(flex-end)	
 		.nav-social
-			+flex
-			+flex-direction(row)
+			+flex()	
+			+align-self(flex-end)
+			+flex-direction(column)
+			padding-top: 600px	
 			img
 				padding: 15px 5px
-				width: 50px
-				height: 50px
+				width: 70px
+				height: 70px
 		> .green-button
 			+align-self(flex-end)
 
@@ -369,9 +371,9 @@ a
 	background-color: $green			
 	position: fixed
 	width: 500px
-	height: 250px
+	height: 350px
 	bottom: 322px
-	padding: 50px 100px 150px 100px
+	padding: 20px 100px 150px 100px
 	left: 15%
 	+border-radius(40px 40px 40px 40px)  
 	a
@@ -394,22 +396,41 @@ a
 		height: 100%
 		width: 100%
 	.one	
-		background-image: url("../resources/prepaUC/3.jpg")
+		background-image: url("../resources/prepaUC/4_1.jpg")
 		background-size: 100% 100%
 		background-repeat: no-repeat
-	#proceso	
-		background-image: url("../resources/prepaUC/2-02.jpg")
-		background-size: 100% 100%
-		background-repeat: no-repeat
-		-webkit-animation: changeP 15s infinite ease
-		animation: changeP 15s infinite ease
+	#proceso
+		width: 100%
+		height: 100%
+		position: absolute
+		background-color: red
+		+flex-direction(column)
+		> #uno	
+			width: 100%
+			height: 100%
+			background-size: 100% 100%
+			background-repeat: no-repeat
+			background-image: url("../resources/prepaUC/2-02.jpg")
+	#quien
+		width: 100%
+		height: 100%
+		position: absolute
+		background-color: red
+		+flex-direction(column)		
+		> #dos	
+			width: 100%
+			height: 100%
+			background-size: 100% 100%
+			background-repeat: no-repeat
+			background-image: url("../resources/prepaUC/3-03.jpg")
+		
 	#costos
 		background-image: url("../resources/prepaUC/1-01.jpg")
 		background-size: 100% 100%
 		background-repeat: no-repeat
 	#plan	
 		width: 100%
-		height: 200%
+		height: 300%
 		position: absolute
 		background-color: red
 		+flex-direction(column)
@@ -424,27 +445,33 @@ a
 			height: 100%
 			background-size: 100% 100%
 			background-repeat: no-repeat
-			background-image: url("../resources/prepaUC/2.2.jpg")
-		#primer, #tercer
+			background-image: url("../resources/prepaUC/3.jpg")
+		#quinto
+			width: 100%
+			height: 100%
+			background-size: 100% 100%
+			background-repeat: no-repeat
+			background-image: url("../resources/prepaUC/1.jpg")	
+		#primer, #tercer, #quinto
 			> div
 				color: $white
-				padding: 200px 50px
+				padding: 400px 250px
 				font-size: 35px
 				position: relative
 	#talleres	
 		background-image: url("../resources/prepaUC/5.jpg")
 		background-size: 100% 100%
 		background-repeat: no-repeat
-		-webkit-animation: changeT 6s infinite ease
-		animation: changeT 6s infinite ease
+		-webkit-animation: changeT 8s infinite ease
+		animation: changeT 8s infinite ease
 		#deportivos
 			-webkit-animation-name: textD
-			-webkit-animation: textD 6s infinite ease
-			animation: textD 6s infinite ease
+			-webkit-animation: textD 8s infinite ease
+			animation: textD 8s infinite ease
 		#culturales
 			-webkit-animation-name: textD
-			-webkit-animation: textC 6s infinite ease
-			animation: textC 6s infinite ease	
+			-webkit-animation: textC 8s infinite ease
+			animation: textC 8s infinite ease	
 		#culturales, #deportivos
 			color: $white
 			position: fixed
@@ -465,11 +492,6 @@ a
 			opacity: 1
 		100%
 			opacity: 0				
-	@keyframes changeP
-		0%	
-			background-image: url("../resources/prepaUC/2-02.jpg")	
-		50%	
-			background-image: url("../resources/prepaUC/3-03.jpg")
 				
 	@keyframes changeT
 		0%	
@@ -479,7 +501,14 @@ a
 .display
 	display: none
 .display:target
-	+flex()		
+	+flex()	
+
+#mision
+	background-color: #4E4B4D
+	height: 100%		
+#filosofia
+	background-color: #B4B2B4
+	height: 100%	
 
 #nosotros
 	width: 100%
@@ -488,7 +517,7 @@ a
 	z-index: -2
 	video
 		+flex()
-		margin-top: 100px	
+		margin-top: 0px	
 		width: 100%
 	#directorio
 		top: 175px

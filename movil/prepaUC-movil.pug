@@ -15,78 +15,69 @@ html
 				div.green-button
 					div
 						a(href='')|¡REGISTRATE!
-				div.nav-social
-					a(href="https://www.facebook.com/ucslp/")
-						img(src='resources/nav/facebook-pin.png')
-					a(href="https://twitter.com/CuauhtemocSLP?lang=es")
-						img(src='resources/nav/twitter-pin.png')
-					a(href="https://www.instagram.com/guerreros_ucslp/")
-						img(src='resources/nav/instagram-pin.png')
-					a(href="https://www.youtube.com/user/UCUAUHTEMOCSLP")
-						img(src='resources/nav/youtube-pin.png')
-					a(href="http://servicios.ucslp.edu.mx/")
-						img(src='resources/nav/uc-pin.png')
-					a(href="https://www.ucslp.edu.mx/descargas/calendario/ucslp_calendario.pdf")
-						img(src='resources/nav/calendar-pin.png')
-		nav.secondNav
-			div
-				ul
-					li
-						a(href="#")|Nosotros
+		#n
+			nav.secondNav
+				div
+					ul
+						li
+							a(href="#")|Nosotros
+								ul.children
+									li
+										a(href="nosotros-movil.html#mision")|Misión, Visión, Valores
+									li
+										a(href="nosotros-movil.html#filosofia")|Filosofía
+									li
+										a(href="nosotros-movil.html#directorio")|Directorio
+						li
+							a(href="#")|Oferta Académica
 							ul.children
 								li
-									a(href="nosotros-movil.html#mision")|Misión, Visión, Valores
+									a(href="prepaUC-movil.html")|Prepa UC
 								li
-									a(href="nosotros-movil.html#filosofia")|Filosofía
+									a(href="#")|Licenciaturas +
 								li
-									a(href="nosotros-movil.html#directorio")|Directorio
-					li
-						a(href="#")|Oferta Académica
-						ul.children
-							li
-								a(href="prepaUC-movil.html")|Prepa UC
-							li
-								a(href="#")|Licenciaturas +
-							li
-								a(href="#")|Maestrías y Posgrados
-					li
-						a(href="#")|Intégrate
-						ul.children
-							li
-								a(href="#")|Ingreso a Licenciatura
-							li
-								a(href="#")|Ingreso a Bachillerato
-							li
-								a(href="#")|Provenientes de Otras Univesrdiades
-							li
-								a(href="#")|Ingreso a Licenciatura para Alumnos Extranjeros	
-					li
-						a(href="#")|Prestigio UC
-						ul.children
-							li
-								a(href="https://www.ucslp.edu.mx/prestigio/prestigioAlumnos")|Alumnos
-							li
-								a(href="https://www.ucslp.edu.mx/prestigio/prestigioProfesores")|Docentes
-							li
-								a(href="https://www.ucslp.edu.mx/prestigio/prestigioExAlumnos")|Ex Alumnos
-					li
-						a(href="https://www.ucslp.edu.mx/beneficios")|Beneficios UC
-					li
-						a(href="https://www.ucslp.edu.mx/internacional")|Internacional
-						ul.children
-							li
-								a(href="#")|Intercambio Estudiantil
-							li
-								a(href="#")|Estudiantes Visitantes
-							li
-								a(href="#")|Profesores Visitantes
-					li
-						a(href="#").final|Visitanos					
+									a(href="#")|Maestrías y Posgrados
+						li
+							a(href="#")|Intégrate
+							ul.children
+								li
+									a(href="#")|Ingreso a Licenciatura
+								li
+									a(href="#")|Ingreso a Bachillerato
+								li
+									a(href="#")|Provenientes de Otras Univesrdiades
+								li
+									a(href="#")|Ingreso a Licenciatura para Alumnos Extranjeros	
+						li
+							a(href="#")|Prestigio UC
+							ul.children
+								li
+									a(href="https://www.ucslp.edu.mx/prestigio/prestigioAlumnos")|Alumnos
+								li
+									a(href="https://www.ucslp.edu.mx/prestigio/prestigioProfesores")|Docentes
+								li
+									a(href="https://www.ucslp.edu.mx/prestigio/prestigioExAlumnos")|Ex Alumnos
+						li
+							a(href="https://www.ucslp.edu.mx/beneficios")|Beneficios UC
+						li
+							a(href="https://www.ucslp.edu.mx/internacional")|Internacional
+							ul.children
+								li
+									a(href="#")|Intercambio Estudiantil
+								li
+									a(href="#")|Estudiantes Visitantes
+								li
+									a(href="#")|Profesores Visitantes
+						li
+							a(href="#").final|Visitanos					
 
 		
 		#UC
 			div.one
 			div#proceso.display
+				div#uno
+			div#quien.display
+				div#dos
 			div#costos.display
 			div#plan.display
 				div#primer
@@ -130,6 +121,25 @@ html
 						p|-Literatura II
 						p|-Lengua Adicional al Español IV
 						p|-Informática IV
+				div#quinto
+					div
+						h2|III SEMESTRE
+						p|-Matemáticas III
+						p|-Geografía
+						p|-Física I
+						p|-Historia de México II
+						p|-Literatura I
+						p|-Lengua Adicional al Español III
+						p|-Informática III
+						br
+						h2|IV SEMESTRE
+						p|-Matemáticas IV
+						p|-Biología I
+						p|-Física II
+						p|-Estructura Socioeconómica
+						| de México
+						p|-Lengua Adicional al Español IV
+						p|-Informática IV		
 			div#talleres.display
 				div#deportivos
 					h2|Deportivos
@@ -150,6 +160,7 @@ html
 				img(src='resources/PrepaCu.png')
 				
 		div#logoprepUCmenu.display
+			a(href="#quien")|¿Quiénes somos?
 			a(href="#proceso")|Proceso de Ingreso
 			a(href="#costos")|Costos Prepa UC
 			a(href="#plan")|Plan de Estudios
