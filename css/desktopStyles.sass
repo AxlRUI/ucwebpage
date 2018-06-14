@@ -182,12 +182,15 @@ header
 			+flex()
 			+justify-content(center)
 			+align-items(center)
-			+flex-direction(row)
+			+flex-direction(column)
+			p
+				color: white
+				font-size: 20px
 			div 
-				height: 26px
+				+flex()
+				margin-top: 4px
 				a
 					width: 26px
-					height: 26px
 					.pin
 						width: 26px
 						+transition(400ms ease)

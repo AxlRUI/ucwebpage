@@ -27,6 +27,9 @@ body
 				a(href="https://www.ucslp.edu.mx/descargas/calendario/ucslp_calendario.pdf")
 					img(src="../../../resources/calendar-pin.png", alt="Calendario").pin
 			div
+				a(href="")
+					img(src="../../../resources/juego_ico.svg", alt="Calendario").pin
+			div
 				a(href="#").btn-green
 					|¡Registrate!
 		nav.firstNav
@@ -239,7 +242,7 @@ body
 					
 	section.content#cont1
 		div.a1
-			div.light
+			div.light.fisio
 				video(src="../../resources/oferta/Salud.mp4" width="100%" autoplay loop)
 			div.medium.fisio
 				h1(style="font-size: 50px")|Fisioterapia
@@ -249,16 +252,50 @@ body
 				p|RVOE: 20150090
 		div.a2
 			div.hard
-				div(style="background-image: url(../../resources/folleto_icon.svg);").slides
+				div(style="background-image: url(../../resources/folleto_icon.svg);" onclick="window.location.replace('https://www.ucslp.edu.mx/descargas/licenciaturas/folletos/ucslp-fisioterapia.pdf');").slides
 					p|Descarga el
 					h2|Folleto
-				div(style="background-image: url(../../resources/oferta/fisio/5.jpg); background-position: right; background-size: cover;").b1
-			div(style="background-image: url(../../resources/oferta/fisio/1.jpg); background-position: center; background-size: cover;")
+				div(onclick="window.location.replace('#photoShow');" style="background-image: url(../../resources/oferta/fisio/5.jpg); background-position: right; background-size: cover;").b1#uno
+			div(onclick="window.location.replace('#photoShow');" style="background-image: url(../../resources/oferta/fisio/1.jpg); background-position: center; background-size: cover;")#dos
 			div.green
-				div(style="background-image: url(../../resources/oferta/fisio/2.jpg); background-position: left; background-size: cover;").b2
-				div(style="background-image: url(../../resources/money_bag_icon.svg);").slides
+				div(onclick="window.location.replace('#photoShow');" style="background-image: url(../../resources/oferta/fisio/2.jpg); background-position: left; background-size: cover;").b2#tres
+				div(style="background-image: url(../../resources/money_bag_icon.svg);").slides#slide
 					p|Licenciatura
 					h2|Costo
+					script
+						|$(document).ready(function(){
+						|	$("#slide").hover(function(){
+						|		$(this).find("h2").text("Mensualidad $4800");
+						|		$(this).find("p").text("Inscripción $4800");
+						|	}, function(){
+						|		$(this).find("h2").text("Costo");
+						|		$(this).find("p").text("Licenciatura");
+						|	});
+						|});
+				script
+					|$(document).ready(function(){
+					|	var uno = document.getElementById("uno");
+					|	var dos = document.getElementById("dos");
+					|	var tres = document.getElementById("tres");
+					|	var x = Math.floor((Math.random() * 5) + 1);
+					|	var links = ["../../resources/oferta/fisio/1.jpg", "../../resources/oferta/fisio/2.jpg", "../../resources/oferta/fisio/3.jpg", "../../resources/oferta/fisio/4.jpg", "../../resources/oferta/fisio/5.jpg"];
+					|	setInterval(function(){
+					|		x = Math.floor((Math.random() * 5));
+					|		$(dos).css("background-image","url('"+links[x]+"')");
+					|	}, 4000);
+					|});
+	section(onclick="window.location.replace('#');").photoShow#photoShow
+		div(style="background-image: url(../../resources/oferta/fisio/1.jpg);")#photo
+		script
+			|$(document).ready(function(){
+			|	var photo = document.getElementById("photo");
+			|	var links = ["../../resources/oferta/fisio/1.jpg", "../../resources/oferta/fisio/2.jpg", "../../resources/oferta/fisio/3.jpg", "../../resources/oferta/fisio/4.jpg", "../../resources/oferta/fisio/5.jpg"];
+			|	var x;
+			|	setInterval(function(){
+			|		x = Math.floor((Math.random() * 5));
+			|		$(photo).css("background-image","url('"+links[x]+"')");
+			|	}, 3000);
+			|});
 	section.fisio.content2#cont2
 		span.walkBar
 			img(src="../../resources/edificios/cuauh.svg").building

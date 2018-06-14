@@ -14,6 +14,7 @@
       <div><a href="https://twitter.com/CuauhtemocSLP?lang=es"><img class="pin" src="../../../resources/twitter-pin.png" alt="Twitter"/></a></div>
       <div><a href="http://servicios.ucslp.edu.mx/"><img class="pin" src="../../../resources/uc-pin.png" alt="UC"/></a></div>
       <div><a href="https://www.ucslp.edu.mx/descargas/calendario/ucslp_calendario.pdf"><img class="pin" src="../../../resources/calendar-pin.png" alt="Calendario"/></a></div>
+      <div><a href=""><img class="pin" src="../../../resources/juego_ico.svg" alt="Calendario"/></a></div>
       <div><a class="btn-green" href="#">¡Registrate!</a></div>
     </div>
     <nav class="firstNav">
@@ -130,7 +131,7 @@
   </header>
   <section class="content" id="cont1">
     <div class="a1">
-      <div class="light">
+      <div class="light fisio">
         <video src="../../resources/oferta/Salud.mp4" width="100%" autoplay="autoplay" loop="loop"></video>
       </div>
       <div class="medium fisio">
@@ -143,21 +144,59 @@
     </div>
     <div class="a2">
       <div class="hard">
-        <div class="slides" style="background-image: url(../../resources/folleto_icon.svg);">
+        <div class="slides" style="background-image: url(../../resources/folleto_icon.svg);" onclick="window.location.replace('https://www.ucslp.edu.mx/descargas/licenciaturas/folletos/ucslp-fisioterapia.pdf');">
           <p>Descarga el</p>
           <h2>Folleto</h2>
         </div>
-        <div class="b1" style="background-image: url(../../resources/oferta/fisio/5.jpg); background-position: right; background-size: cover;"></div>
+        <div class="b1" onclick="window.location.replace('#photoShow');" style="background-image: url(../../resources/oferta/fisio/5.jpg); background-position: right; background-size: cover;" id="uno"></div>
       </div>
-      <div style="background-image: url(../../resources/oferta/fisio/1.jpg); background-position: center; background-size: cover;"></div>
+      <div onclick="window.location.replace('#photoShow');" style="background-image: url(../../resources/oferta/fisio/1.jpg); background-position: center; background-size: cover;" id="dos"></div>
       <div class="green">
-        <div class="b2" style="background-image: url(../../resources/oferta/fisio/2.jpg); background-position: left; background-size: cover;"></div>
-        <div class="slides" style="background-image: url(../../resources/money_bag_icon.svg);">
+        <div class="b2" onclick="window.location.replace('#photoShow');" style="background-image: url(../../resources/oferta/fisio/2.jpg); background-position: left; background-size: cover;" id="tres"></div>
+        <div class="slides" style="background-image: url(../../resources/money_bag_icon.svg);" id="slide">
           <p>Licenciatura</p>
           <h2>Costo</h2>
+          <script>
+            $(document).ready(function(){
+            	$("#slide").hover(function(){
+            		$(this).find("h2").text("Mensualidad $4800");
+            		$(this).find("p").text("Inscripción $4800");
+            	}, function(){
+            		$(this).find("h2").text("Costo");
+            		$(this).find("p").text("Licenciatura");
+            	});
+            });
+          </script>
         </div>
+        <script>
+          $(document).ready(function(){
+          	var uno = document.getElementById("uno");
+          	var dos = document.getElementById("dos");
+          	var tres = document.getElementById("tres");
+          	var x = Math.floor((Math.random() * 5) + 1);
+          	var links = ["../../resources/oferta/fisio/1.jpg", "../../resources/oferta/fisio/2.jpg", "../../resources/oferta/fisio/3.jpg", "../../resources/oferta/fisio/4.jpg", "../../resources/oferta/fisio/5.jpg"];
+          	setInterval(function(){
+          		x = Math.floor((Math.random() * 5));
+          		$(dos).css("background-image","url('"+links[x]+"')");
+          	}, 4000);
+          });
+        </script>
       </div>
     </div>
+  </section>
+  <section class="photoShow" onclick="window.location.replace('#');" id="photoShow">
+    <div style="background-image: url(../../resources/oferta/fisio/1.jpg);" id="photo"></div>
+    <script>
+      $(document).ready(function(){
+      	var photo = document.getElementById("photo");
+      	var links = ["../../resources/oferta/fisio/1.jpg", "../../resources/oferta/fisio/2.jpg", "../../resources/oferta/fisio/3.jpg", "../../resources/oferta/fisio/4.jpg", "../../resources/oferta/fisio/5.jpg"];
+      	var x;
+      	setInterval(function(){
+      		x = Math.floor((Math.random() * 5));
+      		$(photo).css("background-image","url('"+links[x]+"')");
+      	}, 3000);
+      });
+    </script>
   </section>
   <section class="fisio content2" id="cont2"><span class="walkBar"><img class="building" src="../../resources/edificios/cuauh.svg"/><span class="dotContainer">
         <div class="fisio"><span class="globo">
