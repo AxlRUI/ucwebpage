@@ -74,7 +74,11 @@ $white: #f2f2f2
 	-o-transition: $align
 	-ms-transition: $align
 	-moz-transition: $align
-	transition: $align    
+	transition: $align 
+=border-box() 
+    -webkit-box-sizing: border-box 
+     box-sizing: border-box
+
 a
 	cursor: pointer
 #firstView
@@ -195,8 +199,8 @@ a
 	position: fixed
 	right: 100%
 	font-size: 50px
-	height: calc(100% - 300px)
-
+	height: calc(70% - 300px)
+	overflow-y: scroll 
 	ul
 		list-style: none
 		li
@@ -214,22 +218,46 @@ a
 			display: none
 			position: relative
 			z-index: 1000
+			> li .children
+				font-size: 40px
+				width: 100%
+				display: none
+				position: relative
 			a
-				padding: 5px 10px !important		
-		li:hover
-			.children
+				padding: 5px 10px !important
+			.titulo
+				font-weight: bold
+				color: $green !important
+				margin-left: 30px !important			
+		li:hover 
+			> .children
 				border: none
 				display: block		
-				li
-					display: block
+				> li
 					border: none
+					> .children
+						display: none
 					a
 						margin-left: 20px
 						border-bottom: none
 						display: block
 						color: $white
 					a:hover
-						color: $green	
+						color: $green
+				> li:hover
+					color: $green
+					> .children
+						border: none
+						display: block
+						> li a
+							margin-left: 40px
+							border-bottom: none
+							display: block
+							color: $white
+						> li a:hover
+							color: $green
+					a:hover
+						color: $green				
 			a
 				border-bottom: 1px solid $green 
 				color: $green 							
@@ -247,7 +275,7 @@ a
 			.children
 				li
 					width: 100%
-					border-bottom: none
+					border-bottom: none	
 		a
 			color: $blue
 		a:hover
@@ -633,7 +661,11 @@ a
 				padding: 5px 40px
 
 
-
+@import 'Arquitectura.sass'
+@import 'Derecho.sass'
+@import 'DG.sass'
+@import 'CD.sass'
+@import 'Odont.sass'
 					
 
 	

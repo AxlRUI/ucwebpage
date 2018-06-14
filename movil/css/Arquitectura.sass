@@ -1,0 +1,126 @@
+#Arquitectura
+	+flex()
+	+flex-direction(column)
+	margin-top: 175px
+	height: calc(300% - 200px)
+	width: 100%
+	position: absolute
+	.first
+		+flex()
+		+flex-direction(column)
+		width: 100%
+		height: 100%
+		position: relative
+		.second
+			+flex-direction(row)
+			+flex()
+			width: 100%
+			height: 50%
+			position: relative
+		.video
+			background-color: $blue	
+		#info
+			background-color: #4F6485
+			+flex-direction(column)
+			+border-box()
+			padding: 20%
+			> p
+				padding-bottom: 50px
+				font-size: 100px
+				color: $white
+			>div p
+				color: $white
+				font-size: 35px	
+		
+		img
+			width: 100%
+			height: 100%
+		.third
+			+flex()
+			+flex-direction(column)
+			width: 50%
+			height: 100%
+			position: relative
+			img
+				width: 100%
+				height: 100%
+			.circle
+				margin: auto
+				+border-radius(100%)
+				padding: 60px 80px
+				+border-box()
+				background-color: $blue
+				width: 300px
+				height: 300px
+			> div
+				+border-box()
+				margin: 0px auto 200px auto 
+				p 
+					text-align: center
+					color: $white
+					font-size: 45px
+				.big
+					font-size: 80px
+		#green
+			background-color: $green
+		#gray
+			background-color: gray
+		.white
+			background-color: $white
+		.blue
+			background-color:#4F6485
+		.blue, .white
+			img
+				margin: 20px
+				+align-self(flex-end)
+				height: 50%
+				width: 15%
+		.bloque
+			position: relative
+			+border-box()
+			background-color: $blue
+			width: 100%	
+			+border-radius(30px)
+			+flex()
+			+flex-direction(column)
+			overflow-x: scroll
+			padding: 20px
+			>div div
+				+flex()
+				+flex-direction(column)
+				color: $white
+				width: 50%
+				> p
+					font-size: 10px
+					padding: 0px
+					margin: 0px 
+			> .titulo
+				font-size: 50px
+				color: $white
+			> .ext
+				margin-top: 5px
+				+flex()
+				+flex-direction(row)
+				width: 200%
+			#int
+				margin: 20px 100px
+				font-size: 20px !important
+			.dots
+				position: absolute
+				+flex()
+				+flex-direction(row)
+				margin: auto
+				+align-self(center)
+				bottom: 20px
+				.dot
+					margin: 0px 3px
+					+border-radius(100%)
+					background-color: $white
+					width: 10px
+					height: 10px
+
+		.one
+			margin: 40px 20px 150px 20px
+		.two
+			margin: 130px 100px
+

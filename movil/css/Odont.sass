@@ -1,0 +1,123 @@
+#Odont
+	+flex()
+	+flex-direction(column)
+	margin-top: 180px
+	height: calc(300% - 200px)
+	width: 100%
+	position: absolute
+	.first
+		+flex()
+		+flex-direction(column)
+		width: 100%
+		height: calc(100% - 175px)
+		.second
+			+flex()
+			+flex-direction(row)
+			width: 100%
+			height: 50%
+		#info
+			background-color: #25B2A8
+			+flex-direction(column)
+			+border-box()
+			padding: 20%
+			> p
+				padding-bottom: 50px
+				font-size: 100px
+				color: $white
+			>div p
+				color: $white
+				font-size: 35px
+		img
+			width: 100%
+			height: 100%
+		.third
+			+flex()
+			+flex-direction(column)
+			width: 50%
+			height: 100%
+			position: relative
+			img
+				width: 100%
+				height: 100%
+			.circle
+				margin: auto
+				+border-radius(100%)
+				padding: 60px 80px
+				+border-box()
+				background-color: $blue
+				width: 300px
+				height: 300px
+			> div
+				+border-box()
+				margin: 0px auto 200px auto 
+				p 
+					text-align: center
+					color: $white
+					font-size: 45px
+				.big
+					font-size: 80px	
+		#green
+			background-color: $green
+		#gray
+			background-color: gray
+		.white
+			background-color: $white
+		.orange
+			background-color: #25B2A8
+			padding-top: 110px
+		.orange, .white
+			+flex()
+			+flex-direction(row)
+			overflow-x: scroll
+			position: relative
+			.bloque
+				position: relative
+				background-color: $blue
+				height: 60%
+				width: 400px
+				+border-box()
+				margin: 100px 50px	
+				+border-radius(30px)
+				+flex()
+				+flex-direction(column)
+				overflow-x: scroll
+				padding: 40px 20px
+				> p
+					margin: 5px
+					font-size: 20px
+				> .titulo
+					font-size: 30px
+					color: $white
+			img
+				+flex()
+				height: 40%
+				width: 50%
+			.dots
+				position: absolute
+				+flex()
+				+flex-direction(row)
+				bottom: 70px
+				left: 50%
+				.dot
+					margin: 0px 3px
+					+border-radius(100%)
+					background-color: $white
+					width: 10px
+					height: 10px
+				.or
+					background-color: #25B2A8
+	#video	
+		background-image: url("../resources/odontologia/1-01.jpg")
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		-webkit-animation: changeT 15s infinite ease
+		animation: changeT 15s infinite ease
+	@keyframes changeT
+		0%	
+			background-image: url("../resources/odontologia/1-01.jpg")
+		25%	
+			background-image: url("../resources/odontologia/2-02.jpg")
+		50%	
+			background-image: url("../resources/odontologia/3-03.jpg")
+		75%	
+			background-image: url("../resources/odontologia/4-04.jpg")
