@@ -125,17 +125,24 @@ a {
       display: -o-flex;
       display: -ms-flex;
       display: -moz-flex;
-      -webkit-box-orient: horizontal;
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      -webkit-align-self: flex-end;
+      -o-align-self: flex-end;
+      -ms-align-self: flex-end;
+      -moz-align-self: flex-end;
+      -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-      flex-direction: row;
-      -webkit-flex-direction: row;
-      -o-flex-direction: row;
-      -ms-flex-direction: row;
-      -moz-flex-direction: row; }
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      -o-flex-direction: column;
+      -ms-flex-direction: column;
+      -moz-flex-direction: column;
+      padding-top: 600px; }
       .firstNav .nav-right .nav-social img {
         padding: 15px 5px;
-        width: 50px;
-        height: 50px; }
+        width: 70px;
+        height: 70px; }
     .firstNav .nav-right > .green-button {
       -ms-flex-item-align: end;
       align-self: flex-end;
@@ -529,9 +536,9 @@ a {
   background-color: #83B93A;
   position: fixed;
   width: 500px;
-  height: 250px;
+  height: 350px;
   bottom: 322px;
-  padding: 50px 100px 150px 100px;
+  padding: 20px 100px 150px 100px;
   left: 15%;
   border-radius: 40px 40px 40px 40px;
   -webkit-border-radius: 40px 40px 40px 40px;
@@ -571,24 +578,54 @@ a {
     height: 100%;
     width: 100%; }
   #UC .one {
-    background-image: url("../resources/prepaUC/3.jpg");
+    background-image: url("../resources/prepaUC/4_1.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat; }
   #UC #proceso {
-    background-image: url("../resources/prepaUC/2-02.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    -webkit-animation: changeP 15s infinite ease;
-    animation: changeP 15s infinite ease; }
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #003056;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column; }
+    #UC #proceso > #uno {
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-image: url("../resources/prepaUC/2-02.jpg"); }
+  #UC #quien {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #003056;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column; }
+    #UC #quien > #dos {
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-image: url("../resources/prepaUC/3-03.jpg"); }
   #UC #costos {
     background-image: url("../resources/prepaUC/1-01.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat; }
   #UC #plan {
     width: 100%;
-    height: 200%;
+    height: 300%;
     position: absolute;
-    background-color: red;
+    background-color: #003056;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
@@ -607,26 +644,32 @@ a {
       height: 100%;
       background-size: 100% 100%;
       background-repeat: no-repeat;
-      background-image: url("../resources/prepaUC/2.2.jpg"); }
-    #UC #plan #primer > div, #UC #plan #tercer > div {
+      background-image: url("../resources/prepaUC/3.jpg"); }
+    #UC #plan #quinto {
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-image: url("../resources/prepaUC/1.jpg"); }
+    #UC #plan #primer > div, #UC #plan #tercer > div, #UC #plan #quinto > div {
       color: #f2f2f2;
-      padding: 200px 50px;
+      padding: 400px 250px;
       font-size: 35px;
       position: relative; }
   #UC #talleres {
     background-image: url("../resources/prepaUC/5.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    -webkit-animation: changeT 6s infinite ease;
-    animation: changeT 6s infinite ease; }
+    -webkit-animation: changeT 8s infinite ease;
+    animation: changeT 8s infinite ease; }
     #UC #talleres #deportivos {
       -webkit-animation-name: textD;
-      -webkit-animation: textD 6s infinite ease;
-      animation: textD 6s infinite ease; }
+      -webkit-animation: textD 8s infinite ease;
+      animation: textD 8s infinite ease; }
     #UC #talleres #culturales {
       -webkit-animation-name: textD;
-      -webkit-animation: textC 6s infinite ease;
-      animation: textC 6s infinite ease; }
+      -webkit-animation: textC 8s infinite ease;
+      animation: textC 8s infinite ease; }
     #UC #talleres #culturales, #UC #talleres #deportivos {
       color: #f2f2f2;
       position: fixed;
@@ -666,18 +709,6 @@ a {
   100% {
     opacity: 0; } }
 
-@-webkit-keyframes changeP {
-  0% {
-    background-image: url("../resources/prepaUC/2-02.jpg"); }
-  50% {
-    background-image: url("../resources/prepaUC/3-03.jpg"); } }
-
-@keyframes changeP {
-  0% {
-    background-image: url("../resources/prepaUC/2-02.jpg"); }
-  50% {
-    background-image: url("../resources/prepaUC/3-03.jpg"); } }
-
 @-webkit-keyframes changeT {
   0% {
     background-image: url("../resources/prepaUC/5.jpg"); }
@@ -702,6 +733,14 @@ a {
   display: -ms-flex;
   display: -moz-flex; }
 
+#mision {
+  background-color: #4E4B4D;
+  height: 100%; }
+
+#filosofia {
+  background-color: #B4B2B4;
+  height: 100%; }
+
 #nosotros {
   width: 100%;
   height: 100%;
@@ -715,7 +754,7 @@ a {
     display: -o-flex;
     display: -ms-flex;
     display: -moz-flex;
-    margin-top: 100px;
+    margin-top: 0px;
     width: 100%; }
   #nosotros #directorio {
     top: 175px;
