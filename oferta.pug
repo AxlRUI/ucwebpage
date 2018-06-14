@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Oferta Academica 
+	link(rel="stylesheet", href="css/ofertaStyles.css")
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+body
+	header#mainHeader
+		nav.firstNav
+			div.firstContainer
+				div
+					a(href="index.html")
+						img(src="resources/culogo.png", alt="Universidad Cuauhtemoc").logo
+				div(style="margin-left:24px").pinContainer
+					div
+						a(href="https://www.facebook.com/ucslp/")
+							img(src="resources/facebook-pin.png", alt="Facebook").pin
+					div
+						a(href="https://www.instagram.com/guerreros_ucslp/")
+							img(src="resources/instagram-pin.png", alt="Instagram").pin
+					div
+						a(href="https://www.youtube.com/user/UCUAUHTEMOCSLP")
+							img(src="resources/youtube-pin.png", alt="Youtube").pin
+					div
+						a(href="https://twitter.com/CuauhtemocSLP?lang=es")
+							img(src="resources/twitter-pin.png", alt="Twitter").pin
+					div
+						a(href="http://servicios.ucslp.edu.mx/")
+							img(src="resources/uc-pin.png", alt="UC").pin
+					div
+						a(href="https://www.ucslp.edu.mx/descargas/calendario/ucslp_calendario.pdf")
+							img(src="resources/calendar-pin.png", alt="Calendario").pin
+			div
+				a(href="#").btn-green
+					|¡Registrate!
+		nav.secondNav
+			div
+				ul.headerMain
+					li(style="margin-left:0; padding-left:0;")
+						a(href="nosotros.html" style="margin-left:0; padding-left:0;")|Nosotros
+						ul.headerMain
+							li
+								a(href="nosotros.html#mision")|Misión, Visión, Valores
+							li
+								a(href="nosotros.html#filosofia")|Filosofía
+							li
+								a(href="nosotros.html#directorio")|Directorio
+					li
+						a(href="oferta.html")|Oferta Académica
+						ul.listHorizontal.headerMain
+							li
+								a(href="#").head.greenHead|Nivel Medio Superior
+									ul.dump
+										li
+											a(href="prepauc.html")|Prepa UC
+							li
+								a(href="#").head.greenHead|Nivel Superior
+									ul.dump
+										li.derp
+											a(href="#").greenHead|Salud
+												ul.dump
+													li
+														div.greenHeadContainer
+															a(href="/oferta_academica/fisioterapia.html")|Fisioterapia
+															a(href="/oferta_academica/odontologia.html")|Odontología
+															a(href="/oferta_academica/medico.html")|Médico Cirujano
+															a(href="/oferta_academica/psicologia.html")|Psicología Clínica
+															a(href="/oferta_academica/nutricion.html")|Nutrición y Ciencias de los Alimentos													
+															a(href="/oferta_academica/deporte.html")|Ciencias de la Actividad Física y del Deporte
+										li.derp
+											a(href="#").greenHead|Sociales
+												ul.dump
+													li
+														div.greenHeadContainer
+															a(href="/oferta_academica/derecho.html")|Derecho
+															a(href="/oferta_academica/turismo.html")|Turismo
+															a(href="/oferta_academica/comercio.html")|Comercio Internacional
+															a(href="/oferta_academica/administracion.html")|Administración de Empresas
+															a(href="/oferta_academica/ejecutiva_derecho.html")|Licenciatura Ejecutiva en Derecho
+															a(href="/oferta_academica/ejecutiva_comercio.html")|Licenciatura Ejecutiva en Comercio Internacional
+															a(href="/oferta_academica/administracion")|Licenciatura Ejecutiva en Administración de Empresas
+										li.derp
+											a(href="#").greenHead|Humanidades
+												ul.dump
+													li
+														div.greenHeadContainer
+															a(href="/oferta_academica/pedagogia.html")|Pedagogía
+															a(href="/oferta_academica/arquitectura.html")|Arquitectura
+															a(href="/oferta_academica/grafico.html")|Diseño Gráfico
+															a(href="/oferta_academica/comunicacion.html")|Ciencias de la Comunicación
+										li.derp
+											a(href="").greenHead|Ingeniería
+												ul.dump
+													li
+														div.greenHeadContainer
+															a(href="/oferta_academica/digitales.html")|Contenidos Digitales Interactivos
+
+							li
+								a(href="").head.greenHead|Maestrías y Posgrados
+									ul.dump.bigDump
+											li
+												a(href="/oferta_academica/especialidad-en-bioetica.html")|Especialidad en Bioética
+												a(href="/oferta_academica/maestria-en-derecho-civil.html")|Maestría en Derecho Civil
+												a(href="/oferta_academica/maestria-en-criminologia.html")|Maestría en Criminología
+												a(href="/oferta_academica/especialidad-en-ortodoncia-y-ortopedia-maxilar.html")|Especialidad en Ortodoncia y Ortopedia Maxilar
+					li
+						a(href="https://www.ucslp.edu.mx/integrate")|Integrate
+						ul.headerMain
+							li
+								a(href="")|Ingreso a Lincenciatura (alumnos)
+							li
+								a(href="")|Ingreso a Bachillerato
+							li
+								a(href="")|Provenientes de Otras Universidades
+							li
+								a(href="")|Ingreso a Licenciatura para Alumnos Extranjeros
+					li
+						a(href="#")|Prestigio UC
+						ul.headerMain
+							li
+								a(href="https://www.ucslp.edu.mx/prestigio/prestigioAlumnos.html")|Alumnos
+							li
+								a(href="https://www.ucslp.edu.mx/prestigio/prestigioProfesores.html")|Docentes
+							li
+								a(href="https://www.ucslp.edu.mx/prestigio/prestigioExAlumnos.html")|Ex Alumnos
+					li
+						a(href="https://www.ucslp.edu.mx/beneficio.htmls")|Beneficios UC
+					li
+						a(href="https://www.ucslp.edu.mx/internacional.html")|Internacional
+						ul.headerMain
+							li
+								a(href="")|Intercambio Estudiantil
+							li
+								a(href="")|Estudiantes Visitantes
+							li
+								a(href="")|Profesores Visitantes
+							li
+								a(href="")|Testimonios
+					li
+						a(href="").final|Visítanos
+	header#header.none
+		nav.firstNav
+			div
+				ul
+					a(href="index.html").logo
+						img(src="resources/culogo_round.png", alt="Universidad Cuauhtemoc").logo
+			
+				ul
+					li(style="margin-left:0; padding-left:0;").ul64
+						a(href="nosotros.html" style="margin-left:0; padding-left:0;")|Nosotros
+						ul
+							li
+								a(href="nosotros.html#mision")|Misión, Visión, Valores
+							li
+								a(href="nosotros.html#filosofia")|Filosofía
+							li
+								a(href="nosotros.html#directorio")|Directorio
+					li
+						a(href="oferta.html")|Oferta Académica
+						ul.listHorizontal
+							li
+								a(href="#").head.greenHead|Nivel Medio Superior
+									a(href="prepauc.html")|Prepa UC
+							li
+								a(href="#").head.greenHead|Nivel Superior
+								
+								a(href="#").greenHead|Salud
+									div.greenHeadContainer
+										a(href="/oferta_academica/fisioterapia.html")|Fisioterapia
+										a(href="/oferta_academica/odontologia.html")|Odontología
+										a(href="/oferta_academica/medico.html")|Médico Cirujano
+										a(href="/oferta_academica/psicologia.html")|Psicología Clínica
+										a(href="/oferta_academica/nutricion.html")|Nutrición y Ciencias de los Alimentos													
+										a(href="/oferta_academica/deporte.html")|Ciencias de la Actividad Física y del Deporte
+								a(href="#").greenHead|Sociales
+									div.greenHeadContainer
+										a(href="/oferta_academica/derecho.html")|Derecho
+										a(href="/oferta_academica/turismo.html")|Turismo
+										a(href="/oferta_academica/comercio.html")|Comercio Internacional
+										a(href="/oferta_academica/administracion.html")|Administración de Empresas
+										a(href="/oferta_academica/ejecutiva_derecho.html")|Licenciatura Ejecutiva en Derecho
+										a(href="/oferta_academica/ejecutiva_comercio.html")|Licenciatura Ejecutiva en Comercio Internacional
+										a(href="/oferta_academica/administracion.html")|Licenciatura Ejecutiva en Administración de Empresas
+								a(href="#").greenHead|Humanidades
+									div.greenHeadContainer
+										a(href="/oferta_academica/pedagogia.html")|Pedagogía
+										a(href="/oferta_academica/arquitectura.html")|Arquitectura
+										a(href="/oferta_academica/grafico.html")|Diseño Gráfico
+										a(href="/oferta_academica/comunicacion.html")|Ciencias de la Comunicación
+								a(href="").greenHead|Ingeniería
+									div.greenHeadContainer
+										a(href="/oferta_academica/digitales.html")|Contenidos Digitales Interactivos
+							li
+								a(href="").head.greenHead|Maestrías y Posgrados
+								a(href="/oferta_academica/especialidad-en-bioetica.html")|Especialidad en Bioética
+								a(href="/oferta_academica/maestria-en-derecho-civil.html")|Maestría en Derecho Civil
+								a(href="/oferta_academica/maestria-en-criminologia.html")|Maestría en Criminología
+								a(href="/oferta_academica/especialidad-en-ortodoncia-y-ortopedia-maxilar.html")|Especialidad en Ortodoncia y Ortopedia Maxilar
+					li
+						a(href="https://www.ucslp.edu.mx/integrate")|Integrate
+						ul
+							li
+								a(href="")|Ingreso a Lincenciatura (alumnos)
+							li
+								a(href="")|Ingreso a Bachillerato
+							li
+								a(href="")|Provenientes de Otras Universidades
+							li
+								a(href="")|Ingreso a Licenciatura para Alumnos Extranjeros
+					li
+						a(href="#")|Prestigio UC
+						ul
+							li
+								a(href="https://www.ucslp.edu.mx/prestigio/prestigioAlumnos")|Alumnos
+							li
+								a(href="https://www.ucslp.edu.mx/prestigio/prestigioProfesores")|Docentes
+							li
+								a(href="https://www.ucslp.edu.mx/prestigio/prestigioExAlumnos")|Ex Alumnos
+					li
+						a(href="https://www.ucslp.edu.mx/beneficios")|Beneficios UC
+					li
+						a(href="https://www.ucslp.edu.mx/internacional")|Internacional
+						ul
+							li
+								a(href="")|Intercambio Estudiantil
+							li
+								a(href="")|Estudiantes Visitantes
+							li
+								a(href="")|Profesores Visitantes
+							li
+								a(href="")|Testimonios
+					li
+						a(href="").final|Visítanos
+			div
+				a(href="#").btn-green
+					|¡Registrate!
+		div(style="margin-left:24px").pinContainer
+			div
+				a(href="https://www.facebook.com/ucslp/")
+					img(src="resources/facebook-pin.png", alt="Facebook").pin
+			div
+				a(href="https://www.instagram.com/guerreros_ucslp/")
+					img(src="resources/instagram-pin.png", alt="Instagram").pin
+			div
+				a(href="https://www.youtube.com/user/UCUAUHTEMOCSLP")
+					img(src="resources/youtube-pin.png", alt="Youtube").pin
+			div
+				a(href="https://twitter.com/CuauhtemocSLP?lang=es")
+					img(src="resources/twitter-pin.png", alt="Twitter").pin
+			div
+				a(href="http://servicios.ucslp.edu.mx/")
+					img(src="resources/uc-pin.png", alt="UC").pin
+			div
+				a(href="https://www.ucslp.edu.mx/descargas/calendario/ucslp_calendario.pdf")
+					img(src="resources/calendar-pin.png", alt="Calendario").pin
+	section.content.oferta#cont1
+		div
+			div(style="background-image: url('resources/oferta/salud.png')").start
+				p|Salud
+			span
+				div.a1( onclick="window.location.href = '/oferta_academica/medico.html';")
+					p|Médico Cirujano
+				div.a4( onclick="window.location.href = '/oferta_academica/nutricion.html';")
+					p|Nutrición y Ciencias
+					span|de los alimentos
+				div.a2( onclick="window.location.href = '/oferta_academica/odontologia.html';")
+					p|Odontología
+				div.a3( onclick="window.location.href = '/oferta_academica/fisioterapia.html';")
+					p|Fisioterapia
+				div.a5( onclick="window.location.href = '/oferta_academica/psicologia.html';")
+					p|Psicología Clínica
+				div.a6( onclick="window.location.href = '/oferta_academica/deporte.html';")
+					p|Ciencias de la actividad 
+					span|física y el deporte
+				img(src="resources/Untitled-4.png", alt="").arrowL
+				img(src="resources/Untitled-4.png", alt="").arrowR
+				script(src="js/slideMatter.js")
+		div
+			div(style="background-image: url('resources/oferta/comida.png')").start
+				p|Sociales
+			span#secondSpan
+				div.b1( onclick="window.location.href = '/oferta_academica/comercio.html';")
+					p|Comercio Internacional
+				div.b2( onclick="window.location.href = '/oferta_academica/derecho.html';")
+					p|Derecho
+				div.b3( onclick="window.location.href = '/oferta_academica/turismo.html';")
+					p|Turismo
+				div.b4( onclick="window.location.href = '/oferta_academica/administracion.html';")
+					p|Administración de empresas
+				div.b2( onclick="window.location.href = '/oferta_academica/ejecutiva_derecho.html';")
+					p|Licenciatura Ejecutiva 
+					span|Derecho
+				div.b1( onclick="window.location.href = '/oferta_academica/ejecutiva_comercio.html';")
+					p|Licenciatura Ejecutiva 
+					span|Comercio Internacional
+				div.b4( onclick="window.location.href = '/oferta_academica/ejecutiva_administracion.html';")
+					p|Licenciatura Ejecutiva 
+					span|Administración de Empresas
+				img(src="resources/Untitled-4.png", alt="").arrowL
+				img(src="resources/Untitled-4.png", alt="").arrowR
+				script(src="js/slideMatter.js")
+	section.content3#cont2
+		div
+			div(style="background-image: url('resources/oferta/humanos.png')" ).start
+				p|Humanidades
+			div(style="background-image: url('resources/oferta/arqui_ico.svg')" onclick="window.location.href = '/oferta_academica/arquitectura.html';").c1
+				p|Arquitectura
+			div(style="background-image: url('resources/oferta/diseño_ico.svg')" onclick="window.location.href = '/oferta_academica/grafico.html';").c2
+				p|Diseño Gráfico
+			div(style="background-image: url('resources/oferta/comuni_ico.svg')" onclick="window.location.href = '/oferta_academica/comunicacion.html';").c3
+				p|Comunicación
+			div(style="background-image: url('resources/oferta/peda_ico.svg')"  onclick="window.location.href = '/oferta_academica/pedagogia.html';").c4
+				p|Pedagogia
+			div(style="background-image: url('resources/oferta/girl.png')" ).start
+		div.special
+			div(style="background-image: url('resources/oferta/lentes.png')").start
+				p|Ingeniería
+			div(style="background-image: url('resources/oferta/juego_ico.svg')" onclick="window.location.href = '/oferta_academica/digitales.html';").c5
+				p|Contenidos Digitales
+				span|Interactivos
+			div.master.gray2
+				p|Maestrías y
+				span|Posgrados
+			div(style="background-image: url('resources/oferta/diente_ico.svg')"  onclick="window.location.href = '/oferta_academica/especialidad-en-ortodoncia-y-ortopedia-maxilar.html';").gray1
+				p|Especialidad en Ortodoncia
+				span|y Ortopedia Maxilar
+			div(style="background-image: url('resources/oferta/bio_ico.svg')"  onclick="window.location.href = '/oferta_academica/especialidad-en-bioetica.html';").gray2
+				p|Especialidad en Bioética
+			div(style="background-image: url('resources/oferta/civil_ico.svg')" onclick="window.location.href = '/oferta_academica/maestria-en-derecho-civil.html';").gray1
+				p|Maestría en
+				span|Derecho Civil
+			div(style="background-image: url('resources/oferta/criminologia.svg')" onclick="window.location.href = '/oferta_academica/maestria-en-derecho-civil.html';").gray2
+				p|Criminología
+			img(src="resources/Untitled-4.png", alt="").arrowL2
+			img(src="resources/Untitled-4.png", alt="").arrowR2
+			script(src="js/slideMatter2.js")
+
+	footer.contact.none
+		p.specialP
+			|Contacto
+		div.info
+			div.internal
+				div.one
+					a(href="")
+						img(src="resources/culogo.png", alt="Universidad Cuauhtemoc")
+				div.two
+					div.two_one
+						p
+							|Dirección: Salvador Nava Martínez No.3291
+						p
+							|Col. Viveros. San Luis Potosí, México.
+						p
+							|C.P. 78290
+					div.two_two
+						p
+							|Lada Sin Costo: 01 800 00 UCSLP (82757)
+						p
+							|Teléfonos: (444) 500.45.00 / (444) 817.62.30
+						p
+							|WhatsApp: (444) 408.30.27
+						p
+							|Email: contacto@ucslp.net
+		div.social
+			a(href="")
+				img(src="resources/facebook-pin.png", alt="Facebook")
+			a(href="")
+				img(src="resources/twitter-pin.png", alt="Twitter")
+			a(href="")
+				img(src="resources/instagram-pin.png", alt="Instagram")
+	script
+
+		| 
+		|$(document).ready(function(){
+		|	
+		|  $(window).scroll(function() {
+		|    if ($(document).scrollTop() > 7 ) {
+		|      $("#cont2").css("z-index", "2");
+		|		$("#header").addClass("headerWhite");
+		|		$("#header").removeClass("none");
+		|		$("footer").removeClass("none");
+		|		$("#mainHeader").addClass("none");
+		|    } else if ($(document).scrollTop() < 8){
+		|      $("#cont2").css("z-index", "1");
+		|		$("#header").removeClass("headerWhite");
+		|		$("#header").addClass("none");
+		|		$("footer").addClass("none");
+		|		$("#mainHeader").removeClass("none");
+		|    }
+		|  });
+		|});

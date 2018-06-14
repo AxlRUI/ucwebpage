@@ -1,0 +1,162 @@
+@import desktopStyles.sass
+
+$light_blue: #29abe2
+$medium_blue: #0b6497
+$hard_blue: #003056
+
+.light
+	background-color: $light_blue
+.medium 
+	background-color: $medium_blue
+.hard
+	background-color: $hard_blue
+.green
+	background-color: $cu_green
+
+.content
+	padding-top: 110px
+	+flex()
+	+flex-direction(column)
+	height: calc(100% - 110px)
+	.slides
+		background-position: center 20% 
+		background-size: 120px
+		background-repeat: no-repeat
+		color: white
+		cursor: pointer
+		p, h2
+			width: 100%
+			text-align: center
+			position: relative
+			top: 60%
+			+transition(400ms ease)
+		p
+			font-size: 24px
+		h2
+			font-size: 40px
+	.slides:hover
+		p, h2
+			color: $medium_blue
+	> div 
+		+flex-normal(2)
+		+flex()
+		.light
+			+flex-normal(2)
+		.medium
+			+flex-normal(1)
+			color: white
+			h1, p
+			h1
+				padding-left: 40px
+				padding-top: 20px
+				font-size: 62px
+				margin-bottom: 10%
+				width: calc(100% - 40px)
+			p 
+				width: calc(100% - 24px)
+				padding-left: 24px
+				font-size: 18px
+
+	> .a2
+		> div 
+			+flex-normal(3)
+			+flex()
+			> div 
+				+flex-normal(2)
+.photoShow
+.walkBar
+	background-color: white
+	position: absolute
+	bottom: 0
+	width: 100%
+	height: 20%
+	+flex()
+	+justify-content(center)
+	.building
+		+flex-normal(2)
+		height: 200px
+		position: relative
+		top: -60px
+		width: 100%
+	.dotContainer
+		+flex()
+		width: 70%
+		+justify-content(space-around)
+		+align-items(center)
+		z-index: 10
+		> div
+			width: 40px
+			height: 40px
+			border-radius: 100%
+			opacity: 0.7
+			text-align: left
+			img
+				position: absolute
+				top: -150px
+				height: 160px
+				left: -25%
+				opacity: 0
+			.globo
+				position: absolute
+				width: 200px
+				height: 330px
+				top: -500px
+				background-image: url(../resources/oferta/globo.svg)
+				background-repeat: no-repeat
+				background-size: 100%
+				padding: 40px
+				opacity: 0
+				h1
+					font-size: 30px
+				p
+					font-size: 15px
+					text-align: left
+			.flexGlobo
+				+flex()
+				> div
+					+flex-normal(2)
+					display: block
+					padding-left: 40px
+		div:hover
+			opacity: 1
+			color: white
+			img
+				opacity: 1
+			.globo
+				opacity: 1
+	.dotContainer:hover
+		color: white
+		h1
+			color: white
+		p
+			color: white
+.medico
+	background-color: #0b6497
+.derecho
+	background-color: #98381a
+.arqui
+	background-color: #4f6485
+.turismo
+	background-color: #e62865
+.digitales
+	background-color: #4a8169
+.odonto
+	background-color: #25b2a8
+.deporte
+	background-color: #135d72
+.diseno
+	background-color: #f39634
+.comercio
+	background-color: #9c5d98
+.admi
+	background-color: #ec6d3a
+.comunicacion
+	background-color: #16a1b9
+.nutri
+	background-color: #f0832b
+.pedagogia
+	background-color: #875430
+.psico
+	background-color: #889659
+.fisio
+	background-color: #1281bc

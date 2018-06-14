@@ -87,7 +87,7 @@ body
 header
 	z-index: 10
 	position: fixed
-	width: 100%
+	width: 100% 
 	height: 180px
 	+flex()
 	+justify-content(space-around)
@@ -114,8 +114,10 @@ header
 		.listHorizontal
 			li
 				float: left
+				margin-left: 100px
 			.head
 				font-weight: normal
+				cursor: pointer
 		div
 			+transition(400ms ease)
 			padding: 0px 0px 15px 0px
@@ -127,10 +129,9 @@ header
 				+transition(400ms ease)
 				font-size: 15px
 				font-weight: normal
-				//background: green
 			.greenHead
 				color: $cu_green !important
-				cursor: initial
+				cursor: pointer
 			.greenHead:hover
 				text-decoration: none
 			.greenHeadContainer
@@ -145,6 +146,24 @@ header
 				font-weight: normal
 				color: $cu_green
 				text-decoration: underline $cu_green
+			.dump
+				padding: 0 !important
+				width: 100px
+				min-width: 100px
+				padding-start: 0 !important
+				li 
+					padding: 0
+					margin: 0
+				.derp:hover
+					padding-bottom: 160px
+				li:hover > ul
+					display: block
+					padding-top: 0
+					width: 400px
+					a
+						border-right: none
+			.bigDump
+				width: 400px
 		div:hover
 			border-bottom: 2px solid white
 	.firstNav
@@ -187,7 +206,7 @@ header
 	background: white
 	color: $cu_green
 
-.content, .content2
+.content, .content2, .content3
 	margin: 0
 	padding: 0
 	display: block
@@ -369,7 +388,95 @@ header
 				color: white
 				border: none
 				font-size: 16px
-		
+.doblehead
+	background: #cccccc
+	height: 110px
+	+flex-direction(column)
+	+justify-content(center)
+	+align-items(center)
+	.pinContainer
+		+flex()
+		background: $hard_blue
+		width: 100%
+		height: 60px
+		+align-items(center)
+		+justify-content(flex-end)
+		.pin
+			width: 28px
+			height: 28px
+			+transition(400ms ease)
+			margin-right: 20px
+		.pin:hover
+			width: 29px
+		.btn-green
+			color: white
+			border: none
+			font-size: 16px
+			margin-right: 20px
+	.firstNav
+		+justify-content(space-between)
+		ul, ol
+			list-style: none
+			//height: 64px
+			+flex()
+			+align-items(center)
+		div > ul >li 
+			float: left
+			height: 64px
+			margin-top: 32px
+		li ul 
+			display: none
+			position: absolute
+			min-width: 100%
+		li:hover > ul
+			display: block
+			padding-top: 0
+			a
+				border-right: none
+		ul > li > ul
+			background: #cccccc
+			margin-top: 21px
+			font-size: 15px
+		.listHorizontal
+			li
+				float: left
+			.head
+				font-weight: normal
+
+		div
+			border: none
+			padding: 0
+			+flex()
+			.greenHead
+				color: $cu_green !important
+				cursor: initial
+				margin: 0
+			.greenHead:hover
+				text-decoration: none
+			.greenHeadContainer
+				margin: 0
+				margin-bottom: 8px
+				padding: 0
+				+flex-direction(column)
+			.greenHeadContainer:hover
+				border: none
+			a
+				display: block
+				padding: 1px 10px 1px 10px
+				border-right: 2px solid $hard_blue
+				color: $hard_blue
+				+transition(400ms ease)
+				font-weight: normal
+				font-size: 15px
+			a.final
+				border-right: none
+			a:hover
+				font-weight: normal
+				color: $cu_green
+				text-decoration: underline $cu_green
+			.logo
+				width: 200px;
+				border: none !important
 .playButton
 	position: relative
 	bottom: 300px

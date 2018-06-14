@@ -12,7 +12,7 @@ body
 		nav.firstNav
 			div.firstContainer
 				div
-					a(href="")
+					a(href="index.html")
 						img(src="resources/culogo.png", alt="Universidad Cuauhtemoc").logo
 				div(style="margin-left:24px").pinContainer
 					div
@@ -43,50 +43,69 @@ body
 						a(href="nosotros.html" style="margin-left:0; padding-left:0;")|Nosotros
 						ul.headerMain
 							li
-								a(href="#mision")|Misión, Visión, Valores
+								a(href="nosotros.html#mision")|Misión, Visión, Valores
 							li
-								a(href="#filosofia")|Filosofía
+								a(href="nosotros.html#filosofia")|Filosofía
 							li
-								a(href="#directorio")|Directorio
+								a(href="nosotros.html#directorio")|Directorio
 					li
-						a(href="https://www.ucslp.edu.mx/oferta")|Oferta Académica
+						a(href="oferta.html")|Oferta Académica
 						ul.listHorizontal.headerMain
 							li
 								a(href="#").head.greenHead|Nivel Medio Superior
-									a(href="prepauc.html")|Prepa UC
+									ul.dump
+										li
+											a(href="prepauc.html")|Prepa UC
 							li
 								a(href="#").head.greenHead|Nivel Superior
-								
-								a(href="#").greenHead|Salud
-									div.greenHeadContainer
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/fisioterapia")|Fisioterapia
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/odontologia")|Odontología
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/medico-cirujano")|Médico Cirujano
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/psicologia-clinica")|Psicología Clínica
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/nutricion-y-ciencias-de-los-alimentos")|Nutrición y Ciencias de los Alimentos													
-								a(href="#").greenHead|Administrativas
-									div.greenHeadContainer
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/derecho")|Derecho
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/turismo")|Turismo
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/comercio-internacional")|Comercio Internacional
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/administracion-de-empresas")|Administración de Empresas
-								a(href="#").greenHead|Sociales
-									div.greenHeadContainer
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/pedagogia")|Pedagogía
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/arquitectura")|Arquitectura
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/diseno-grafico")|Diseño Gráfico
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/comunicacion")|Ciencias de la Comunicación
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/contenidos-digitales-interactivos")|Contenidos Digitales Interactivos
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/ciencias-de-la-actividad-fisica-y-del-deporte")|Ciencias de la Actividad y el Deporte
+									ul.dump
+										li.derp
+											a(href="#").greenHead|Salud
+												ul.dump
+													li
+														div.greenHeadContainer
+															a(href="/oferta_academica/fisioterapia.html")|Fisioterapia
+															a(href="/oferta_academica/odontologia.html")|Odontología
+															a(href="/oferta_academica/medico.html")|Médico Cirujano
+															a(href="/oferta_academica/psicologia.html")|Psicología Clínica
+															a(href="/oferta_academica/nutricion.html")|Nutrición y Ciencias de los Alimentos													
+															a(href="/oferta_academica/deporte.html")|Ciencias de la Actividad Física y del Deporte
+										li.derp
+											a(href="#").greenHead|Sociales
+												ul.dump
+													li
+														div.greenHeadContainer
+															a(href="/oferta_academica/derecho.html")|Derecho
+															a(href="/oferta_academica/turismo.html")|Turismo
+															a(href="/oferta_academica/comercio.html")|Comercio Internacional
+															a(href="/oferta_academica/administracion.html")|Administración de Empresas
+															a(href="/oferta_academica/ejecutiva_derecho.html")|Licenciatura Ejecutiva en Derecho
+															a(href="/oferta_academica/ejecutiva_comercio.html")|Licenciatura Ejecutiva en Comercio Internacional
+															a(href="/oferta_academica/administracion")|Licenciatura Ejecutiva en Administración de Empresas
+										li.derp
+											a(href="#").greenHead|Humanidades
+												ul.dump
+													li
+														div.greenHeadContainer
+															a(href="/oferta_academica/pedagogia.html")|Pedagogía
+															a(href="/oferta_academica/arquitectura.html")|Arquitectura
+															a(href="/oferta_academica/grafico.html")|Diseño Gráfico
+															a(href="/oferta_academica/comunicacion.html")|Ciencias de la Comunicación
+										li.derp
+											a(href="").greenHead|Ingeniería
+												ul.dump
+													li
+														div.greenHeadContainer
+															a(href="/oferta_academica/digitales.html")|Contenidos Digitales Interactivos
+
 							li
 								a(href="").head.greenHead|Maestrías y Posgrados
-								a(href="https://www.ucslp.edu.mx/posgrados/carreras/especialidad-en-ortodoncia-y-ortopedia-maxilar")|Especialidad en Ortodoncia
-								a(href="https://www.ucslp.edu.mx/posgrados/carreras/especialidad-en-bioetica")|Especialidad en Bioética
-								a(href="https://www.ucslp.edu.mx/posgrados/carreras/maestria-en-derecho-civil")|Maestría en Derecho Civil
-								a(href="https://www.ucslp.edu.mx/posgrados/carreras/maestria-en-criminologia")|Maestría en Criminología
-								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/licenciatura-ejecutiva-administracion-de-empresas")|Licenciatura Ejecutiva Administración de Empresas
-								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/licenciatura-ejecutiva-derecho")|Licenciatura Ejecutiva Derecho
-								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/licenciatura-ejecutiva-comercio-internacional")|Licenciatura Ejecutiva Comercio Internacional
+									ul.dump.bigDump
+											li
+												a(href="/oferta_academica/especialidad-en-bioetica.html")|Especialidad en Bioética
+												a(href="/oferta_academica/maestria-en-derecho-civil.html")|Maestría en Derecho Civil
+												a(href="/oferta_academica/maestria-en-criminologia.html")|Maestría en Criminología
+												a(href="/oferta_academica/especialidad-en-ortodoncia-y-ortopedia-maxilar.html")|Especialidad en Ortodoncia y Ortopedia Maxilar
 					li
 						a(href="https://www.ucslp.edu.mx/integrate")|Integrate
 						ul.headerMain
@@ -102,15 +121,15 @@ body
 						a(href="#")|Prestigio UC
 						ul.headerMain
 							li
-								a(href="https://www.ucslp.edu.mx/prestigio/prestigioAlumnos")|Alumnos
+								a(href="https://www.ucslp.edu.mx/prestigio/prestigioAlumnos.html")|Alumnos
 							li
-								a(href="https://www.ucslp.edu.mx/prestigio/prestigioProfesores")|Docentes
+								a(href="https://www.ucslp.edu.mx/prestigio/prestigioProfesores.html")|Docentes
 							li
-								a(href="https://www.ucslp.edu.mx/prestigio/prestigioExAlumnos")|Ex Alumnos
+								a(href="https://www.ucslp.edu.mx/prestigio/prestigioExAlumnos.html")|Ex Alumnos
 					li
-						a(href="https://www.ucslp.edu.mx/beneficios")|Beneficios UC
+						a(href="https://www.ucslp.edu.mx/beneficio.htmls")|Beneficios UC
 					li
-						a(href="https://www.ucslp.edu.mx/internacional")|Internacional
+						a(href="https://www.ucslp.edu.mx/internacional.html")|Internacional
 						ul.headerMain
 							li
 								a(href="")|Intercambio Estudiantil
@@ -122,11 +141,11 @@ body
 								a(href="")|Testimonios
 					li
 						a(href="").final|Visítanos
-	header#header.none 
+	header#header.none
 		nav.firstNav
 			div
 				ul
-					a(href="").logo
+					a(href="index.html").logo
 						img(src="resources/culogo_round.png", alt="Universidad Cuauhtemoc").logo
 			
 				ul
@@ -134,13 +153,13 @@ body
 						a(href="nosotros.html" style="margin-left:0; padding-left:0;")|Nosotros
 						ul
 							li
-								a(href="#mision")|Misión, Visión, Valores
+								a(href="nosotros.html#mision")|Misión, Visión, Valores
 							li
-								a(href="#filosofia")|Filosofía
+								a(href="nosotros.html#filosofia")|Filosofía
 							li
-								a(href="#directorio")|Directorio
+								a(href="nosotros.html#directorio")|Directorio
 					li
-						a(href="https://www.ucslp.edu.mx/oferta")|Oferta Académica
+						a(href="oferta.html")|Oferta Académica
 						ul.listHorizontal
 							li
 								a(href="#").head.greenHead|Nivel Medio Superior
@@ -150,34 +169,36 @@ body
 								
 								a(href="#").greenHead|Salud
 									div.greenHeadContainer
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/fisioterapia")|Fisioterapia
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/odontologia")|Odontología
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/medico-cirujano")|Médico Cirujano
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/psicologia-clinica")|Psicología Clínica
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/nutricion-y-ciencias-de-los-alimentos")|Nutrición y Ciencias de los Alimentos													
-								a(href="#").greenHead|Administrativas
-									div.greenHeadContainer
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/derecho")|Derecho
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/turismo")|Turismo
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/comercio-internacional")|Comercio Internacional
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/administracion-de-empresas")|Administración de Empresas
+										a(href="/oferta_academica/fisioterapia.html")|Fisioterapia
+										a(href="/oferta_academica/odontologia.html")|Odontología
+										a(href="/oferta_academica/medico.html")|Médico Cirujano
+										a(href="/oferta_academica/psicologia.html")|Psicología Clínica
+										a(href="/oferta_academica/nutricion.html")|Nutrición y Ciencias de los Alimentos													
+										a(href="/oferta_academica/deporte.html")|Ciencias de la Actividad Física y del Deporte
 								a(href="#").greenHead|Sociales
 									div.greenHeadContainer
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/pedagogia")|Pedagogía
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/arquitectura")|Arquitectura
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/diseno-grafico")|Diseño Gráfico
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/comunicacion")|Ciencias de la Comunicación
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/contenidos-digitales-interactivos")|Contenidos Digitales Interactivos
-										a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/ciencias-de-la-actividad-fisica-y-del-deporte")|Ciencias de la Actividad y el Deporte
+										a(href="/oferta_academica/derecho.html")|Derecho
+										a(href="/oferta_academica/turismo.html")|Turismo
+										a(href="/oferta_academica/comercio.html")|Comercio Internacional
+										a(href="/oferta_academica/administracion.html")|Administración de Empresas
+										a(href="/oferta_academica/ejecutiva_derecho.html")|Licenciatura Ejecutiva en Derecho
+										a(href="/oferta_academica/ejecutiva_comercio.html")|Licenciatura Ejecutiva en Comercio Internacional
+										a(href="/oferta_academica/administracion.html")|Licenciatura Ejecutiva en Administración de Empresas
+								a(href="#").greenHead|Humanidades
+									div.greenHeadContainer
+										a(href="/oferta_academica/pedagogia.html")|Pedagogía
+										a(href="/oferta_academica/arquitectura.html")|Arquitectura
+										a(href="/oferta_academica/grafico.html")|Diseño Gráfico
+										a(href="/oferta_academica/comunicacion.html")|Ciencias de la Comunicación
+								a(href="").greenHead|Ingeniería
+									div.greenHeadContainer
+										a(href="/oferta_academica/digitales.html")|Contenidos Digitales Interactivos
 							li
 								a(href="").head.greenHead|Maestrías y Posgrados
-								a(href="https://www.ucslp.edu.mx/posgrados/carreras/especialidad-en-ortodoncia-y-ortopedia-maxilar")|Especialidad en Ortodoncia
-								a(href="https://www.ucslp.edu.mx/posgrados/carreras/especialidad-en-bioetica")|Especialidad en Bioética
-								a(href="https://www.ucslp.edu.mx/posgrados/carreras/maestria-en-derecho-civil")|Maestría en Derecho Civil
-								a(href="https://www.ucslp.edu.mx/posgrados/carreras/maestria-en-criminologia")|Maestría en Criminología
-								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/licenciatura-ejecutiva-administracion-de-empresas")|Licenciatura Ejecutiva Administración de Empresas
-								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/licenciatura-ejecutiva-derecho")|Licenciatura Ejecutiva Derecho
-								a(href="https://www.ucslp.edu.mx/licenciaturas/carreras/licenciatura-ejecutiva-comercio-internacional")|Licenciatura Ejecutiva Comercio Internacional
+								a(href="/oferta_academica/especialidad-en-bioetica.html")|Especialidad en Bioética
+								a(href="/oferta_academica/maestria-en-derecho-civil.html")|Maestría en Derecho Civil
+								a(href="/oferta_academica/maestria-en-criminologia.html")|Maestría en Criminología
+								a(href="/oferta_academica/especialidad-en-ortodoncia-y-ortopedia-maxilar.html")|Especialidad en Ortodoncia y Ortopedia Maxilar
 					li
 						a(href="https://www.ucslp.edu.mx/integrate")|Integrate
 						ul
@@ -251,8 +272,9 @@ body
 				|Misión, Visión y Valores
 			h3
 				|Filosofía
-			h3
-				|Directorio
+			h3(style="background: #003056; overflow-y: scroll")
+				p(style="background: #003056")
+					|Directorio
 			
 		div.uno(onclick="window.location.replace('#mision');")
 			video(src="resources/HomeMision.mp4")
