@@ -77,9 +77,11 @@ header {
     header .secondNav li:hover > ul a {
       border-right: none; }
   header .secondNav .listHorizontal li {
-    float: left; }
+    float: left;
+    margin-left: 100px; }
   header .secondNav .listHorizontal .head {
-    font-weight: normal; }
+    font-weight: normal;
+    cursor: pointer; }
   header .secondNav div {
     -o-transition: 400ms ease;
     -ms-transition: 400ms ease;
@@ -101,7 +103,7 @@ header {
       font-weight: normal; }
     header .secondNav div .greenHead {
       color: #83b93a !important;
-      cursor: initial; }
+      cursor: pointer; }
     header .secondNav div .greenHead:hover {
       text-decoration: none; }
     header .secondNav div .greenHeadContainer {
@@ -117,6 +119,24 @@ header {
       color: #83b93a;
       -webkit-text-decoration: underline #83b93a;
       text-decoration: underline #83b93a; }
+    header .secondNav div .dump {
+      padding: 0 !important;
+      width: 100px;
+      min-width: 100px;
+      padding-start: 0 !important; }
+      header .secondNav div .dump li {
+        padding: 0;
+        margin: 0; }
+      header .secondNav div .dump .derp:hover {
+        padding-bottom: 160px; }
+      header .secondNav div .dump li:hover > ul {
+        display: block;
+        padding-top: 0;
+        width: 400px; }
+        header .secondNav div .dump li:hover > ul a {
+          border-right: none; }
+    header .secondNav div .bigDump {
+      width: 400px; }
   header .secondNav div:hover {
     border-bottom: 2px solid white; }
   header .firstNav {
@@ -213,7 +233,7 @@ header {
   background: white;
   color: #83b93a; }
 
-.content, .content2 {
+.content, .content2, .content3 {
   margin: 0;
   padding: 0;
   display: block;
@@ -526,6 +546,168 @@ header {
         color: white;
         border: none;
         font-size: 16px; }
+
+.doblehead {
+  background: #cccccc;
+  height: 110px;
+  -o-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  -moz-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: center; }
+  .doblehead .pinContainer {
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #003056;
+    width: 100%;
+    height: 60px;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -o-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end; }
+    .doblehead .pinContainer .pin {
+      width: 28px;
+      height: 28px;
+      -o-transition: 400ms ease;
+      -ms-transition: 400ms ease;
+      -moz-transition: 400ms ease;
+      transition: 400ms ease;
+      -webkit-transition: 400ms ease;
+      margin-right: 20px; }
+    .doblehead .pinContainer .pin:hover {
+      width: 29px; }
+    .doblehead .pinContainer .btn-green {
+      color: white;
+      border: none;
+      font-size: 16px;
+      margin-right: 20px; }
+  .doblehead .firstNav {
+    -o-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-justify-content: space-between; }
+    .doblehead .firstNav ul, .doblehead .firstNav ol {
+      list-style: none;
+      display: -webkit-flex;
+      display: -o-flex;
+      display: -ms-flex;
+      display: -moz-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -o-align-items: center;
+      -ms-align-items: center;
+      -moz-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-align-items: center; }
+    .doblehead .firstNav div > ul > li {
+      float: left;
+      height: 64px;
+      margin-top: 32px; }
+    .doblehead .firstNav li ul {
+      display: none;
+      position: absolute;
+      min-width: 100%; }
+    .doblehead .firstNav li:hover > ul {
+      display: block;
+      padding-top: 0; }
+      .doblehead .firstNav li:hover > ul a {
+        border-right: none; }
+    .doblehead .firstNav ul > li > ul {
+      background: #cccccc;
+      margin-top: 21px;
+      font-size: 15px; }
+    .doblehead .firstNav .listHorizontal li {
+      float: left; }
+    .doblehead .firstNav .listHorizontal .head {
+      font-weight: normal; }
+    .doblehead .firstNav div {
+      border: none;
+      padding: 0;
+      display: -webkit-flex;
+      display: -o-flex;
+      display: -ms-flex;
+      display: -moz-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .doblehead .firstNav div .greenHead {
+        color: #83b93a !important;
+        cursor: initial;
+        margin: 0; }
+      .doblehead .firstNav div .greenHead:hover {
+        text-decoration: none; }
+      .doblehead .firstNav div .greenHeadContainer {
+        margin: 0;
+        margin-bottom: 8px;
+        padding: 0;
+        -o-flex-direction: column;
+        -ms-flex-direction: column;
+        -moz-flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-flex-direction: column; }
+      .doblehead .firstNav div .greenHeadContainer:hover {
+        border: none; }
+      .doblehead .firstNav div a {
+        display: block;
+        padding: 1px 10px 1px 10px;
+        border-right: 2px solid #003056;
+        color: #003056;
+        -o-transition: 400ms ease;
+        -ms-transition: 400ms ease;
+        -moz-transition: 400ms ease;
+        transition: 400ms ease;
+        -webkit-transition: 400ms ease;
+        font-weight: normal;
+        font-size: 15px; }
+      .doblehead .firstNav div a.final {
+        border-right: none; }
+      .doblehead .firstNav div a:hover {
+        font-weight: normal;
+        color: #83b93a;
+        -webkit-text-decoration: underline #83b93a;
+        text-decoration: underline #83b93a; }
+      .doblehead .firstNav div .logo {
+        width: 200px;
+        border: none !important; }
 
 .playButton {
   position: relative;

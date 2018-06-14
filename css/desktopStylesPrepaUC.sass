@@ -19,6 +19,7 @@ header
 	width: 320px
 	right: 60px
 	top: 100px
+	z-index: 20
 .floatNav
 	width: 100%
 	position: fixed
@@ -46,6 +47,7 @@ header
 	height: 100%
 	overflow: hidden
 	video
+		background: #ffca05
 		z-index: -1
 	> div
 		position: absolute
@@ -65,10 +67,12 @@ header
 			color: white
 			+justify-content(center)
 			+align-items(center)
+			padding-top: 140px
 			h3
 				width: 100%
 				text-align: center
 				font-size: 28px
+				color: #ffca05
 			p 
 				font-size: 17px
 				padding-left: 14px
@@ -79,16 +83,16 @@ header
 		.uno
 			background-image: url("../resources/1.jpg")
 			+transition(200ms ease)
-			-webkit-animation: change1 2.5s infinite ease
- 			animation: change1 2.5s infinite ease
+			-webkit-animation: change1 8s infinite ease
+ 			animation: change1 8s infinite ease
 		//.uno:hover
 			//background-image: url("../resources/2.jpg")
 		.dos
 			background-image: url("../resources/3.5.jpg")
 		.tres
 			background-image: url("../resources/3.jpg")
-			-webkit-animation: change2 2.5s infinite ease
-			animation: change2 2.5s infinite ease
+			-webkit-animation: change2 8s infinite ease
+			animation: change2 8s infinite ease
 		//.tres:hover
 			//background-image: url("../resources/5.jpg")
 	#talleres
@@ -99,21 +103,22 @@ header
 			+flex-direction(column)
 			h3
 				width: 100%
+				font-size: 30
+
 			p
 				padding-left: 0 !important
 				text-align: center
-				font-size: 20px !important
+				font-size: 28px !important
 		.uno
 			+flex-normal(2)
 			background-image: url("../resources/deporte1.jpg")
-			-webkit-animation: change3 2.8s infinite ease
-			animation: change3 2.8s infinite ease
+			-webkit-animation: change3 8s infinite ease
+			animation: change3 8s infinite ease
 		.dos
 			+flex-normal(2)
 			background-image: url("../resources/cultura1.jpg")
-			-webkit-animation: change4 2.8s infinite ease
-			animation: change4 2.8s infinite ease
-
+			-webkit-animation: change4 8s infinite ease
+			animation: change4 8s infinite easw
 
 
 

@@ -1,0 +1,250 @@
+@import desktopStyles.sass
+
+$medico: #0b6497
+$odonto: #25b2a8
+$fisio: #1281bc
+$nutri: #f0832b
+$psico: #889659
+$fisic: #135d72
+$comercio: #9c5d98
+$derecho: #98381a
+$turismo: #e62865
+$admi: #ec6d3a
+$arqui: #4f6485
+$grafico: #f39634
+$comunica: #16a1b9
+$peda: #875430
+$game: #068269
+$gris_oscuro: #999999
+$gris_claro: #b3b3b3
+
+.oferta
+	background: white
+	+flex()
+	+flex-direction(column)
+	> div 
+		+flex-normal(2)
+		width: 100%
+		background: green
+		+flex()
+		> .start 
+			background-size: cover
+			width: 17%
+			background-repeat: no-repeat
+			z-index: 4
+			p
+				+transition(400ms ease)
+				color: white
+				font-size: 30px
+				width: 100%
+				position: relative
+				margin-top: 100%
+				text-align: center
+
+		> span
+			z-index: 3
+			background: white
+			width: 100%
+			margin-left: 17%
+			position: fixed
+			height: 50%
+			cursor: pointer
+			+flex()
+			+transition(400ms ease)
+			.arrowL, .arrowR
+				position: absolute
+				width: 28px
+				top: 50%
+				opacity: 0.35
+			.arrowR
+				top: 60%
+				-webkit-transform: translate(0%, -50%)
+				-o-transform: translate(0%, -50%)
+				-ms-transform: translate(0%, -50%)
+				-moz-transform: translate(0%, -50%)
+				transform: translate(0%, -50%)
+				right: calc(20px + 17%)
+			.arrowL
+				left: 20px
+				-webkit-transform: rotate(180deg) translate(0%, 50%)
+				-o-transform: rotate(180deg) translate(0%, 50%)
+				-ms-transform: rotate(180deg) translate(0%, 50%)
+				-moz-transform: rotate(180deg) translate(0%, 50%)
+				transform: rotate(180deg) translate(0%, 50%)
+				top: calc(60%)
+			> div
+				background: white
+				width: 17%
+				+transition(400ms ease)
+				color: white
+				font-size: 20px
+				width: 100%
+				text-align: center
+				opacity: 0.7
+				p 
+					margin-top: 122%
+					opacity: 0
+				span
+					opacity: 0
+			> div:hover
+				opacity: 1
+				p,span
+					opacity: 1
+			.a1
+				background: $medico
+				background-image: url(../resources/oferta/cirujano_ico.svg)
+				background-repeat: no-repeat
+				background-position: center 70%
+				background-size: 40%
+			.a2
+				background: $odonto
+				background-image: url(../resources/oferta/odonto_ico.svg)
+				background-repeat: no-repeat
+				background-position: center 70%
+				background-size: 40%
+			.a3
+				background: $fisio
+				background-image: url(../resources/oferta/fisio_ico.svg)
+				background-repeat: no-repeat
+				background-position: center 70%
+				background-size: 40%
+			.a4
+				background: $nutri
+				background-image: url(../resources/oferta/nutri_ico.svg)
+				background-repeat: no-repeat
+				background-position: center 70%
+				background-size: 40%
+			.a5
+				background: $psico
+				background-image: url(../resources/oferta/psico_ico.svg)
+				background-repeat: no-repeat
+				background-position: center 70%
+				background-size: 40%
+			.a6
+				background: $fisic
+				background-image: url(../resources/oferta/fisic_ico.svg)
+				background-repeat: no-repeat
+				background-position: center 70%
+				background-size: 40%
+			.b1
+				background: $comercio
+				background-image: url(../resources/oferta/comercio_ico.svg)
+				background-repeat: no-repeat
+				background-position: center 
+				background-size: 40%
+			.b2
+				background: $derecho
+				background-image: url(../resources/oferta/derecho_ico.svg)
+				background-repeat: no-repeat
+				background-position: center 
+				background-size: 40%
+			.b3
+				background: $turismo
+				background-image: url(../resources/oferta/turismo_ico.svg)
+				background-repeat: no-repeat
+				background-position: center 
+				background-size: 40%
+			.b4
+				background: $admi
+				background-image: url(../resources/oferta/admi_ico.svg)
+				background-repeat: no-repeat
+				background-position: center 
+				background-size: 40%
+
+		> #secondSpan
+			width: 116.5%
+			.arrowR
+				right: calc(20px + 29%)
+.content3
+	margin-top: 140px
+	height: calc(100% - 60px)
+	z-index: 1
+	background: white
+	+flex()
+	+flex-direction(column)
+	overflow: hidden
+	.special
+		width: 116.5%
+		overflow: hidden
+		.arrowL2, .arrowR2
+			position: absolute
+			width: 28px
+			top: 75%
+			opacity: 0.35
+			cursor: pointer
+		.arrowR2
+			-webkit-transform: translate(0%, -50%)
+			-o-transform: translate(0%, -50%)
+			-ms-transform: translate(0%, -50%)
+			-moz-transform: translate(0%, -50%)
+			transform: translate(0%, -50%)
+			right: calc(20px)
+		.arrowL2
+			left: calc(20px + 17%)
+			-webkit-transform: rotate(180deg) translate(0%, 50%)
+			-o-transform: rotate(180deg) translate(0%, 50%)
+			-ms-transform: rotate(180deg) translate(0%, 50%)
+			-moz-transform: rotate(180deg) translate(0%, 50%)
+			transform: rotate(180deg) translate(0%, 50%)
+		
+	> div
+		background: white
+		+flex-normal(2)	
+		+flex()
+		> div
+			+flex-normal(1)
+			background-size: 40%
+			background-repeat: no-repeat
+			background-position: center
+			cursor: pointer
+			color: white
+			font-size: 20px
+			width: 100%
+			text-align: center
+			+transition(400ms ease)
+			opacity: 0.7
+			p 
+				margin-top: 100%
+				opacity: 0
+			span
+				opacity: 0
+		.master
+			font-size: 40px
+			opacity: 1
+			p
+				margin-top: 50%
+				opacity: 1
+			span
+				opacity: 1
+		> .start 
+			background-size: 100% 100%
+			cursor: initial
+			opacity: 1
+			p
+				color: white
+				font-size: 30px
+				width: 100%
+				position: relative
+				margin-top: 100%
+				text-align: center
+				opacity: 1
+		> div:hover 
+			opacity: 1
+			p
+				opacity: 1
+			span
+				opacity: 1
+		.c1
+			background-color: $arqui
+		.c2
+			background-color: $grafico
+		.c3 
+			background-color: $comunica
+		.c4
+			background-color: $peda
+		.c5
+			background-color: $game
+		.gray1
+			background-color: $gris_claro
+		.gray2
+			background-color: $gris_oscuro

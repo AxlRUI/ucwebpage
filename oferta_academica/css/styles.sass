@@ -1,0 +1,86 @@
+@import ../../css/desktopStyles.sass
+
+.doblehead
+	background: #f2f2f2
+	height: 64px
+	+flex-direction(row)
+	+justify-content(center)
+	+align-items(center)
+	.pinContainer
+		position: fixed
+		float: right
+		right: 30px
+		top: 140px
+		.pin
+			width: 26px
+			+transition(400ms ease)
+		.pin:hover
+			width: 29px
+	.firstNav
+		+justify-content(space-between)
+		ul, ol
+			list-style: none
+			//height: 64px
+			+flex()
+			+align-items(center)
+		div > ul >li 
+			float: left
+			height: 64px
+			margin-top: 32px
+		li ul 
+			display: none
+			position: absolute
+			min-width: 100%
+		li:hover > ul
+			display: block
+			padding-top: 0
+			a
+				border-right: none
+		ul > li > ul
+			background: rgba(255,255,255,0.8)
+			margin-top: 21px
+		.listHorizontal
+			li
+				float: left
+			.head
+				font-weight: normal
+
+		div
+			border: none
+			padding: 0
+			+flex()
+			.greenHead
+				color: $cu_green !important
+				cursor: initial
+				margin: 0
+			.greenHead:hover
+				text-decoration: none
+			.greenHeadContainer
+				margin: 0
+				margin-bottom: 8px
+				padding: 0
+				+flex-direction(column)
+			.greenHeadContainer:hover
+				border: none
+			a
+				display: block
+				padding: 1px 10px 1px 10px
+				border-right: 2px solid $hard_blue 
+				color: $hard_blue
+				+transition(400ms ease)
+				font-weight: normal
+				font-size: 15px
+			a.final
+				border-right: none
+			a:hover
+				font-weight: normal
+				color: $cu_green
+				text-decoration: underline $cu_green
+			.logo
+				width: 52px;
+				border: none !important
+
+			.btn-green
+				color: white
+				border: none
+				font-size: 16px
