@@ -1,0 +1,34 @@
+doctype html
+html
+	head
+		link(rel="stylesheet" href="css/movilStyles.css")
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+			
+	body
+		content(style="z-index: 2;")#secondViewNav
+			include headerV2.pug
+		
+		content#visitanos
+			div.box
+				div.up
+				div.down
+					div.one
+						div.boxes
+							img(src="resources/visitanos/carro.png")
+							p Llegando por carretera 57 Matehuala
+						div.boxes
+							img(src="resources/visitanos/carro.png")
+							p Llegando por carretera Lagos de Moreno/México 80
+						div.boxes
+							img(src="resources/visitanos/carro.png")
+							p Llegando por carretera 57 Querétaro
+						div.boxes
+							img(src="resources/visitanos/carro.png")
+							p Llegando por carretera Río Verde
+			div.box
+				div.up
+				div(style="overflow: hidden;").down
+					img(src="resources/visitanos/uc.png")
+
+		include footer.pug

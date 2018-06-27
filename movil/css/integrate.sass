@@ -1,0 +1,86 @@
+#integrate
+	width: 100%
+	height: 100%
+	position: absolute
+	background-color: $blue
+	+flex()
+	+flex-direction(column)
+	a
+		width: 100%
+		height: 100%
+		text-decoration: none
+	.up
+		width: 100%
+		height: 70%
+	.down
+		width: 100%
+		height: 30%
+		position: relative
+		overflow: scroll
+		.abs
+			+flex()
+			width: 200%
+			height: 100%
+			position: absolute
+			.boxes
+				+border-box()
+				padding: 250px 20px
+				> p
+					text-align: center
+					color: $white
+					font-size: 45px
+
+	.first
+		width: 100%
+		height: 100%
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		background-image: url("../resources/visitanos/1.jpg")
+	.second
+		width: 100%
+		height: 100%
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		background-image: url("../resources/visitanos/2.jpg")
+	.third
+		width: 100%
+		height: 100%
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		background-image: url("../resources/visitanos/3.jpg")
+	.fourth
+		width: 100%
+		height: 100%
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		background-image: url("../resources/visitanos/4.jpg")
+.new
+	+border-box()
+	+flex()
+	+flex-direction(column)
+	position: absolute
+	width: 100%
+	height: 100%
+	padding-top: 170px
+	.video1, .video2
+		width: 100%
+		height: 50%
+		position: relative
+	.video1
+		background-color: $green
+	.video2
+		background-color: $blue
+	.back
+		background-size: 100% 100%
+		background-repeat: no-repeat
+		background-image: url("../resources/visitanos/back.png")
+		z-index: 1
+		position: fixed
+		width: 70px
+		height: 70px
+		top: 200px
+		left: 20px
+.display
+	display: none
+.display:target
+	+flex()

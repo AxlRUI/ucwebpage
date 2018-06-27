@@ -1,0 +1,47 @@
+#visitanos
+	width: 100%
+	height: 200%
+	position: absolute
+	+flex()
+	+flex-direction(column)
+	.box
+		width: 100%
+		height: 100%
+		+flex()
+		+flex-direction(column)
+		.up
+			width: 100%
+			height: 70%
+			background-color: $blue
+		.down
+			width: 100%
+			height: 30%
+			background-color: $green
+			position: relative
+			overflow: scroll
+			z-index: 1
+			> img
+				width: 100%
+				height: 100%
+			.one
+				+flex()
+				width: 200%
+				height: 100%
+				position: absolute
+				background-color: #999
+				.boxes
+					position: relative
+					margin: auto 0
+					width: 25%
+					height: 90%
+					border-right: 2px #ccc solid
+					background-color: #999999
+					> img
+						margin: 150px 130px 0px 
+						width: 200px
+						height: 100px
+					> p
+						padding: 15px
+						text-align: center
+						color: $white
+						font-size: 30px

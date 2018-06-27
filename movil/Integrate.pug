@@ -1,0 +1,57 @@
+doctype html
+html
+	head
+		link(rel="stylesheet" href="css/movilStyles.css")
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+			
+	body
+		content(style="z-index: 2;")#secondViewNav
+			include headerV2.pug
+		
+		content#integrate.display
+			div.up
+			div.down
+				div.abs
+					a(href="#bachillerato")
+						div.boxes.first
+							p Equivalencia para 
+							p alumnos de 
+							p Bachillerato
+					a(href="#licenciatura")
+						div.boxes.second
+							p Documentos para
+							p ingreso a Licenciatura
+							p (alumnos)
+					a(href="#universidades")
+						div.boxes.third
+							p Equivalencia para
+							p alumnos que provienen
+							p de otras Universidades
+					a(href="#extranjeros")
+						div.boxes.fourth
+							p Ingreso a Licenciatura
+							p para alumnos
+							p extranjeros
+		div#bachillerato.display.new
+			a(href="#integrate")
+				div.back
+			div.video1
+			div.video2
+		div#licenciatura.display.new
+			a(href="#integrate")
+				div.back
+			div.video1
+			div.video2
+		div#universidades.display.new
+			a(href="#integrate")
+				div.back
+			div.video1
+			div.video2
+		div#extranjeros.display.new
+			a(href="#integrate")
+				div.back
+			div.video1
+			div.video2
+
+		include footer.pug

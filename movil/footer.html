@@ -1,0 +1,64 @@
+
+<footer class="first-footer">
+  <div> 
+    <p>Contacto</p>
+  </div>
+</footer>
+<footer class="second-footer">
+  <div class="foot"><img src="resources/nav/culogo.png"/></div>
+  <div class="foot2">
+    <div>
+      <p>Dirección Av. Dr.Salvador Nava Martínez No 329</p>
+      <p>Col. Viveros. San Luis Potosí, México.</p>
+      <p>C.P. 78290</p>
+    </div>
+    <div>
+      <p>Salida Sin Costo: 01 800 00 UCSLP (82757)</p>
+      <p>Teléfonos: (444) 500.45.00 / (400) 817.65.30</p>
+      <p>WhatsApp: (444) 408.30.27</p>
+      <p>Email: contacto@ucslp.net	</p>
+    </div>
+  </div>
+  <div class="foot3"><a href="https://www.facebook.com/ucslp/"></a><img src="resources/nav/facebook-pin.png"/><a href="https://twitter.com/CuauhtemocSLP?lang=es"></a><img src="resources/nav/twitter-pin.png"/><a href="https://www.instagram.com/guerreros_ucslp/"></a><img src="resources/nav/instagram-pin.png"/></div>
+  <div class="foot4">
+    <div>
+      <p>Contacto	</p>
+    </div>
+  </div>
+  <script>
+    	var botonM = false;
+    	$('.burger').click(function(){
+    		if (botonM == false) {
+    			$('.secondNav').animate({
+    				left: '0'
+    			},'slow');
+    			botonM = true;
+    		}else if(botonM == true){
+    			$('.secondNav').animate({
+    				left: '-110%'
+    			},'slow');
+    			botonM = false;
+    		}
+    	});
+     
+    $(document).ready(function(){
+     $(window).scroll(function() {
+       if ($(document).scrollTop() > 5 ) {
+         $("#firstView").css("z-index", "-1");
+    		$("#secondView").css("z-index", "1");
+       } else if ($(document).scrollTop() < 5){
+         $("#secondView").css("z-index", "-1");
+         $("#firstView").css("z-index", "2");
+       }
+     });
+    	$('.first-footer').click(function(){
+    		$(".second-footer").css("display", "flex");
+    		$(".first-footer").css("display", "none");
+    	});
+    	$('.second-footer').click(function(){
+    		$(".first-footer").css("display", "flex");
+    		$(".second-footer").css("display", "none");
+    	});
+    });
+  </script>
+</footer>

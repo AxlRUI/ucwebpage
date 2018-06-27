@@ -8,144 +8,8 @@ html
 			
 	body
 		content#firstView
-			//img(src='resources/1080x1920.jpg').back
-			nav.firstNav
-				div.nav-left
-					div.burger
-					img(src='resources/nav/culogo.png').logo
-				div.nav-right
-					div.green-button
-						div
-							a(href='')|¡REGISTRATE!
-					div.nav-social
-						a(href="https://www.facebook.com/ucslp/")
-							img(src='resources/nav/facebook-pin.png')
-						a(href="https://twitter.com/CuauhtemocSLP?lang=es")
-							img(src='resources/nav/twitter-pin.png')
-						a(href="https://www.instagram.com/guerreros_ucslp/")
-							img(src='resources/nav/instagram-pin.png')
-						a(href="https://www.youtube.com/user/UCUAUHTEMOCSLP")
-							img(src='resources/nav/youtube-pin.png')
-						a(href="http://servicios.ucslp.edu.mx/")
-							img(src='resources/nav/uc-pin.png')
-						a(href="https://www.ucslp.edu.mx/descargas/calendario/ucslp_calendario.pdf")
-							img(src='resources/nav/calendar-pin.png')
-			nav.secondNav
-				div
-					ul
-						li
-							a(href="#")|Nosotros
-							ul.children
-								li
-									a(href="nosotros-movil.html#mision")|Misión, Visión, Valores
-								li
-									a(href="nosotros-movil.html#filosofia")|Filosofía
-								li
-									a(href="nosotros-movil.html#directorio")|Directorio
-						li
-							a(href="#")|Oferta Académica
-							ul.children
-								li
-									a(href="prepaUC-movil.html")|Prepa UC
-								li
-									a(href="#")|Licenciaturas +
-								li
-									a(href="#")|Maestrías y Posgrados
-									ul.children
-										li
-											a(href="#")|-Especialidad en Ortodoncia
-										li
-											a(href="#")|-Ortopediamaxilar
-										li
-											a(href="#")|-Especialidad en bioética
-										li
-											a(href="#")|-Maestría en Derecho Civil
-								li 
-									a(href="#")|Nivel superior	
-									ul.children
-										li 
-											a(href="#").titulo|Salud
-										li 
-											a(href="#")|-Fisioterapia
-										li 
-											a(href="Odontologia.html")|-Odontología
-										li 
-											a(href="#")|-Médico Cirujano
-										li 
-											a(href="#")|-Psicología Clínica
-										li 
-											a(href="#")|-Nutrición y Ciencias de los Alimentos
-										li
-											a(href="#")|-Ciencias de la Actividad y del Deporte
 
-									ul.children
-										li
-											a(href="#").titulo|Sociales
-										li
-											a(href="Derecho.html")|-Derecho
-										li
-											a(href="#")|-Turismo
-										li
-											a(href="#")|-Comercio Internacional
-										li
-											a(href="#")|-Administración de empresas
-										li
-											a(href="#")|-Licenciatura Ejecutiva en Derecho
-										li
-											a(href="#")|-Licenciatura Ejecutiva en Comercio Internacional
-										li
-											a(href="#")|-Licenciatura Ejecutiva en Administración de Empresas
-									ul.children
-										li
-											a(href="#").titulo|Humanidades
-										li
-											a(href="#")|-Pedagogía
-										li
-											a(href="Arquitectura.html")|-Arquitectura
-										li
-											a(href="DisenioGrafico.html")|-Diseño Gráfico
-										li
-											a(href="#")|-Ciencias de la Comunicación
-									ul.children
-										li
-											a(href="#").titulo|Ingeniería
-										li
-											a(href="ContenidosDigitales.html")|-Contenidos Digitales Interactivos
-
-						li
-							a(href="#")|Intégrate
-							ul.children
-								li
-									a(href="#")|Ingreso a Licenciatura
-								li
-									a(href="#")|Ingreso a Bachillerato
-								li
-									a(href="#")|Provenientes de Otras Univesrsidades
-								li
-									a(href="#")|Ingreso a Licenciatura para Alumnos Extranjeros	
-						li
-							a(href="#")|Prestigio UC
-							ul.children
-								li
-									a(href="https://www.ucslp.edu.mx/prestigio/prestigioAlumnos")|Alumnos
-								li
-									a(href="https://www.ucslp.edu.mx/prestigio/prestigioProfesores")|Docentes
-								li
-									a(href="https://www.ucslp.edu.mx/prestigio/prestigioExAlumnos")|Ex Alumnos
-						li
-							a(href="https://www.ucslp.edu.mx/beneficios")|Beneficios UC
-						li
-							a(href="https://www.ucslp.edu.mx/internacional")|Internacional
-							ul.children
-								li
-									a(href="#")|Intercambio Estudiantil
-								li
-									a(href="#")|Estudiantes Visitantes
-								li
-									a(href="#")|Profesores Visitantes
-						li
-							a(href="#").final|Visitanos
-
+			include headerV1.pug
 
 			div(onClick='playPause()').index-play
 				img(src='resources/index/Untitled-4.png').play
@@ -155,132 +19,11 @@ html
 				br
 				|CON ALTO DESEMPEÑO ACADÉMICO
 		div.margin
-		content#secondView
-			div
-			nav.firstNavS
-				div.nav-leftS
-					div.burger
-					a(href='index-movil.html')
-						img(src='resources/nav/culogo_round.png').logo
-				div.nav-rightS
-					div.green-button
-						div 
-							a(href='')|¡REGISTRATE!
-			nav.secondNav
-				div
-					ul
-						li
-							a(href="#")|Nosotros
-							ul.children
-								li
-									a(href="#")|Misión, Visión, Valores
-								li
-									a(href="#")|Filosofía
-								li
-									a(href="#")|Directorio
-						li
-							a(href="#")|Oferta Académica
-							ul.children
-								li
-									a(href="prepaUC-movil.html")|Prepa UC
-								li
-									a(href="#")|Licenciaturas +
-								li
-									a(href="#")|Maestrías y Posgrados
-									ul.children
-										li
-											a(href="#")|-Especialidad en Ortodoncia
-										li
-											a(href="#")|-Ortopediamaxilar
-										li
-											a(href="#")|-Especialidad en bioética
-										li
-											a(href="#")|-Maestría en Derecho Civil
-								li 
-									a(href="#")|Nivel superior	
-									ul.children
-										li 
-											a(href="#").titulo|Salud
-										li 
-											a(href="#")|-Fisioterapia
-										li 
-											a(href="Odontologia.html")|-Odontología
-										li 
-											a(href="#")|-Médico Cirujano
-										li 
-											a(href="#")|-Psicología Clínica
-										li 
-											a(href="#")|-Nutrición y Ciencias de los Alimentos
-										li
-											a(href="#")|-Ciencias de la Actividad y del Deporte
 
-									ul.children
-										li
-											a(href="#").titulo|Sociales
-										li
-											a(href="Derecho.html")|-Derecho
-										li
-											a(href="#")|-Turismo
-										li
-											a(href="#")|-Comercio Internacional
-										li
-											a(href="#")|-Administración de empresas
-										li
-											a(href="#")|-Licenciatura Ejecutiva en Derecho
-										li
-											a(href="#")|-Licenciatura Ejecutiva en Comercio Internacional
-										li
-											a(href="#")|-Licenciatura Ejecutiva en Administración de Empresas
-									ul.children
-										li
-											a(href="#").titulo|Humanidades
-										li
-											a(href="#")|-Pedagogía
-										li
-											a(href="Arquitectura.html")|-Arquitectura
-										li
-											a(href="DisenioGrafico")|-Diseño Gráfico
-										li
-											a(href="#")|-Ciencias de la Comunicación
-									ul.children
-										li
-											a(href="#").titulo|Ingeniería
-										li
-											a(href="ContenidosDigitales.html")|-Contenidos Digitales Interactivos
-						li
-							a(href="#")|Intégrate
-							ul.children
-								li
-									a(href="#")|Ingreso a Licenciatura
-								li
-									a(href="#")|Ingreso a Bachillerato
-								li
-									a(href="#")|Provenientes de Otras Univesrdiades
-								li
-									a(href="#")|Ingreso a Licenciatura para Alumnos Extranjeros	
-						li
-							a(href="#")|Prestigio UC
-							ul.children
-								li
-									a(href="https://www.ucslp.edu.mx/prestigio/prestigioAlumnos")|Alumnos
-								li
-									a(href="https://www.ucslp.edu.mx/prestigio/prestigioProfesores")|Docentes
-								li
-									a(href="https://www.ucslp.edu.mx/prestigio/prestigioExAlumnos")|Ex Alumnos
-						li
-							a(href="https://www.ucslp.edu.mx/beneficios")|Beneficios UC
-						li
-							a(href="https://www.ucslp.edu.mx/internacional")|Internacional
-							ul.children
-								li
-									a(href="#")|Intercambio Estudiantil
-								li
-									a(href="#")|Estudiantes Visitantes
-								li
-									a(href="#")|Profesores Visitantes
-						li
-							a(href="#").final|Visitanos
-			
+		content#secondView
+			content#secondViewNav
+				include headerV2.pug
+
 			div.boxes
 				div.box
 					img(src='resources/index/prepa-movil.jpg')
@@ -303,81 +46,18 @@ html
 				div.box
 					img(src='resources/index/UCSLP_CampañaVerano_bannerweb.png')
 				
-		footer.first-footer
-			div 
-				p Contacto
-		footer.second-footer
-			div.foot
-				img(src='resources/nav/culogo.png')
-			div.foot2
-				div
-					p
-						|Dirección Av. Dr.Salvador Nava Martínez No 329
-					p
-						|Col. Viveros. San Luis Potosí, México.
-					p
-						|C.P. 78290
-				div
-					p
-						|Salida Sin Costo: 01 800 00 UCSLP (82757)
-					p
-						|Teléfonos: (444) 500.45.00 / (400) 817.65.30
-					p
-						|WhatsApp: (444) 408.30.27
-					p
-						|Email: contacto@ucslp.net	
-			div.foot3
-				a(href="https://www.facebook.com/ucslp/")
-				img(src='resources/nav/facebook-pin.png')
-			
-				a(href="https://twitter.com/CuauhtemocSLP?lang=es")
-				img(src='resources/nav/twitter-pin.png')
-			
-				a(href="https://www.instagram.com/guerreros_ucslp/")
-				img(src='resources/nav/instagram-pin.png')
-			div.foot4
-				div
-					p Contacto	
+		include footer.pug
 
-
-
-
-	  
-	script
-		|	var botonM = false;
-		|	$('.burger').click(function(){
-		|		if (botonM == false) {
-		|			$('.secondNav').animate({
-		|				left: '0'
-		|			},'slow');
-		|			botonM = true;
-		|		}else if(botonM == true){
-		|			$('.secondNav').animate({
-		|				left: '-110%'
-		|			},'slow');
-		|			botonM = false;
-		|		}
-		|	});
-		| 
-		|$(document).ready(function(){
-		|  $(window).scroll(function() {
-		|    if ($(document).scrollTop() > 5 ) {
-		|      $("#firstView").css("z-index", "-1");
-		|		$("#secondView").css("z-index", "1");
-		|    } else if ($(document).scrollTop() < 5){
-		|      $("#secondView").css("z-index", "-1");
-		|      $("#firstView").css("z-index", "2");
-		|    }
-		|  });
-		|	$('.first-footer').click(function(){
-		|		$(".second-footer").css("display", "flex");
-		|		$(".first-footer").css("display", "none");
-		|	});
-		|	$('.second-footer').click(function(){
-		|		$(".first-footer").css("display", "flex");
-		|		$(".second-footer").css("display", "none");
-		|	});
-		|});
+script
+	|$(window).scroll(function() {
+	|    if ($(document).scrollTop() > 5 ) {
+	|      $("#firstView").css("z-index", "-1");
+	|		$("#secondView").css("z-index", "1");
+	|    } else if ($(document).scrollTop() < 5){
+	|      $("#secondView").css("z-index", "-1");
+	|      $("#firstView").css("z-index", "2");
+	|    }
+	|  });
 
 					
 		

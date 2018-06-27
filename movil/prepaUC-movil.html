@@ -177,48 +177,39 @@
           <p>Contacto	</p>
         </div>
       </div>
+      <script>
+        	var botonM = false;
+        	$('.burger').click(function(){
+        		if (botonM == false) {
+        			$('.secondNav').animate({
+        				left: '0'
+        			},'slow');
+        			botonM = true;
+        		}else if(botonM == true){
+        			$('.secondNav').animate({
+        				left: '-110%'
+        			},'slow');
+        			botonM = false;
+        		}
+        	});
+         
+        $(document).ready(function(){
+        	$('.first-footer').click(function(){
+        		$(".second-footer").css("display", "flex");
+        		$(".first-footer").css("display", "none");
+        	});
+        	$('.second-footer').click(function(){
+        		$(".first-footer").css("display", "flex");
+        		$(".second-footer").css("display", "none");
+        	});
+        	$('#logoprepUC').click(function(){
+        		$("#logoprepUCmenu").css("display", "flex");
+        	});
+        	$('#UC').click(function(){
+        		$("#logoprepUCmenu").css("display", "none");
+        	});
+        });
+      </script>
     </footer>
   </body>
-  <script>
-    	var botonM = false;
-    	$('.burger').click(function(){
-    		if (botonM == false) {
-    			$('.secondNav').animate({
-    				left: '0'
-    			},'slow');
-    			botonM = true;
-    		}else if(botonM == true){
-    			$('.secondNav').animate({
-    				left: '-110%'
-    			},'slow');
-    			botonM = false;
-    		}
-    	});
-     
-    $(document).ready(function(){
-     $(window).scroll(function() {
-       if ($(document).scrollTop() > 5 ) {
-         $("#firstView").css("z-index", "-1");
-    		$("#secondView").css("z-index", "1");
-       } else if ($(document).scrollTop() < 5){
-         $("#secondView").css("z-index", "-1");
-         $("#firstView").css("z-index", "2");
-       }
-     });
-    	$('.first-footer').click(function(){
-    		$(".second-footer").css("display", "flex");
-    		$(".first-footer").css("display", "none");
-    	});
-    	$('.second-footer').click(function(){
-    		$(".first-footer").css("display", "flex");
-    		$(".second-footer").css("display", "none");
-    	});
-    	$('#logoprepUC').click(function(){
-    		$("#logoprepUCmenu").css("display", "flex");
-    	});
-    	$('#UC').click(function(){
-    		$("#logoprepUCmenu").css("display", "none");
-    	});
-    });					
-  </script>
 </html>

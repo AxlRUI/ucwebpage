@@ -26,10 +26,56 @@ a {
   bottom: -50px; }
 
 #secondView {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: 1; }
+  z-index: 1;
+  position: absolute;
+  height: 200%;
+  width: 100%; }
+  #secondView .boxes {
+    margin-top: 200px;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column; }
+    #secondView .boxes .box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      display: -webkit-flex;
+      display: -o-flex;
+      display: -ms-flex;
+      display: -moz-flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      -o-flex-direction: row;
+      -ms-flex-direction: row;
+      -moz-flex-direction: row;
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      #secondView .boxes .box > img {
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+      #secondView .boxes .box > p {
+        position: absolute;
+        font-size: 50px;
+        color: white;
+        bottom: 50px;
+        margin-left: 50px; }
 
 .firstNav {
   padding-top: 70px;
@@ -308,24 +354,25 @@ a {
       border-bottom: 1px solid #83B93A;
       color: #83B93A; }
 
-#secondView {
-  position: absolute;
+#secondViewNav {
+  z-index: 1;
+  position: fixed;
   height: 180%; }
-  #secondView .secondNav {
+  #secondViewNav .secondNav {
     width: 100%;
     height: 100%;
     background-color: #f2f2f2; }
-    #secondView .secondNav li {
+    #secondViewNav .secondNav li {
       width: 50%;
       border-bottom: 1px solid #003056; }
-      #secondView .secondNav li .children li {
+      #secondViewNav .secondNav li .children li {
         width: 100%;
         border-bottom: none; }
-    #secondView .secondNav a {
+    #secondViewNav .secondNav a {
       color: #003056; }
-    #secondView .secondNav a:hover {
+    #secondViewNav .secondNav a:hover {
       color: #83B93A; }
-  #secondView > .firstNavS {
+  #secondViewNav > .firstNavS {
     position: fixed;
     top: 0px !important;
     z-index: 3;
@@ -353,7 +400,7 @@ a {
     -o-justify-content: space-between;
     -ms-justify-content: space-between;
     -moz-justify-content: space-between; }
-    #secondView > .firstNavS .nav-leftS {
+    #secondViewNav > .firstNavS .nav-leftS {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -368,11 +415,11 @@ a {
       -o-flex-direction: row;
       -ms-flex-direction: row;
       -moz-flex-direction: row; }
-      #secondView > .firstNavS .nav-leftS > .burger {
+      #secondViewNav > .firstNavS .nav-leftS > .burger {
         margin: 0px 30px 0px 40px; }
-      #secondView > .firstNavS .nav-leftS > .burger:hover {
+      #secondViewNav > .firstNavS .nav-leftS > .burger:hover {
         background-image: url("../resources/nav/burger.png"); }
-      #secondView > .firstNavS .nav-leftS .logo {
+      #secondViewNav > .firstNavS .nav-leftS .logo {
         margin-top: 20px;
         -ms-flex-item-align: center;
         align-self: center;
@@ -382,71 +429,25 @@ a {
         -moz-align-self: center;
         width: 130px;
         height: 130px; }
-    #secondView > .firstNavS .nav-rightS {
+    #secondViewNav > .firstNavS .nav-rightS {
       -ms-flex-item-align: center;
       align-self: center;
       -webkit-align-self: center;
       -o-align-self: center;
       -ms-align-self: center;
       -moz-align-self: center; }
-      #secondView > .firstNavS .nav-rightS > .green-button {
+      #secondViewNav > .firstNavS .nav-rightS > .green-button {
         margin-right: 40px; }
-  #secondView .boxes {
-    margin-top: 200px;
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    display: -webkit-flex;
-    display: -o-flex;
-    display: -ms-flex;
-    display: -moz-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    -o-flex-direction: column;
-    -ms-flex-direction: column;
-    -moz-flex-direction: column; }
-    #secondView .boxes .box {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      display: -webkit-flex;
-      display: -o-flex;
-      display: -ms-flex;
-      display: -moz-flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      flex-direction: row;
-      -webkit-flex-direction: row;
-      -o-flex-direction: row;
-      -ms-flex-direction: row;
-      -moz-flex-direction: row;
-      width: 100%;
-      height: 100%;
-      position: relative; }
-      #secondView .boxes .box > img {
-        position: absolute;
-        width: 100%;
-        height: 100%; }
-      #secondView .boxes .box > p {
-        position: absolute;
-        font-size: 50px;
-        color: white;
-        bottom: 50px;
-        margin-left: 50px; }
-  #secondView > .nav-socialS {
+  #secondViewNav > .nav-socialS {
     position: fixed;
     z-index: 2;
     top: 350px;
     right: 40px; }
-    #secondView > .nav-socialS > div {
+    #secondViewNav > .nav-socialS > div {
       height: 50px;
       width: 50px;
       margin-bottom: 20px; }
-      #secondView > .nav-socialS > div > a img {
+      #secondViewNav > .nav-socialS > div > a img {
         height: 100%;
         width: 100%; }
 
@@ -738,13 +739,13 @@ a {
   0% {
     background-image: url("../resources/prepaUC/5.jpg"); }
   50% {
-    background-image: url("../resources/prepaUC/4.jpg"); } }
+    background-image: url("../resources/prepaUC/cu.jpg"); } }
 
 @keyframes changeT {
   0% {
     background-image: url("../resources/prepaUC/5.jpg"); }
   50% {
-    background-image: url("../resources/prepaUC/4.jpg"); } }
+    background-image: url("../resources/prepaUC/cu.jpg"); } }
 
 .display {
   display: none; }
@@ -2224,10 +2225,10 @@ a {
     background-image: url("../resources/odontologia/1-01.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    -webkit-animation: changeT 15s infinite ease;
-    animation: changeT 15s infinite ease; }
+    -webkit-animation: changeO 15s infinite ease;
+    animation: changeO 15s infinite ease; }
 
-@keyframes changeT {
+@-webkit-keyframes changeO {
   0% {
     background-image: url("../resources/odontologia/1-01.jpg"); }
   25% {
@@ -2236,3 +2237,218 @@ a {
     background-image: url("../resources/odontologia/3-03.jpg"); }
   75% {
     background-image: url("../resources/odontologia/4-04.jpg"); } }
+
+@keyframes changeO {
+  0% {
+    background-image: url("../resources/odontologia/1-01.jpg"); }
+  25% {
+    background-image: url("../resources/odontologia/2-02.jpg"); }
+  50% {
+    background-image: url("../resources/odontologia/3-03.jpg"); }
+  75% {
+    background-image: url("../resources/odontologia/4-04.jpg"); } }
+
+#visitanos {
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -o-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column; }
+  #visitanos .box {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column; }
+    #visitanos .box .up {
+      width: 100%;
+      height: 70%;
+      background-color: #003056; }
+    #visitanos .box .down {
+      width: 100%;
+      height: 30%;
+      background-color: #83B93A;
+      position: relative;
+      overflow: scroll;
+      z-index: 1; }
+      #visitanos .box .down > img {
+        width: 100%;
+        height: 100%; }
+      #visitanos .box .down .one {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        display: -webkit-flex;
+        display: -o-flex;
+        display: -ms-flex;
+        display: -moz-flex;
+        width: 200%;
+        height: 100%;
+        position: absolute;
+        background-color: #999; }
+        #visitanos .box .down .one .boxes {
+          position: relative;
+          margin: auto 0;
+          width: 25%;
+          height: 90%;
+          border-right: 2px #ccc solid;
+          background-color: #999999; }
+          #visitanos .box .down .one .boxes > img {
+            margin: 150px 130px 0px;
+            width: 200px;
+            height: 100px; }
+          #visitanos .box .down .one .boxes > p {
+            padding: 15px;
+            text-align: center;
+            color: #f2f2f2;
+            font-size: 30px; }
+
+#integrate {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #003056;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -o-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column; }
+  #integrate a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none; }
+  #integrate .up {
+    width: 100%;
+    height: 70%; }
+  #integrate .down {
+    width: 100%;
+    height: 30%;
+    position: relative;
+    overflow: scroll; }
+    #integrate .down .abs {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      display: -webkit-flex;
+      display: -o-flex;
+      display: -ms-flex;
+      display: -moz-flex;
+      width: 200%;
+      height: 100%;
+      position: absolute; }
+      #integrate .down .abs .boxes {
+        -webkit-box-sizing: border-box;
+          -webkit-box-sizing-box-sizing: border-box;
+        padding: 250px 20px; }
+        #integrate .down .abs .boxes > p {
+          text-align: center;
+          color: #f2f2f2;
+          font-size: 45px; }
+  #integrate .first {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../resources/visitanos/1.jpg"); }
+  #integrate .second {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../resources/visitanos/2.jpg"); }
+  #integrate .third {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../resources/visitanos/3.jpg"); }
+  #integrate .fourth {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../resources/visitanos/4.jpg"); }
+
+.new {
+  -webkit-box-sizing: border-box;
+    -webkit-box-sizing-box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -o-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 170px; }
+  .new .video1, .new .video2 {
+    width: 100%;
+    height: 50%;
+    position: relative; }
+  .new .video1 {
+    background-color: #83B93A; }
+  .new .video2 {
+    background-color: #003056; }
+  .new .back {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../resources/visitanos/back.png");
+    z-index: 1;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    top: 200px;
+    left: 20px; }
+
+.display {
+  display: none; }
+
+.display:target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: -moz-flex; }
